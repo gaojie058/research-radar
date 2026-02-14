@@ -274,27 +274,27 @@ agent, human-AI, agentic, collaboration, qualitative
 
 ### 推荐关注
 
-| 姓名 | 平台 | Handle | 说明 |
-|------|------|--------|------|
-| Sherry Tongshuang Wu | X | @tongshuangwu | HCI×NLP，human-AI interaction |
-| Saleema Amershi | X | @sabornershi | Human-AI Interaction Guidelines |
-| Gagan Bansal | X | @gaaborned | Human-AI teaming |
-| Q. Vera Liao | X | @qaborned | Explainable AI, responsible AI in HCI |
-| Kenneth Holstein | X | @kenholstein | Human-AI系统评估，教育AI |
-| Lydia Chilton | X | @lyaborned | AI创造力，人机协作写作 |
-| Michael Bernstein | X | @msb | Generative agents, social computing |
-| Mina Lee | X | @maborned | Human-AI collaborative writing |
-| Aniket Kittur | X | @nkittur | Sensemaking, knowledge work with AI |
-| April Wang | X | — | Programming + HCI + AI |
-| Toby Jia-Jun Li | X | @tobyjiajun | End-user programming, human-AI systems |
-| Dakuo Wang | X | @dakuowang | Human-AI collaboration, CSCW |
-| Percy Liang | X | @percyliang | LLM evaluation框架 |
-| Simon Willison | X | @simonw | LLM工具生态最佳信息源 |
-| Andrej Karpathy | X | @karpathy | 深度技术解读 |
-| Swyx | X | @swyx | AI工程/agent生态trend |
-| Eric Horvitz | LinkedIn | — | MSR Chief Scientist, 大趋势预判 |
-| Ben Shneiderman | LinkedIn | — | Human-centered AI倡导者 |
-| Ece Kamar | LinkedIn | — | Human-AI complementarity |
+| 姓名 | 链接 | 平台 | 说明 |
+|------|------|------|------|
+| Sherry Tongshuang Wu | https://x.com/tongshuangwu | X | HCI×NLP，human-AI interaction |
+| Saleema Amershi | https://x.com/sabornershi | X | Human-AI Interaction Guidelines |
+| Gagan Bansal | https://x.com/gaaborned | X | Human-AI teaming |
+| Q. Vera Liao | https://x.com/qaborned | X | Explainable AI, responsible AI in HCI |
+| Kenneth Holstein | https://x.com/kenholstein | X | Human-AI系统评估，教育AI |
+| Lydia Chilton | https://x.com/lyaborned | X | AI创造力，人机协作写作 |
+| Michael Bernstein | https://x.com/msb | X | Generative agents, social computing |
+| Mina Lee | https://x.com/maborned | X | Human-AI collaborative writing |
+| Aniket Kittur | https://x.com/nkittur | X | Sensemaking, knowledge work with AI |
+| April Wang | https://scholar.google.com/citations?user=April_Wang | X | Programming + HCI + AI |
+| Toby Jia-Jun Li | https://x.com/tobyjiajun | X | End-user programming, human-AI systems |
+| Dakuo Wang | https://x.com/dakuowang | X | Human-AI collaboration, CSCW |
+| Percy Liang | https://x.com/percyliang | X | LLM evaluation框架 |
+| Simon Willison | https://x.com/simonw | X | LLM工具生态最佳信息源 |
+| Andrej Karpathy | https://x.com/karpathy | X | 深度技术解读 |
+| Swyx | https://x.com/swyx | X | AI工程/agent生态trend |
+| Eric Horvitz | https://www.linkedin.com/in/erichorvitz | LinkedIn | MSR Chief Scientist, 大趋势预判 |
+| Ben Shneiderman | https://www.linkedin.com/in/ben-shneiderman | LinkedIn | Human-centered AI倡导者 |
+| Ece Kamar | https://www.linkedin.com/in/ecekamar | LinkedIn | Human-AI complementarity |
 
 ### 播客
 
@@ -306,11 +306,11 @@ agent, human-AI, agentic, collaboration, qualitative
 
 ### 会议/Workshop
 
-| 名称 | 频率 | 说明 |
-|------|------|------|
-| CHI GenAICHI Workshop | 年度 | Generative AI × HCI |
-| HHAI Conference | 年度 | Hybrid Human-AI Intelligence |
-| CHI TREW Workshop | 年度 | Trust & Reliance in Human-AI Workflows |
-| ACL/EMNLP HCI+NLP Workshop | 年度 | HCI×NLP交叉 |
-| IUI Conference | 年度 | Intelligent User Interfaces |
-| NeurIPS/ICML Agent Workshops | 年度 | 系统/ML视角的agent研究 |
+| 名称 | 链接 | 频率 | 说明 |
+|------|------|------|------|
+| CHI GenAICHI Workshop | https://genai-chi.github.io | 年度 | Generative AI × HCI |
+| HHAI Conference | https://hhai-conference.org | 年度 | Hybrid Human-AI Intelligence |
+| CHI TREW Workshop | https://trew-workshop.github.io | 年度 | Trust & Reliance in Human-AI Workflows |
+| ACL/EMNLP HCI+NLP Workshop | https://aclanthology.org | 年度 | HCI×NLP交叉 |
+| IUI Conference | https://iui.acm.org | 年度 | Intelligent User Interfaces |
+| NeurIPS/ICML Agent Workshops | https://neurips.cc | 年度 | 系统/ML视角的agent研究 |
