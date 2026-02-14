@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-14T02:27:20.059995",
+    "fetched_at": "2026-02-14T02:45:18.197993",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1273,37 +1273,20 @@
   ],
   "semantic_scholar": [
     {
-      "id": "fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
-      "title": "Jokeasy: Exploring Human-AI Collaboration in Thematic Joke Generation",
+      "id": "8b82fa412642816f7db5deaed364a836ebdd201d",
+      "title": "Thinking Makes LLM Agents Introverted: How Mandatory Thinking Can Backfire in User-Engaged Agents",
       "authors": [
-        "Yate Ge",
-        "Lin Tian",
-        "Chiqian Xu",
-        "Luyao Xu",
-        "Meiying Li"
+        "Jiatong Li",
+        "Changdae Oh",
+        "Hyeong Kyu Choi",
+        "Jindong Wang",
+        "Sharon Li"
       ],
-      "summary": "Thematic jokes are central to stand-up comedy, sitcoms, and public speaking, where contexts and punchlines rely on fresh material - news, anecdotes, and cultural references that resonate with the audience. Recent advances in Large Language Models (LLMs) have enabled interactive joke generation through conversational interfaces. Although LLMs enable interactive joke generation, ordinary conversational interfaces seldom give creators enough agency, control, or timely access to such source material",
-      "published": "2026-02-10",
+      "summary": "Eliciting reasoning has emerged as a powerful technique for improving the performance of large language models (LLMs) on complex tasks by inducing thinking. However, their effectiveness in realistic user-engaged agent scenarios remains unclear. In this paper, we conduct a comprehensive study on the effect of explicit thinking in user-engaged LLM agents. Our experiments span across seven models, three benchmarks, and two thinking instantiations, and we evaluate them through both a quantitative re",
+      "published": "2026-02-08",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "dadcf5b53ed96a478c10f455a0e4a6d14822b540",
-      "title": "LLM-Grounded Dynamic Task Planning with Hierarchical Temporal Logic for Human-Aware Multi-Robot Collaboration",
-      "authors": [
-        "Shuyuan Hu",
-        "Tao Lin",
-        "Kai Ye",
-        "Yang Yang",
-        "Tianwei Zhang"
-      ],
-      "summary": "While Large Language Models (LLM) enable non-experts to specify open-world multi-robot tasks, the generated plans often lack kinematic feasibility and are not efficient, especially in long-horizon scenarios. Formal methods like Linear Temporal Logic (LTL) offer correctness and optimal guarantees, but are typically confined to static, offline settings and struggle with computational scalability. To bridge this gap, we propose a neuro-symbolic framework that grounds LLM reasoning into hierarchical",
-      "published": "2026-02-10",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/dadcf5b53ed96a478c10f455a0e4a6d14822b540",
-      "matched_keyword": "human-AI collaboration LLM",
+      "link": "https://www.semanticscholar.org/paper/8b82fa412642816f7db5deaed364a836ebdd201d",
+      "matched_keyword": "LLM qualitative analysis",
       "source": "semantic_scholar"
     },
     {
@@ -1341,20 +1324,18 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "0bf6ab530c50492142bf37789e81e6637315a012",
-      "title": "From Human-Human Collaboration to Human-Agent Collaboration: A Vision, Design Philosophy, and an Empirical Framework for Achieving Successful Partnerships Between Humans and LLM Agents",
+      "id": "b901ef580574dc6b16cc2a61f56802e781b7aeff",
+      "title": "Testing LLM Diagnostics in Endodontics: The Impact of Linguistic Variation on Unseen Cases.",
       "authors": [
-        "Bingsheng Yao",
-        "Chaoran Chen",
-        "A. Wang",
-        "Sherry Tongshuang Wu",
-        "T. Li"
+        "Itrat Batool",
+        "N. Naved",
+        "F. Umer"
       ],
-      "summary": "The emergence of Large Language Model (LLM) agents enables us to build agent-based intelligent systems that move beyond the role of a\"tool\"to become genuine collaborators with humans, thereby realizing a novel human-agent collaboration paradigm. Our vision is that LLM agents should resemble remote human collaborators, which allows HCI researchers to ground the future exploration in decades of research on trust, awareness, and common ground in remote human collaboration, while also revealing the ",
+      "summary": "AIM\nTo assess the diagnostic performance of two language models, GPT-5 Plus and Gemini 2.5 Flash using a curated benchmark dataset of unseen endodontic and restorative dentistry related clinical case scenarios and the linguistic variations introduced around the original dataset. Additionally, a descriptive qualitative analysis was performed on a subset of cases to evaluate the quality of reasoning generated by both models.\n\n\nMETHODOLOGY\nOne hundred single best answer MCQs were generated using st",
       "published": "2026-02-05",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/0bf6ab530c50492142bf37789e81e6637315a012",
-      "matched_keyword": "human-AI collaboration LLM",
+      "link": "https://www.semanticscholar.org/paper/b901ef580574dc6b16cc2a61f56802e781b7aeff",
+      "matched_keyword": "LLM qualitative analysis",
       "source": "semantic_scholar"
     },
     {
@@ -1369,6 +1350,22 @@
       "citations": 0,
       "link": "https://www.semanticscholar.org/paper/a8613e716d87ac0faecdbf6acd5197ab6951a466",
       "matched_keyword": "AI agent workflow",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "822f705e1d2058d8cb698a365effddaf7277e1f4",
+      "title": "Human-centered AI to promote youth mental health: a serendipitous natural experiment enabled by a digital health platform",
+      "authors": [
+        "T. Katapally",
+        "Nadine Elsahli",
+        "S. Ibrahim",
+        "Jasmin Bhawra"
+      ],
+      "summary": "Background Health systems are struggling to deliver timely preventive care, particularly for marginalized populations, necessitating integration across health, education, and social services. For Indigenous youth in rural communities, fragmented services, isolation, and limited culturally safe options worsen mental health disparities. Interactive technologies, particularly human-centered artificial intelligence (AI)-enabled digital health platforms grounded in human-computer interaction (HCI), c",
+      "published": "2026-02-02",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/822f705e1d2058d8cb698a365effddaf7277e1f4",
+      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1387,20 +1384,63 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "ae236ed343c8fd827b06f0d6f7a2bbaaa34fec83",
-      "title": "A Human-Centred AI System for Multi-Actor Planning and Collaboration in Family Learning",
+      "id": "b7a0a1d5d16fc1994c2242878653906ba015455b",
+      "title": "LeagueBot: A Voice LLM Companion of Cognitive and Emotional Support for Novice Players in Competitive Games",
       "authors": [
-        "Si Chen",
-        "Jingyi Xie",
-        "Yao Li",
-        "Ya-Fang Lin",
-        "He Zhang"
+        "Jungmin Lee",
+        "Inhee Cho",
+        "Youngjae Yoo"
       ],
-      "summary": "Family learning takes place in everyday routines where children and caregivers read, practice, and develop new skills together. Despite growing interest in AI tutors, most existing systems are designed for single learners or classroom settings and do not address the distributed planning, coordination, and execution demands of learning at home. This paper introduces ParPal, a human-centred, LLM-powered system that supports multi-actor family learning by decomposing learning goals into actionable ",
+      "summary": "Competitive games pose steep learning curves and strong social pressures, often discouraging novice players and limiting sustained engagement. To address these challenges, this study introduces LeagueBot, a large language model-based voice chatbot designed to provide both informational and emotional support during live gameplay in league of legends, one of the most competitive multiplayer online battle arena games. In a within-subjects experiment with 33 novice players, LeagueBot was found to re",
+      "published": "2026-02-01",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/b7a0a1d5d16fc1994c2242878653906ba015455b",
+      "matched_keyword": "LLM qualitative analysis",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "802f3d25799b1a1e9543e97031f24e8f009770f4",
+      "title": "An HCAI Methodological Framework: Putting it Into Action to Enable Human-Centered AI",
+      "authors": [
+        "Wei Xu",
+        "Zaifeng Gao",
+        "Marvin J. Dainoff"
+      ],
+      "summary": "Human-centered artificial intelligence (HCAI) is a design philosophy that prioritizes humans in the design, development, deployment, and use of AI systems, aiming to maximize AI’s benefits while mitigating its negative impacts. Despite its growing prominence in literature, the lack of methodological guidance for its implementation poses challenges to HCAI practice. To address this gap, this article proposes a comprehensive HCAI methodological framework (HCAI-MF) comprising five key components: H",
+      "published": "2026-02-01",
+      "citations": 11,
+      "link": "https://www.semanticscholar.org/paper/802f3d25799b1a1e9543e97031f24e8f009770f4",
+      "matched_keyword": "human-centered AI systems",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "5eb71f6e5f5bf8b1f7299601df0eb309576edc96",
+      "title": "How topic content shapes LLM personality-tailored persuasion: semantic anchoring and topic stereotype effects",
+      "authors": [
+        "Shuang Xu",
+        "Zili Zhou",
+        "Nan Zhao"
+      ],
+      "summary": "Large language models (LLMs) have shown promise in generating personality-tailored persuasive messages, yet their effectiveness remains inconsistent across contexts. This research systematically investigated how the characteristics of recommended products or actions shapes the efficacy of LLM- generated personality-tailored persuasion through three experimental studies (N = 618). Study 1 revealed that personality-matching effects were limited and inconsistent when the core features of the recomm",
+      "published": "2026-01-30",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/5eb71f6e5f5bf8b1f7299601df0eb309576edc96",
+      "matched_keyword": "LLM qualitative analysis",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "1ba6983531e7c074c1d70fea993c3f6ca64d2969",
+      "title": "Designing Understandable and Fair AI for Learning: The PEARL Framework for Human-Centered Educational AI",
+      "authors": [
+        "S. Dakshit",
+        "Kouider Mokhtari",
+        "A. Khalid"
+      ],
+      "summary": "As artificial intelligence (AI) is increasingly used in classrooms, tutoring systems, and learning platforms, it is essential that these tools are not only powerful, but also easy to understand, fair, and supportive of real learning. Many current AI systems can generate fluent responses or accurate predictions, yet they often fail to clearly explain their decisions, reflect students’ cultural contexts, or give learners and educators meaningful control. This gap can reduce trust and limit the edu",
       "published": "2026-01-28",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/ae236ed343c8fd827b06f0d6f7a2bbaaa34fec83",
-      "matched_keyword": "human-AI collaboration LLM",
+      "link": "https://www.semanticscholar.org/paper/1ba6983531e7c074c1d70fea993c3f6ca64d2969",
+      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1421,32 +1461,36 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "ee72f858e8b46326d0fb58db6b74449fdac1e4a2",
-      "title": "Human-AI collaboration enhances the performance of large language models in risk of bias assessment",
+      "id": "2cf5b15bc32dfa983f5e4bd24fb6ed2e4f6c6e87",
+      "title": "Autonomous Multi-Agent AI for High-Throughput Polymer Informatics: From Property Prediction to Generative Design Across Synthetic and Bio-Polymers",
       "authors": [
-        "Yingyin Li",
-        "Fengchun Yang",
-        "Meng Wu",
-        "Jiao Li"
+        "Mahule Roy",
+        "Adib Bazgir",
+        "Arthur da Silva Sousa Santos",
+        "Yuwen Zhang"
       ],
-      "summary": "",
-      "published": "2026-01-20",
+      "summary": "We present an integrated multiagent AI ecosystem for polymer discovery that unifies high-throughput materials workflows, artificial intelligence, and computational modeling within a single Polymer Research Lifecycle (PRL) pipeline. The system orchestrates specialized agents powered by state-of-the-art large language models (DeepSeek-V2 and DeepSeek-Coder) to retrieve and reason over scientific resources, invoke external tools, execute domain-specific code, and perform metacognitive self-assessme",
+      "published": "2026-01-25",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/ee72f858e8b46326d0fb58db6b74449fdac1e4a2",
-      "matched_keyword": "human-AI collaboration LLM",
+      "link": "https://www.semanticscholar.org/paper/2cf5b15bc32dfa983f5e4bd24fb6ed2e4f6c6e87",
+      "matched_keyword": "AI agent workflow",
       "source": "semantic_scholar"
     },
     {
-      "id": "98a6b200d61cee0d0c3b58fb9140786b7bfbc471",
-      "title": "Inventory optimization under supply chain disruptions: Leveraging large language models for human-AI collaborative decision-making",
+      "id": "b02e865f62b7a79909a3b3c9ecf28f2e42ca6e67",
+      "title": "ResQConnect: An AI-Powered Multi-Agentic Platform for Human-Centered and Resilient Disaster Response",
       "authors": [
-        "Ruijing Wu"
+        "Aththanayake Aththanayake",
+        "Chemini Mallikarachchi",
+        "Janeesha Wickramasinghe",
+        "Sajeev Kugarajah",
+        "D. Meedeniya"
       ],
-      "summary": "",
+      "summary": "Effective disaster management is critical for safeguarding lives, infrastructure and economies in an era of escalating natural hazards like floods and landslides. Despite advanced early-warning systems and coordination frameworks, a persistent “last-mile” challenge undermines response effectiveness: transforming fragmented and unstructured multimodal data into timely and accountable field actions. This paper introduces ResQConnect, a human-centered, AI-powered multimodal multi-agent platform tha",
       "published": "2026-01-19",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/98a6b200d61cee0d0c3b58fb9140786b7bfbc471",
-      "matched_keyword": "human-AI collaboration LLM",
+      "citations": 1,
+      "link": "https://www.semanticscholar.org/paper/b02e865f62b7a79909a3b3c9ecf28f2e42ca6e67",
+      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1467,82 +1511,48 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "192a166871cf394d97cb8c6cf09e73325a2800dd",
-      "title": "Exploring Human-AI Collaboration Dynamics in LLM-supported Engineering Project-Based Learning",
+      "id": "7321344ff13d71d7f1c6035636751206d0590782",
+      "title": "LLM QLoRA Fine-Tuning of Llama, DeepSeek, and Qwen: A Skyrim Case Study",
       "authors": [
-        "Xuan Qiu",
-        "Tin Nok Mak"
+        "M. E. Monteiro",
+        "Marcos Talau",
+        "Heitor Silvério Lopes"
+      ],
+      "summary": "Fine-tuning Large Language Models (LLMs) for domains that demand extensive background knowledge, such as video game lore, involves navigating trade-offs between model architecture, scale, and the organization of training data. In this study, we examine these factors through the use of Quantized Low-Rank Adaptation (QLoRA) applied to the lore of Skyrim®. Our analysis considers nine models from the DeepSeek, Llama, and Qwen families at three parameter scales (~8B, ~13B, and ~33B). Each model was f",
+      "published": "2026",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/7321344ff13d71d7f1c6035636751206d0590782",
+      "matched_keyword": "LLM qualitative analysis",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "5b732ee2ff422121aa66cd4b0fa207ca54216df6",
+      "title": "Intercultural Human-Centered AI for Automotive Systems: Bridging ASPICE Processes and Intelligent Human Systems Integration",
+      "authors": [
+        "Rüdiger Heimgärtner"
+      ],
+      "summary": "The integration of Artificial Intelligence into safety-critical automotive systems demands approaches that combine technical rigor with cultural and human-centred sensitivity. While Automotive SPICE (ASPICE) ensures structured engineering practices, it lacks explicit guidance on integrating intercultural human factors and intelligent AI-driven support. This paper proposes a framework for Intercultural Human-Centred AI that bridges ASPICE-based practices with intelligent human systems integration",
+      "published": "2026",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/5b732ee2ff422121aa66cd4b0fa207ca54216df6",
+      "matched_keyword": "human-centered AI systems",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "37952a875dc6a5f3507546773d5eaa834d926cc2",
+      "title": "Enhancing obstacle detectability in tunnel look-ahead systems through human-centered explainable AI and inverse inference",
+      "authors": [
+        "Yanlong Niu",
+        "Huaigu Tang",
+        "E. Nilot",
+        "Yuhan Zhou",
+        "Yunyue Elita Li"
       ],
       "summary": "",
       "published": "2026",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/192a166871cf394d97cb8c6cf09e73325a2800dd",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "66ea1aa845a34c6693e11d31789a0eec330433de",
-      "title": "Human-LLM Collaboration Framework for Translating Health Instruments",
-      "authors": [
-        "Hind Bitar",
-        "Omaima Almatrafi",
-        "Amal Babour",
-        "Ohoud Alzamzami",
-        "Mayda Alrige"
-      ],
-      "summary": "Large language models have revolutionized various sectors, including education and healthcare, by demonstrating significant advancements in producing human-like text and enhancing translation accuracy. Despite these advancements, the conventional process of cross-cultural instrument translation remains labor-intensive, expensive, and heavily dependent on the expertise of human professionals, including translators and healthcare specialists. The objective of this study is to address the translati",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/66ea1aa845a34c6693e11d31789a0eec330433de",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "a785dc215f8dd317f272e1db008ee9fa0733850e",
-      "title": "CCM-FCC: LLM-powered cognition-centered AI agent framework for proactive human-robot collaboration",
-      "authors": [
-        "Pengfei Ding",
-        "Jie Zhang",
-        "Peng Zhang",
-        "Hongsen Li",
-        "Dexian Wang"
-      ],
-      "summary": "",
-      "published": "2026",
-      "citations": 1,
-      "link": "https://www.semanticscholar.org/paper/a785dc215f8dd317f272e1db008ee9fa0733850e",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "55079826666485d2e95611bc5e337db4a07114f8",
-      "title": "Proactive safety reasoning in human-robot collaboration in disassembly through LLM-augmented STPA and FMEA",
-      "authors": [
-        "Morteza Jalali Alenjareghi",
-        "Fardin Ghorbani",
-        "S. Keivanpour",
-        "Y. Chinniah",
-        "Sabrina Jocelyn"
-      ],
-      "summary": "",
-      "published": "2026",
-      "citations": 1,
-      "link": "https://www.semanticscholar.org/paper/55079826666485d2e95611bc5e337db4a07114f8",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "2e207f78284460ce59438de4512e2ba3b8127547",
-      "title": "HYBRID SENSING AND CLOUD DEPLOYED AGENT MESH FOR AI‑DRIVEN TRAFFIC OPTIMIZATION IN CONGESTED CITIES",
-      "authors": [
-        "Florin Andreescu",
-        "Dorin Simionescu"
-      ],
-      "summary": "Urban traffic congestion in crowded cities is increasingly shaped by short term demand fluctuations, spillback formation, and heterogeneous vehicle dynamics, which challenge fixed time signal plans and reactive controllers. This paper proposes an AI enabled intersection agent that combines (i) a deep learning (DL) predictor for short horizon traffic forecasting (15–60 minutes) and (ii) an intersection level machine learning (ML) controller that applies bounded adaptations of green times based on",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/2e207f78284460ce59438de4512e2ba3b8127547",
-      "matched_keyword": "AI agent workflow",
+      "link": "https://www.semanticscholar.org/paper/37952a875dc6a5f3507546773d5eaa834d926cc2",
+      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1650,7 +1660,7 @@
       "title": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
       "hn_link": "https://news.ycombinator.com/item?id=46990729",
-      "points": 2267,
+      "points": 2269,
       "comments": 927,
       "published": "2026-02-12",
       "matched_keyword": "AI agent",
@@ -1661,7 +1671,7 @@
       "title": "AI agent opens a PR write a blogpost to shames the maintainer who closes it",
       "link": "https://github.com/matplotlib/matplotlib/pull/31132",
       "hn_link": "https://news.ycombinator.com/item?id=46987559",
-      "points": 928,
+      "points": 929,
       "comments": 739,
       "published": "2026-02-12",
       "matched_keyword": "AI agent",
@@ -1767,24 +1777,24 @@
       "source": "hackernews"
     },
     {
-      "id": "47006843",
-      "title": "The \"AI agent hit piece\" situation clarifies how dumb we are acting",
-      "link": "https://ardentperf.com/2026/02/13/the-scott-shambaugh-situation-clarifies-how-dumb-we-are-acting/",
-      "hn_link": "https://news.ycombinator.com/item?id=47006843",
-      "points": 180,
-      "comments": 90,
-      "published": "2026-02-13",
-      "matched_keyword": "AI agent",
-      "source": "hackernews"
-    },
-    {
       "id": "47009949",
       "title": "An AI Agent Published a Hit Piece on Me – More Things Have Happened",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/",
       "hn_link": "https://news.ycombinator.com/item?id=47009949",
-      "points": 149,
-      "comments": 74,
+      "points": 191,
+      "comments": 93,
       "published": "2026-02-14",
+      "matched_keyword": "AI agent",
+      "source": "hackernews"
+    },
+    {
+      "id": "47006843",
+      "title": "The \"AI agent hit piece\" situation clarifies how dumb we are acting",
+      "link": "https://ardentperf.com/2026/02/13/the-scott-shambaugh-situation-clarifies-how-dumb-we-are-acting/",
+      "hn_link": "https://news.ycombinator.com/item?id=47006843",
+      "points": 186,
+      "comments": 94,
+      "published": "2026-02-13",
       "matched_keyword": "AI agent",
       "source": "hackernews"
     },
@@ -1804,7 +1814,7 @@
       "title": "Show HN: Moltis – AI assistant with memory, tools, and self-extending skills",
       "link": "https://www.moltis.org",
       "hn_link": "https://news.ycombinator.com/item?id=46993587",
-      "points": 81,
+      "points": 86,
       "comments": 32,
       "published": "2026-02-12",
       "matched_keyword": "AI assistant",
