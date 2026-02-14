@@ -715,6 +715,9 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
   currentCategory = tab.dataset.category;
+  // Clear keyword filter when switching tabs
+  currentKeyword = '';
+  document.querySelectorAll('.keyword-pill').forEach(p => p.classList.remove('active'));
   render();
 });
 
