@@ -276,25 +276,27 @@ agent, human-AI, agentic, collaboration, qualitative
 
 | 姓名 | 链接 | 平台 | 说明 |
 |------|------|------|------|
+| Anthropic| https://x.com/AnthropicAI | X | AI safety and research company |
+| Claude | https://x.com/claudeai | X | safe, accurate, and secure |
+| OpenAI | https://x.com/OpenAI | X | artificial general intelligence benefits all of humanity |
 | Sherry Tongshuang Wu | https://x.com/tongshuangwu | X | HCI×NLP，human-AI interaction |
-| Saleema Amershi | https://x.com/sabornershi | X | Human-AI Interaction Guidelines |
-| Gagan Bansal | https://x.com/gaaborned | X | Human-AI teaming |
-| Q. Vera Liao | https://x.com/qaborned | X | Explainable AI, responsible AI in HCI |
-| Kenneth Holstein | https://x.com/kenholstein | X | Human-AI系统评估，教育AI |
-| Lydia Chilton | https://x.com/lyaborned | X | AI创造力，人机协作写作 |
-| Michael Bernstein | https://x.com/msb | X | Generative agents, social computing |
-| Mina Lee | https://x.com/maborned | X | Human-AI collaborative writing |
-| Aniket Kittur | https://x.com/nkittur | X | Sensemaking, knowledge work with AI |
-| April Wang | https://scholar.google.com/citations?user=April_Wang | X | Programming + HCI + AI |
-| Toby Jia-Jun Li | https://x.com/tobyjiajun | X | End-user programming, human-AI systems |
+| Diyi Yang | https://x.com/Diyi_Yang | X | Human-AI |
+| Ziang Xiao | https://x.com/ZiangXiao | X | AI4SocialScience, Model Evaluation, Information Seeking |
+| Mark Dredze | https://x.com/mdredze | X | NLP |
+| Wesley Hanwen Deng | https://x.com/wes_deng | X | Human-AI |
+| Mina Lee | https://x.com/MinaLee__ | X | Human-AI collaborative writing |
+| Jentse Huang | https://x.com/JentseHuang | X | LLM + Social Science, Multi-Agent, AI Fairness |
+| Toby Jia-Jun Li | https://x.com/TobyJLi | X | End-user programming, human-AI systems |
 | Dakuo Wang | https://x.com/dakuowang | X | Human-AI collaboration, CSCW |
 | Percy Liang | https://x.com/percyliang | X | LLM evaluation框架 |
+| Michael Bernstein | https://x.com/msbernst | X | Generative agents, social computing |
 | Simon Willison | https://x.com/simonw | X | LLM工具生态最佳信息源 |
+| Joon Sung Park | https://x.com/joon_s_pk | X | Social Simulations |
 | Andrej Karpathy | https://x.com/karpathy | X | 深度技术解读 |
 | Swyx | https://x.com/swyx | X | AI工程/agent生态trend |
-| Eric Horvitz | https://www.linkedin.com/in/erichorvitz | LinkedIn | MSR Chief Scientist, 大趋势预判 |
-| Ben Shneiderman | https://www.linkedin.com/in/ben-shneiderman | LinkedIn | Human-centered AI倡导者 |
-| Ece Kamar | https://www.linkedin.com/in/ecekamar | LinkedIn | Human-AI complementarity |
+| Saleema Amershi | https://x.com/SaleemaAmershi | X | Human-AI Interaction Guidelines |
+| Q. Vera Liao | https://x.com/QVeraLiao | X | Explainable AI, responsible AI in HCI |
+| Xiang 'Anthony' Chen | https://x.com/_xiang_chen_ | X | Interactive AI systems |
 
 ### 播客
 
