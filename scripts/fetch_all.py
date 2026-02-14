@@ -15,59 +15,150 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-DATA_DIR = Path(__file__).parent.parent / "docs" / "data"
+PROJECT_ROOT = Path(__file__).parent.parent
+DATA_DIR = PROJECT_ROOT / "docs" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
+CONFIG_MD = PROJECT_ROOT / "information-source.md"
 
-# ─── Configuration ───────────────────────────────────────────────────────────
-# Edit these to customize your research radar
 
-ARXIV_CATEGORIES = ["cs.HC", "cs.AI", "cs.CL", "cs.SE"]
-ARXIV_KEYWORDS = [
-    "human-AI collaboration",
-    "LLM agent",
-    "AI agent",
-    "qualitative analysis",
-    "human-centered AI",
-    "responsible AI",
-    "trustworthy AI",
-    "human-LLM interaction",
-    "AI-assisted analysis",
-    "collaborative AI",
-    "agentic AI",
-    "computer-supported cooperative work",
-]
+# ─── Configuration (loaded from information-source.md) ───────────────────────
 
-SEMANTIC_SCHOLAR_KEYWORDS = [
-    "human-AI collaboration LLM",
-    "AI agent workflow",
-    "LLM qualitative analysis",
-    "human-centered AI systems",
-]
+def load_config():
+    """Parse the '自动扫描配置' section from information-source.md."""
+    config = {
+        "arxiv_categories": ["cs.HC", "cs.AI", "cs.CL", "cs.SE"],
+        "arxiv_keywords": ["human-AI collaboration", "LLM agent", "AI agent"],
+        "s2_keywords": ["human-AI collaboration LLM"],
+        "tracked_authors": {},
+        "hn_keywords": ["AI agent", "LLM agent", "human-AI"],
+        "reddit_subreddits": ["MachineLearning", "artificial", "LocalLLaMA"],
+        "reddit_keywords": ["agent", "human-AI", "agentic"],
+        "days_lookback": 7,
+    }
 
-# Authors to track on Semantic Scholar (name -> Semantic Scholar author ID)
-# Find IDs at: https://www.semanticscholar.org/
-TRACKED_AUTHORS = {
-    "Shneiderman, Ben": "1740403",
-    "Amershi, Saleema": "2668412",
-    "Horvitz, Eric": "144901256",
-    "Bansal, Gagan": "46610912",
-    "Wu, Tongshuang": "47830705",
-    "Liang, Percy": "2630822",
-}
+    if not CONFIG_MD.exists():
+        print(f"  ⚠ Config file not found ({CONFIG_MD}), using defaults")
+        return config
 
-HN_KEYWORDS = [
-    "AI agent",
-    "LLM agent",
-    "human-AI",
-    "AI collaboration",
-    "AI assistant",
-    "agentic",
-]
+    text = CONFIG_MD.read_text(encoding="utf-8")
 
-REDDIT_SUBREDDITS = ["MachineLearning", "artificial", "LocalLLaMA"]
-REDDIT_KEYWORDS = ["agent", "human-AI", "agentic", "collaboration", "qualitative"]
+    # Only parse the "自动扫描配置" section
+    marker = "## 九、Research Radar 自动扫描配置"
+    idx = text.find(marker)
+    if idx == -1:
+        print("  ⚠ Config section not found in markdown, using defaults")
+        return config
+    section = text[idx:]
 
-DAYS_LOOKBACK = 7  # How many days back to search
+    def extract_section(heading):
+        """Extract content between a ### heading and the next ### or ## heading."""
+        pattern = rf"### {re.escape(heading)}\s*\n(.*?)(?=\n###|\n##|\Z)"
+        m = re.search(pattern, section, re.DOTALL)
+        return m.group(1).strip() if m else ""
+
+    def parse_bullet_list(block):
+        """Parse '- item' lines into a list."""
+        return [line.lstrip("- ").strip() for line in block.splitlines()
+                if line.strip().startswith("- ")]
+
+    def parse_comma_list(block):
+        """Parse comma-separated values."""
+        return [item.strip() for item in block.split(",") if item.strip()]
+
+    def parse_link_table(block):
+        """Parse a markdown table into a list of dicts."""
+        items = []
+        headers = None
+        for line in block.splitlines():
+            line = line.strip()
+            if not line.startswith("|"):
+                continue
+            cells = [c.strip() for c in line.split("|")[1:-1]]
+            if not cells:
+                continue
+            if all(set(c) <= set("-: ") for c in cells):
+                continue
+            if headers is None:
+                headers = cells
+            else:
+                row = {}
+                for i, h in enumerate(headers):
+                    if i < len(cells):
+                        row[h] = cells[i]
+                items.append(row)
+        return items
+
+    # arXiv categories
+    raw = extract_section("arXiv 分类")
+    if raw:
+        config["arxiv_categories"] = parse_comma_list(raw)
+
+    # arXiv keywords
+    raw = extract_section("arXiv 关键词")
+    if raw:
+        config["arxiv_keywords"] = parse_bullet_list(raw)
+
+    # Semantic Scholar keywords
+    raw = extract_section("Semantic Scholar 关键词")
+    if raw:
+        config["s2_keywords"] = parse_bullet_list(raw)
+
+    # Tracked authors (table: | Name | ID |)
+    raw = extract_section("Semantic Scholar 跟踪作者")
+    if raw:
+        authors = {}
+        for line in raw.splitlines():
+            parts = [p.strip() for p in line.split("|") if p.strip()]
+            if len(parts) >= 2 and parts[1].isdigit():
+                authors[parts[0]] = parts[1]
+        if authors:
+            config["tracked_authors"] = authors
+
+    # HackerNews keywords
+    raw = extract_section("HackerNews 关键词")
+    if raw:
+        config["hn_keywords"] = parse_bullet_list(raw)
+
+    # Reddit subreddits
+    raw = extract_section("Reddit 子版块")
+    if raw:
+        config["reddit_subreddits"] = [
+            s.strip().lstrip("r/") for s in raw.split(",") if s.strip()
+        ]
+
+    # Reddit filter keywords
+    raw = extract_section("Reddit 过滤关键词")
+    if raw:
+        config["reddit_keywords"] = parse_comma_list(raw)
+
+    # Days lookback
+    raw = extract_section("时间窗口")
+    if raw:
+        try:
+            config["days_lookback"] = int(raw.splitlines()[0].strip())
+        except ValueError:
+            pass
+
+    # Static link directories
+    config["blogs"] = parse_link_table(extract_section("公司/实验室博客"))
+    config["newsletters"] = parse_link_table(extract_section("Newsletter / 个人博客"))
+    config["researchers"] = parse_link_table(extract_section("推荐关注"))
+    config["podcasts"] = parse_link_table(extract_section("播客"))
+    config["conferences"] = parse_link_table(extract_section("会议/Workshop"))
+
+    return config
+
+
+# Load config at module level
+CFG = load_config()
+ARXIV_CATEGORIES = CFG["arxiv_categories"]
+ARXIV_KEYWORDS = CFG["arxiv_keywords"]
+SEMANTIC_SCHOLAR_KEYWORDS = CFG["s2_keywords"]
+TRACKED_AUTHORS = CFG["tracked_authors"]
+HN_KEYWORDS = CFG["hn_keywords"]
+REDDIT_SUBREDDITS = CFG["reddit_subreddits"]
+REDDIT_KEYWORDS = CFG["reddit_keywords"]
+DAYS_LOOKBACK = CFG["days_lookback"]
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -391,6 +482,11 @@ def main():
         "semantic_scholar": fetch_semantic_scholar(),
         "hackernews": fetch_hackernews(),
         "reddit": fetch_reddit(),
+        "blogs": CFG["blogs"],
+        "newsletters": CFG["newsletters"],
+        "researchers": CFG["researchers"],
+        "podcasts": CFG["podcasts"],
+        "conferences": CFG["conferences"],
     }
 
     # Write combined data

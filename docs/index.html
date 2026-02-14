@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research Radar</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23d63031' opacity='.15'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23d63031' stroke-width='1.5' opacity='.4'/><circle cx='16' cy='16' r='4.5' fill='none' stroke='%23d63031' stroke-width='1.5' opacity='.7'/><line x1='16' y1='16' x2='16' y2='2' stroke='%23d63031' stroke-width='2' stroke-linecap='round'/><circle cx='16' cy='5' r='2' fill='%23d63031'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -20,6 +21,13 @@
     --accent-hn: #e65100;
     --accent-reddit: #e53935;
     --accent-twitter: #1a8cd8;
+    --accent-papers: #8e44ad;
+    --accent-discussions: #e67e22;
+    --accent-blogs: #27ae60;
+    --accent-newsletters: #2980b9;
+    --accent-researchers: #e91e63;
+    --accent-podcasts: #ff9800;
+    --accent-conferences: #00897b;
     --tag-bg: rgba(0,0,0,0.04);
     --font-mono: 'IBM Plex Mono', monospace;
     --font-sans: 'IBM Plex Sans', sans-serif;
@@ -368,31 +376,43 @@
 </div>
 
 <div class="tabs" id="tabs">
-  <button class="tab active" data-source="all">
-    All <span class="count" id="count-all">—</span>
+  <button class="tab active" data-category="all">
+    全部 <span class="count" id="count-all">—</span>
   </button>
-  <button class="tab" data-source="arxiv">
-    <span class="source-dot" style="background:var(--accent-arxiv)"></span>
-    arXiv <span class="count" id="count-arxiv">—</span>
+  <button class="tab" data-category="papers">
+    <span class="source-dot" style="background:var(--accent-papers)"></span>
+    学术论文 <span class="count" id="count-papers">—</span>
   </button>
-  <button class="tab" data-source="semantic_scholar">
-    <span class="source-dot" style="background:var(--accent-scholar)"></span>
-    Semantic Scholar <span class="count" id="count-scholar">—</span>
+  <button class="tab" data-category="discussions">
+    <span class="source-dot" style="background:var(--accent-discussions)"></span>
+    社区讨论 <span class="count" id="count-discussions">—</span>
   </button>
-  <button class="tab" data-source="hackernews">
-    <span class="source-dot" style="background:var(--accent-hn)"></span>
-    HackerNews <span class="count" id="count-hn">—</span>
+  <button class="tab" data-category="blogs">
+    <span class="source-dot" style="background:var(--accent-blogs)"></span>
+    实验室博客 <span class="count" id="count-blogs">—</span>
   </button>
-  <button class="tab" data-source="reddit">
-    <span class="source-dot" style="background:var(--accent-reddit)"></span>
-    Reddit <span class="count" id="count-reddit">—</span>
+  <button class="tab" data-category="newsletters">
+    <span class="source-dot" style="background:var(--accent-newsletters)"></span>
+    Newsletter <span class="count" id="count-newsletters">—</span>
+  </button>
+  <button class="tab" data-category="researchers">
+    <span class="source-dot" style="background:var(--accent-researchers)"></span>
+    推荐关注 <span class="count" id="count-researchers">—</span>
+  </button>
+  <button class="tab" data-category="podcasts">
+    <span class="source-dot" style="background:var(--accent-podcasts)"></span>
+    播客 <span class="count" id="count-podcasts">—</span>
+  </button>
+  <button class="tab" data-category="conferences">
+    <span class="source-dot" style="background:var(--accent-conferences)"></span>
+    会议 <span class="count" id="count-conferences">—</span>
   </button>
 </div>
 
 <div class="stats-bar" id="stats-bar">
   <div class="stat">
     <div class="stat-value" id="stat-total">—</div>
-    <div class="stat-label">Total Items</div>
+    <div class="stat-label">Total Fetched</div>
   </div>
   <div class="stat">
     <div class="stat-value" id="stat-papers">—</div>
@@ -403,12 +423,16 @@
     <div class="stat-label">Discussions</div>
   </div>
   <div class="stat">
+    <div class="stat-value" id="stat-links">—</div>
+    <div class="stat-label">Curated Links</div>
+  </div>
+  <div class="stat">
     <div class="stat-value" id="stat-window">—</div>
     <div class="stat-label">Day Window</div>
   </div>
 </div>
 
-<div class="keyword-section">
+<div class="keyword-section" id="keyword-section">
   <div class="keyword-pills" id="keyword-pills"></div>
 </div>
 
@@ -419,7 +443,8 @@
 <script>
 // ─── State ───
 let allItems = [];
-let currentSource = 'all';
+let staticData = {};
+let currentCategory = 'all';
 let currentKeyword = '';
 let searchQuery = '';
 
@@ -437,6 +462,16 @@ const sourceLabels = {
   reddit: 'Reddit',
 };
 
+const categoryMeta = {
+  papers:      { sources: ['arxiv', 'semantic_scholar'], color: 'var(--accent-papers)' },
+  discussions: { sources: ['hackernews', 'reddit'],      color: 'var(--accent-discussions)' },
+  blogs:       { static: true, color: 'var(--accent-blogs)',       nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
+  newsletters: { static: true, color: 'var(--accent-newsletters)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u4f5c\u8005' },
+  researchers: { static: true, color: 'var(--accent-researchers)', nameKey: '\u59d3\u540d', urlKey: null,            descKey: '\u8bf4\u660e', extraKey: 'Handle' },
+  podcasts:    { static: true, color: 'var(--accent-podcasts)',    nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
+  conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: null,            descKey: '\u8bf4\u660e', extraKey: '\u9891\u7387' },
+};
+
 // ─── Load Data ───
 async function loadData() {
   try {
@@ -444,7 +479,6 @@ async function loadData() {
     if (!resp.ok) throw new Error('No data yet');
     const data = await resp.json();
 
-    // Merge all items
     allItems = [
       ...(data.arxiv || []),
       ...(data.semantic_scholar || []),
@@ -452,34 +486,41 @@ async function loadData() {
       ...(data.reddit || []),
     ];
 
+    staticData = {
+      blogs: data.blogs || [],
+      newsletters: data.newsletters || [],
+      researchers: data.researchers || [],
+      podcasts: data.podcasts || [],
+      conferences: data.conferences || [],
+    };
+
     // Update meta
     const fetchedAt = new Date(data.meta?.fetched_at);
     document.getElementById('meta-info').textContent =
       `updated ${fetchedAt.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`;
 
-    // Update counts
-    const counts = { all: allItems.length };
-    ['arxiv', 'semantic_scholar', 'hackernews', 'reddit'].forEach(s => {
-      counts[s] = (data[s] || []).length;
-    });
-    document.getElementById('count-all').textContent = counts.all;
-    document.getElementById('count-arxiv').textContent = counts.arxiv;
-    document.getElementById('count-scholar').textContent = counts.semantic_scholar;
-    document.getElementById('count-hn').textContent = counts.hackernews;
-    document.getElementById('count-reddit').textContent = counts.reddit;
+    // Counts
+    const paperCount = (data.arxiv || []).length + (data.semantic_scholar || []).length;
+    const discussionCount = (data.hackernews || []).length + (data.reddit || []).length;
+    const totalLinks = Object.values(staticData).reduce((s, a) => s + a.length, 0);
+
+    document.getElementById('count-all').textContent = allItems.length;
+    document.getElementById('count-papers').textContent = paperCount;
+    document.getElementById('count-discussions').textContent = discussionCount;
+    document.getElementById('count-blogs').textContent = staticData.blogs.length;
+    document.getElementById('count-newsletters').textContent = staticData.newsletters.length;
+    document.getElementById('count-researchers').textContent = staticData.researchers.length;
+    document.getElementById('count-podcasts').textContent = staticData.podcasts.length;
+    document.getElementById('count-conferences').textContent = staticData.conferences.length;
 
     // Stats
-    const papers = counts.arxiv + counts.semantic_scholar;
-    const discussions = counts.hackernews + counts.reddit;
-    document.getElementById('stat-total').textContent = counts.all;
-    document.getElementById('stat-papers').textContent = papers;
-    document.getElementById('stat-discussions').textContent = discussions;
+    document.getElementById('stat-total').textContent = allItems.length;
+    document.getElementById('stat-papers').textContent = paperCount;
+    document.getElementById('stat-discussions').textContent = discussionCount;
+    document.getElementById('stat-links').textContent = totalLinks;
     document.getElementById('stat-window').textContent = data.meta?.lookback_days || 7;
 
-    // Build keyword pills
-    buildKeywordPills(data.meta?.keywords || []);
-
-    // Render
+    buildKeywordPills();
     render();
   } catch (e) {
     document.getElementById('content').innerHTML = `
@@ -493,9 +534,8 @@ async function loadData() {
   }
 }
 
-function buildKeywordPills(keywords) {
+function buildKeywordPills() {
   const container = document.getElementById('keyword-pills');
-  // Collect all unique matched_keywords from items
   const matched = new Set(allItems.map(i => i.matched_keyword).filter(Boolean));
   const pills = [...matched].sort();
 
@@ -521,19 +561,43 @@ function buildKeywordPills(keywords) {
 
 // ─── Render ───
 function render() {
-  let items = allItems;
+  const meta = categoryMeta[currentCategory];
+  const container = document.getElementById('content');
+  const kwSection = document.getElementById('keyword-section');
 
-  // Filter by source
-  if (currentSource !== 'all') {
-    items = items.filter(i => i.source === currentSource);
+  // Show keyword pills only for fetched-data categories
+  if (meta && meta.static) {
+    kwSection.style.display = 'none';
+  } else {
+    kwSection.style.display = '';
   }
 
-  // Filter by keyword pill
+  // Static link categories
+  if (meta && meta.static) {
+    let items = staticData[currentCategory] || [];
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      items = items.filter(i => Object.values(i).join(' ').toLowerCase().includes(q));
+    }
+    if (items.length === 0) {
+      container.innerHTML = '<div class="empty-state">No items match your filters.</div>';
+      return;
+    }
+    container.innerHTML = items.map(item => renderLinkCard(item, meta)).join('');
+    return;
+  }
+
+  // Fetched data categories
+  let items = allItems;
+
+  if (meta && meta.sources) {
+    items = items.filter(i => meta.sources.includes(i.source));
+  }
+
   if (currentKeyword) {
     items = items.filter(i => i.matched_keyword === currentKeyword);
   }
 
-  // Filter by search
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     items = items.filter(i => {
@@ -546,8 +610,6 @@ function render() {
       return searchable.includes(q);
     });
   }
-
-  const container = document.getElementById('content');
 
   if (items.length === 0) {
     container.innerHTML = '<div class="empty-state">No items match your filters.</div>';
@@ -574,17 +636,17 @@ function renderCard(item) {
   let metrics = '';
   if (item.source === 'hackernews') {
     metrics = `
-      <span class="tag-metric">▲ ${item.points || 0}</span>
-      <span class="tag-metric">💬 ${item.comments || 0}</span>
+      <span class="tag-metric">\u25B2 ${item.points || 0}</span>
+      <span class="tag-metric">\uD83D\uDCAC ${item.comments || 0}</span>
     `;
   } else if (item.source === 'reddit') {
     metrics = `
-      <span class="tag-metric">▲ ${item.score || 0}</span>
-      <span class="tag-metric">💬 ${item.comments || 0}</span>
+      <span class="tag-metric">\u25B2 ${item.score || 0}</span>
+      <span class="tag-metric">\uD83D\uDCAC ${item.comments || 0}</span>
       <span class="tag">r/${item.subreddit}</span>
     `;
   } else if (item.citations != null && item.citations > 0) {
-    metrics = `<span class="tag-metric">📑 ${item.citations} cites</span>`;
+    metrics = `<span class="tag-metric">\uD83D\uDCD1 ${item.citations} cites</span>`;
   }
 
   let categories = '';
@@ -610,8 +672,32 @@ function renderCard(item) {
             <span class="tag">${escapeHtml(item.matched_keyword || '')}</span>
             ${metrics}
             ${categories}
-            ${item.hn_link ? `<a href="${item.hn_link}" target="_blank" style="font-size:0.7rem;color:var(--accent-hn);text-decoration:none;font-family:var(--font-mono)">hn↗</a>` : ''}
+            ${item.hn_link ? `<a href="${item.hn_link}" target="_blank" style="font-size:0.7rem;color:var(--accent-hn);text-decoration:none;font-family:var(--font-mono)">hn\u2197</a>` : ''}
           </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderLinkCard(item, meta) {
+  const color = meta.color;
+  const name = item[meta.nameKey] || '';
+  const url = meta.urlKey ? item[meta.urlKey] || '' : '';
+  const desc = item[meta.descKey] || '';
+  const extra = meta.extraKey ? item[meta.extraKey] || '' : '';
+
+  const titleHtml = url
+    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a>`
+    : escapeHtml(name);
+
+  return `
+    <div class="card">
+      <div class="card-header">
+        <div class="card-source-indicator" style="background:${color}"></div>
+        <div style="flex:1">
+          <div class="card-title">${titleHtml}</div>
+          ${extra ? `<div class="card-authors">${escapeHtml(extra)}</div>` : ''}
+          ${desc ? `<div class="card-summary">${escapeHtml(desc)}</div>` : ''}
         </div>
       </div>
     </div>`;
@@ -628,7 +714,7 @@ document.getElementById('tabs').addEventListener('click', e => {
   if (!tab) return;
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
-  currentSource = tab.dataset.source;
+  currentCategory = tab.dataset.category;
   render();
 });
 
@@ -637,7 +723,6 @@ document.getElementById('search').addEventListener('input', e => {
   render();
 });
 
-// Keyboard shortcut: / to focus search
 document.addEventListener('keydown', e => {
   if (e.key === '/' && document.activeElement !== document.getElementById('search')) {
     e.preventDefault();

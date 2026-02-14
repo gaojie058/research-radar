@@ -186,3 +186,131 @@
 ---
 
 *这份清单的目标不是让你信息过载，而是用最小的时间投入捕获最重要的信号。宁可少而精，不要多而杂。*
+
+---
+
+## 九、Research Radar 自动扫描配置
+
+> 以下内容会被 `scripts/fetch_all.py` 自动读取，修改后下次扫描即生效。
+> 格式说明：每个小节标题固定，内容用逗号或换行分隔即可。
+
+### arXiv 分类
+cs.HC, cs.AI, cs.CL, cs.SE
+
+### arXiv 关键词
+- human-AI collaboration
+- LLM agent
+- AI agent
+- agentic AI
+- human-centered AI
+- qualitative analysis LLM
+- human-LLM interaction
+- responsible AI
+- trustworthy AI
+- AI-assisted analysis
+- collaborative AI systems
+- computer-supported cooperative work
+
+### Semantic Scholar 关键词
+- human-AI collaboration LLM
+- AI agent workflow
+- LLM qualitative analysis
+- human-centered AI systems
+
+### Semantic Scholar 跟踪作者
+
+| 姓名 | Semantic Scholar ID |
+|------|---------------------|
+| Shneiderman, Ben | 1740403 |
+| Amershi, Saleema | 2668412 |
+| Horvitz, Eric | 144901256 |
+| Bansal, Gagan | 46610912 |
+| Wu, Tongshuang | 47830705 |
+| Liang, Percy | 2630822 |
+
+### HackerNews 关键词
+- AI agent
+- LLM agent
+- human-AI
+- AI collaboration
+- AI assistant
+- agentic
+
+### Reddit 子版块
+r/MachineLearning, r/LocalLLaMA, r/artificial
+
+### Reddit 过滤关键词
+agent, human-AI, agentic, collaboration, qualitative
+
+### 时间窗口
+7
+
+### 公司/实验室博客
+
+| 名称 | 链接 | 说明 |
+|------|------|------|
+| Anthropic Research | https://anthropic.com/research | Claude生态，MCP协议，human-AI交互理念 |
+| OpenAI Research | https://openai.com/research | GPT系列、agent框架、ChatGPT产品迭代 |
+| Google DeepMind | https://deepmind.google/research | Gemini、agent研究、AI safety |
+| Microsoft Research Blog | https://microsoft.com/en-us/research/blog | HAX Toolkit, Human-AI Interaction Guidelines, Copilot |
+| Meta AI (FAIR) | https://ai.meta.com/research | Llama开源生态 |
+| Amazon Science | https://amazon.science | 应用型AI研究 |
+| Apple Machine Learning | https://machinelearning.apple.com | 设备端AI、隐私AI |
+| Hugging Face Blog | https://huggingface.co/blog | 开源模型、工具、社区趋势 |
+| LangChain Blog | https://blog.langchain.dev | Agent框架生态风向标 |
+
+### Newsletter / 个人博客
+
+| 名称 | 链接 | 作者 | 说明 |
+|------|------|------|------|
+| Simon Willison's Blog | https://simonwillison.net | Simon Willison | LLM生态最全面的实践者视角 |
+| Ahead of AI | https://magazine.sebastianraschka.com | Sebastian Raschka | LLM研究深度解读 |
+| Interconnects | https://interconnects.ai | Nathan Lambert | RLHF/对齐方向 |
+| Latent Space | https://latent.space | Swyx & Alessio | AI工程师视角，agent和tooling |
+| MIT Technology Review | https://technologyreview.com | 编辑团队 | 日刊科技新闻 |
+| The Batch | https://deeplearning.ai/the-batch | Andrew Ng | AI新闻周报 |
+| Import AI | https://importai.substack.com | Jack Clark | 偏policy和大趋势 |
+| 阮一峰的网络日志 | https://ruanyifeng.com/blog | 阮一峰 | 中文技术圈信号 |
+
+### 推荐关注
+
+| 姓名 | 平台 | Handle | 说明 |
+|------|------|--------|------|
+| Sherry Tongshuang Wu | X | @tongshuangwu | HCI×NLP，human-AI interaction |
+| Saleema Amershi | X | @sabornershi | Human-AI Interaction Guidelines |
+| Gagan Bansal | X | @gaaborned | Human-AI teaming |
+| Q. Vera Liao | X | @qaborned | Explainable AI, responsible AI in HCI |
+| Kenneth Holstein | X | @kenholstein | Human-AI系统评估，教育AI |
+| Lydia Chilton | X | @lyaborned | AI创造力，人机协作写作 |
+| Michael Bernstein | X | @msb | Generative agents, social computing |
+| Mina Lee | X | @maborned | Human-AI collaborative writing |
+| Aniket Kittur | X | @nkittur | Sensemaking, knowledge work with AI |
+| April Wang | X | — | Programming + HCI + AI |
+| Toby Jia-Jun Li | X | @tobyjiajun | End-user programming, human-AI systems |
+| Dakuo Wang | X | @dakuowang | Human-AI collaboration, CSCW |
+| Percy Liang | X | @percyliang | LLM evaluation框架 |
+| Simon Willison | X | @simonw | LLM工具生态最佳信息源 |
+| Andrej Karpathy | X | @karpathy | 深度技术解读 |
+| Swyx | X | @swyx | AI工程/agent生态trend |
+| Eric Horvitz | LinkedIn | — | MSR Chief Scientist, 大趋势预判 |
+| Ben Shneiderman | LinkedIn | — | Human-centered AI倡导者 |
+| Ece Kamar | LinkedIn | — | Human-AI complementarity |
+
+### 播客
+
+| 名称 | 链接 | 说明 |
+|------|------|------|
+| Latent Space Podcast | https://latent.space | AI工程最前沿，agent相关讨论 |
+| TWIML AI Podcast | https://twimlai.com | 学术+工业混合视角 |
+| NeurIPS/CHI 录播 | https://youtube.com | 重要talk的录播 |
+
+### 会议/Workshop
+
+| 名称 | 频率 | 说明 |
+|------|------|------|
+| CHI GenAICHI Workshop | 年度 | Generative AI × HCI |
+| HHAI Conference | 年度 | Hybrid Human-AI Intelligence |
+| CHI TREW Workshop | 年度 | Trust & Reliance in Human-AI Workflows |
+| ACL/EMNLP HCI+NLP Workshop | 年度 | HCI×NLP交叉 |
+| IUI Conference | 年度 | Intelligent User Interfaces |
+| NeurIPS/ICML Agent Workshops | 年度 | 系统/ML视角的agent研究 |

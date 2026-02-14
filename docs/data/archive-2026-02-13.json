@@ -1,19 +1,19 @@
 {
   "meta": {
-    "fetched_at": "2026-02-13T20:20:55.028073",
+    "fetched_at": "2026-02-13T20:39:01.960483",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
       "LLM agent",
       "AI agent",
-      "qualitative analysis",
+      "agentic AI",
       "human-centered AI",
+      "qualitative analysis LLM",
+      "human-LLM interaction",
       "responsible AI",
       "trustworthy AI",
-      "human-LLM interaction",
       "AI-assisted analysis",
-      "collaborative AI",
-      "agentic AI",
+      "collaborative AI systems",
       "computer-supported cooperative work"
     ]
   },
@@ -293,60 +293,6 @@
       "source": "arxiv"
     },
     {
-      "id": "2602.11795v1",
-      "title": "A Subword Embedding Approach for Variation Detection in Luxembourgish User Comments",
-      "authors": [
-        "Anne-Marie Lutgen",
-        "Alistair Plum",
-        "Christoph Purschke"
-      ],
-      "summary": "This paper presents an embedding-based approach to detecting variation without relying on prior normalisation or predefined variant lists. The method trains subword embeddings on raw text and groups related forms through combined cosine and n-gram similarity. This allows spelling and morphological diversity to be examined and analysed as linguistic structure rather than treated as noise. Using a large corpus of Luxembourgish user comments, the approach uncovers extensive lexical and orthographic",
-      "published": "2026-02-12",
-      "categories": [
-        "cs.CL"
-      ],
-      "link": "https://arxiv.org/abs/2602.11795v1",
-      "matched_keyword": "qualitative analysis",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.11924v1",
-      "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
-      "authors": [
-        "Shreya Chappidi",
-        "Jatinder Singh",
-        "Andra V. Krauze"
-      ],
-      "summary": "LLMs are increasingly supporting decision-making across high-stakes domains, requiring critical reflection on the socio-technical factors that shape how humans and LLMs are assigned roles and interact during human-in-the-loop decision-making. This paper introduces the concept of human-LLM archetypes -- defined as re-curring socio-technical interaction patterns that structure the roles of humans and LLMs in collaborative decision-making. We describe 17 human-LLM archetypes derived from a scoping ",
-      "published": "2026-02-12",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "link": "https://arxiv.org/abs/2602.11924v1",
-      "matched_keyword": "human-LLM interaction",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.11583v1",
-      "title": "The Five Ws of Multi-Agent Communication: Who Talks to Whom, When, What, and Why -- A Survey from MARL to Emergent Language and LLMs",
-      "authors": [
-        "Jingdi Chen",
-        "Hanqing Yang",
-        "Zongjun Liu",
-        "Carlee Joe-Wong"
-      ],
-      "summary": "Multi-agent sequential decision-making powers many real-world systems, from autonomous vehicles and robotics to collaborative AI assistants. In dynamic, partially observable environments, communication is often what reduces uncertainty and makes collaboration possible. This survey reviews multi-agent communication (MA-Comm) through the Five Ws: who communicates with whom, what is communicated, when communication occurs, and why communication is beneficial. This framing offers a clean way to conn",
-      "published": "2026-02-12",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2602.11583v1",
-      "matched_keyword": "collaborative AI",
-      "source": "arxiv"
-    },
-    {
       "id": "2602.12083v1",
       "title": "Differentiable Modal Logic for Multi-Agent Diagnosis, Orchestration and Communication",
       "authors": [
@@ -377,6 +323,24 @@
       ],
       "link": "https://arxiv.org/abs/2602.11574v1",
       "matched_keyword": "agentic AI",
+      "source": "arxiv"
+    },
+    {
+      "id": "2602.11924v1",
+      "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
+      "authors": [
+        "Shreya Chappidi",
+        "Jatinder Singh",
+        "Andra V. Krauze"
+      ],
+      "summary": "LLMs are increasingly supporting decision-making across high-stakes domains, requiring critical reflection on the socio-technical factors that shape how humans and LLMs are assigned roles and interact during human-in-the-loop decision-making. This paper introduces the concept of human-LLM archetypes -- defined as re-curring socio-technical interaction patterns that structure the roles of humans and LLMs in collaborative decision-making. We describe 17 human-LLM archetypes derived from a scoping ",
+      "published": "2026-02-12",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "link": "https://arxiv.org/abs/2602.11924v1",
+      "matched_keyword": "human-LLM interaction",
       "source": "arxiv"
     },
     {
@@ -646,27 +610,6 @@
       "source": "arxiv"
     },
     {
-      "id": "2602.10450v1",
-      "title": "Constructing Industrial-Scale Optimization Modeling Benchmark",
-      "authors": [
-        "Zhong Li",
-        "Hongliang Lu",
-        "Tao Wei",
-        "Wenyu Liu",
-        "Yuxuan Chen"
-      ],
-      "summary": "Optimization modeling underpins decision-making in logistics, manufacturing, energy, and finance, yet translating natural-language requirements into correct optimization formulations and solver-executable code remains labor-intensive. Although large language models (LLMs) have been explored for this task, evaluation is still dominated by toy-sized or synthetic benchmarks, masking the difficulty of industrial problems with $10^{3}$--$10^{6}$ (or more) variables and constraints. A key bottleneck i",
-      "published": "2026-02-11",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "math.OC"
-      ],
-      "link": "https://arxiv.org/abs/2602.10450v1",
-      "matched_keyword": "human-LLM interaction",
-      "source": "arxiv"
-    },
-    {
       "id": "2602.11412v1",
       "title": "When Visibility Outpaces Verification: Delayed Verification and Narrative Lock-in in Agentic AI Discourse",
       "authors": [
@@ -737,6 +680,27 @@
       ],
       "link": "https://arxiv.org/abs/2602.10465v1",
       "matched_keyword": "agentic AI",
+      "source": "arxiv"
+    },
+    {
+      "id": "2602.10450v1",
+      "title": "Constructing Industrial-Scale Optimization Modeling Benchmark",
+      "authors": [
+        "Zhong Li",
+        "Hongliang Lu",
+        "Tao Wei",
+        "Wenyu Liu",
+        "Yuxuan Chen"
+      ],
+      "summary": "Optimization modeling underpins decision-making in logistics, manufacturing, energy, and finance, yet translating natural-language requirements into correct optimization formulations and solver-executable code remains labor-intensive. Although large language models (LLMs) have been explored for this task, evaluation is still dominated by toy-sized or synthetic benchmarks, masking the difficulty of industrial problems with $10^{3}$--$10^{6}$ (or more) variables and constraints. A key bottleneck i",
+      "published": "2026-02-11",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "link": "https://arxiv.org/abs/2602.10450v1",
+      "matched_keyword": "human-LLM interaction",
       "source": "arxiv"
     },
     {
@@ -931,42 +895,21 @@
       "source": "arxiv"
     },
     {
-      "id": "2602.09907v1",
-      "title": "Self-Regulated Reading with AI Support: An Eight-Week Study with Students",
+      "id": "2602.09286v1",
+      "title": "Human Control Is the Anchor, Not the Answer: Early Divergence of Oversight in Agentic AI Communities",
       "authors": [
-        "Yue Fu",
-        "Joel Wester",
-        "Niels Van Berkel",
-        "Alexis Hiniker"
+        "Hanjing Shi",
+        "Dominic DiFranzo"
       ],
-      "summary": "College students increasingly use AI chatbots to support academic reading, yet we lack granular understanding of how these interactions shape their reading experience and cognitive engagement. We conducted an eight-week longitudinal study with 15 undergraduates who used AI to support assigned readings in a course. We collected 838 prompts across 239 reading sessions and developed a coding schema categorizing prompts into four cognitive themes: Decoding, Comprehension, Reasoning, and Metacognitio",
+      "summary": "Oversight for agentic AI is often discussed as a single goal (\"human control\"), yet early adoption may produce role-specific expectations. We present a comparative analysis of two newly active Reddit communities in Jan--Feb 2026 that reflect different socio-technical roles: r/OpenClaw (deployment and operations) and r/Moltbook (agent-centered social interaction). We conceptualize this period as an early-stage crystallization phase, where oversight expectations form before norms reach equilibrium",
       "published": "2026-02-10",
       "categories": [
-        "cs.HC",
         "cs.AI",
-        "cs.CY"
+        "cs.CY",
+        "cs.HC"
       ],
-      "link": "https://arxiv.org/abs/2602.09907v1",
-      "matched_keyword": "qualitative analysis",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.09311v1",
-      "title": "Cross-Project Flakiness: A Case Study of the OpenStack Ecosystem",
-      "authors": [
-        "Tao Xiao",
-        "Dong Wang",
-        "Shane McIntosh",
-        "Hideaki Hata",
-        "Yasutaka Kamei"
-      ],
-      "summary": "Automated regression testing is a cornerstone of modern software development, often contributing directly to code review and Continuous Integration (CI). Yet some tests suffer from flakiness, where their outcomes vary non-deterministically. Flakiness erodes developer trust in test results, wastes computational resources, and undermines CI reliability. While prior research has examined test flakiness within individual projects, its broader ecosystem-wide impact remains largely unexplored. In this",
-      "published": "2026-02-10",
-      "categories": [
-        "cs.SE"
-      ],
-      "link": "https://arxiv.org/abs/2602.09311v1",
-      "matched_keyword": "qualitative analysis",
+      "link": "https://arxiv.org/abs/2602.09286v1",
+      "matched_keyword": "agentic AI",
       "source": "arxiv"
     },
     {
@@ -1004,24 +947,6 @@
       ],
       "link": "https://arxiv.org/abs/2602.09841v1",
       "matched_keyword": "responsible AI",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.09286v1",
-      "title": "Human Control Is the Anchor, Not the Answer: Early Divergence of Oversight in Agentic AI Communities",
-      "authors": [
-        "Hanjing Shi",
-        "Dominic DiFranzo"
-      ],
-      "summary": "Oversight for agentic AI is often discussed as a single goal (\"human control\"), yet early adoption may produce role-specific expectations. We present a comparative analysis of two newly active Reddit communities in Jan--Feb 2026 that reflect different socio-technical roles: r/OpenClaw (deployment and operations) and r/Moltbook (agent-centered social interaction). We conceptualize this period as an early-stage crystallization phase, where oversight expectations form before norms reach equilibrium",
-      "published": "2026-02-10",
-      "categories": [
-        "cs.AI",
-        "cs.CY",
-        "cs.HC"
-      ],
-      "link": "https://arxiv.org/abs/2602.09286v1",
-      "matched_keyword": "agentic AI",
       "source": "arxiv"
     },
     {
@@ -1152,26 +1077,6 @@
       "source": "arxiv"
     },
     {
-      "id": "2602.07590v1",
-      "title": "Automated rock joint trace mapping using a supervised learning model trained on synthetic data generated by parametric modelling",
-      "authors": [
-        "Jessica Ka Yi Chiu",
-        "Tom Frode Hansen",
-        "Eivind Magnus Paulsen",
-        "Ole Jakob Mengshoel"
-      ],
-      "summary": "This paper presents a geology-driven machine learning method for automated rock joint trace mapping from images. The approach combines geological modelling, synthetic data generation, and supervised image segmentation to address limited real data and class imbalance. First, discrete fracture network models are used to generate synthetic jointed rock images at field-relevant scales via parametric modelling, preserving joint persistence, connectivity, and node-type distributions. Second, segmentat",
-      "published": "2026-02-07",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2602.07590v1",
-      "matched_keyword": "qualitative analysis",
-      "source": "arxiv"
-    },
-    {
       "id": "2602.07491v1",
       "title": "GraphAgents: Knowledge Graph-Guided Agentic AI for Cross-Domain Materials Design",
       "authors": [
@@ -1249,61 +1154,6 @@
       ],
       "link": "https://arxiv.org/abs/2602.06305v2",
       "matched_keyword": "human-AI collaboration",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.06916v1",
-      "title": "Understanding Workplace Relatedness Support among Healthcare Professionals: A Four-Layer Model and Implications for Technology Design",
-      "authors": [
-        "Zheyuan Zhang",
-        "Dorian Peters",
-        "Lan Xiao",
-        "Jingjing Sun",
-        "Laura Moradbakhti"
-      ],
-      "summary": "Healthcare professionals (HCPs) face increasing occupational stress and burnout. Supporting HCPs need for relatedness is fundamental to their psychological wellbeing and resilience. However, how technologies could support HCPs relatedness in the workplace remains less explored. This study incorporated semi-structured interviews (n = 15) and co-design workshops (n = 21) with HCPs working in the UK National Health Service (NHS), to explore their current practices and preferences for workplace rela",
-      "published": "2026-02-06",
-      "categories": [
-        "cs.HC"
-      ],
-      "link": "https://arxiv.org/abs/2602.06916v1",
-      "matched_keyword": "qualitative analysis",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.06395v1",
-      "title": "Empirical Analysis of Adversarial Robustness and Explainability Drift in Cybersecurity Classifiers",
-      "authors": [
-        "Mona Rajhans",
-        "Vishal Khawarey"
-      ],
-      "summary": "Machine learning (ML) models are increasingly deployed in cybersecurity applications such as phishing detection and network intrusion prevention. However, these models remain vulnerable to adversarial perturbations small, deliberate input modifications that can degrade detection accuracy and compromise interpretability. This paper presents an empirical study of adversarial robustness and explainability drift across two cybersecurity domains phishing URL classification and network intrusion detec",
-      "published": "2026-02-06",
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "link": "https://arxiv.org/abs/2602.06395v1",
-      "matched_keyword": "trustworthy AI",
-      "source": "arxiv"
-    },
-    {
-      "id": "2602.06310v1",
-      "title": "Trustworthy AI Software Engineers",
-      "authors": [
-        "Aldeida Aleti",
-        "Baishakhi Ray",
-        "Rashina Hoda",
-        "Simin Chen"
-      ],
-      "summary": "With the rapid rise of AI coding agents, the fundamental premise of what it means to be a software engineer is in question. In this vision paper, we re-examine what it means for an AI agent to be considered a software engineer and then critically think about what makes such an agent trustworthy. \\textit{Grounded} in established definitions of software engineering (SE) and informed by recent research on agentic AI systems, we conceptualise AI software engineers as participants in human-AI SE team",
-      "published": "2026-02-06",
-      "categories": [
-        "cs.SE"
-      ],
-      "link": "https://arxiv.org/abs/2602.06310v1",
-      "matched_keyword": "trustworthy AI",
       "source": "arxiv"
     },
     {
@@ -1385,23 +1235,39 @@
       "source": "arxiv"
     },
     {
-      "id": "2602.05874v1",
-      "title": "xList-Hate: A Checklist-Based Framework for Interpretable and Generalizable Hate Speech Detection",
+      "id": "2602.06310v1",
+      "title": "Trustworthy AI Software Engineers",
       "authors": [
-        "Adrián Girón",
-        "Pablo Miralles",
-        "Javier Huertas-Tato",
-        "Sergio D'Antonio",
-        "David Camacho"
+        "Aldeida Aleti",
+        "Baishakhi Ray",
+        "Rashina Hoda",
+        "Simin Chen"
       ],
-      "summary": "Hate speech detection is commonly framed as a direct binary classification problem despite being a composite concept defined through multiple interacting factors that vary across legal frameworks, platform policies, and annotation guidelines. As a result, supervised models often overfit dataset-specific definitions and exhibit limited robustness under domain shift and annotation noise.   We introduce xList-Hate, a diagnostic framework that decomposes hate speech detection into a checklist of exp",
-      "published": "2026-02-05",
+      "summary": "With the rapid rise of AI coding agents, the fundamental premise of what it means to be a software engineer is in question. In this vision paper, we re-examine what it means for an AI agent to be considered a software engineer and then critically think about what makes such an agent trustworthy. \\textit{Grounded} in established definitions of software engineering (SE) and informed by recent research on agentic AI systems, we conceptualise AI software engineers as participants in human-AI SE team",
+      "published": "2026-02-06",
       "categories": [
-        "cs.CL",
-        "cs.AI"
+        "cs.SE"
       ],
-      "link": "https://arxiv.org/abs/2602.05874v1",
-      "matched_keyword": "qualitative analysis",
+      "link": "https://arxiv.org/abs/2602.06310v1",
+      "matched_keyword": "agentic AI",
+      "source": "arxiv"
+    },
+    {
+      "id": "2602.06395v1",
+      "title": "Empirical Analysis of Adversarial Robustness and Explainability Drift in Cybersecurity Classifiers",
+      "authors": [
+        "Mona Rajhans",
+        "Vishal Khawarey"
+      ],
+      "summary": "Machine learning (ML) models are increasingly deployed in cybersecurity applications such as phishing detection and network intrusion prevention. However, these models remain vulnerable to adversarial perturbations small, deliberate input modifications that can degrade detection accuracy and compromise interpretability. This paper presents an empirical study of adversarial robustness and explainability drift across two cybersecurity domains phishing URL classification and network intrusion detec",
+      "published": "2026-02-06",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "link": "https://arxiv.org/abs/2602.06395v1",
+      "matched_keyword": "trustworthy AI",
       "source": "arxiv"
     },
     {
@@ -1701,6 +1567,22 @@
       "source": "semantic_scholar"
     },
     {
+      "id": "2cf5b15bc32dfa983f5e4bd24fb6ed2e4f6c6e87",
+      "title": "Autonomous Multi-Agent AI for High-Throughput Polymer Informatics: From Property Prediction to Generative Design Across Synthetic and Bio-Polymers",
+      "authors": [
+        "Mahule Roy",
+        "Adib Bazgir",
+        "Arthur da Silva Sousa Santos",
+        "Yuwen Zhang"
+      ],
+      "summary": "We present an integrated multiagent AI ecosystem for polymer discovery that unifies high-throughput materials workflows, artificial intelligence, and computational modeling within a single Polymer Research Lifecycle (PRL) pipeline. The system orchestrates specialized agents powered by state-of-the-art large language models (DeepSeek-V2 and DeepSeek-Coder) to retrieve and reason over scientific resources, invoke external tools, execute domain-specific code, and perform metacognitive self-assessme",
+      "published": "2026-01-25",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/2cf5b15bc32dfa983f5e4bd24fb6ed2e4f6c6e87",
+      "matched_keyword": "AI agent workflow",
+      "source": "semantic_scholar"
+    },
+    {
       "id": "ee72f858e8b46326d0fb58db6b74449fdac1e4a2",
       "title": "Human-AI collaboration enhances the performance of large language models in risk of bias assessment",
       "authors": [
@@ -1826,20 +1708,6 @@
       "citations": 1,
       "link": "https://www.semanticscholar.org/paper/55079826666485d2e95611bc5e337db4a07114f8",
       "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "2e207f78284460ce59438de4512e2ba3b8127547",
-      "title": "HYBRID SENSING AND CLOUD DEPLOYED AGENT MESH FOR AI‑DRIVEN TRAFFIC OPTIMIZATION IN CONGESTED CITIES",
-      "authors": [
-        "Florin Andreescu",
-        "Dorin Simionescu"
-      ],
-      "summary": "Urban traffic congestion in crowded cities is increasingly shaped by short term demand fluctuations, spillback formation, and heterogeneous vehicle dynamics, which challenge fixed time signal plans and reactive controllers. This paper proposes an AI enabled intersection agent that combines (i) a deep learning (DL) predictor for short horizon traffic forecasting (15–60 minutes) and (ii) an intersection level machine learning (ML) controller that applies bounded adaptations of green times based on",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/2e207f78284460ce59438de4512e2ba3b8127547",
-      "matched_keyword": "AI agent workflow",
       "source": "semantic_scholar"
     },
     {
@@ -1993,7 +1861,7 @@
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
       "hn_link": "https://news.ycombinator.com/item?id=46990729",
       "points": 2263,
-      "comments": 925,
+      "comments": 926,
       "published": "2026-02-12",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -2026,7 +1894,7 @@
       "link": "https://arxiv.org/abs/2512.20798",
       "hn_link": "https://news.ycombinator.com/item?id=46954920",
       "points": 544,
-      "comments": 365,
+      "comments": 366,
       "published": "2026-02-10",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -2124,8 +1992,8 @@
       "title": "The \"AI agent hit piece\" situation clarifies how dumb we are acting",
       "link": "https://ardentperf.com/2026/02/13/the-scott-shambaugh-situation-clarifies-how-dumb-we-are-acting/",
       "hn_link": "https://news.ycombinator.com/item?id=47006843",
-      "points": 141,
-      "comments": 73,
+      "points": 147,
+      "comments": 78,
       "published": "2026-02-13",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -2146,8 +2014,8 @@
       "title": "Show HN: Moltis – AI assistant with memory, tools, and self-extending skills",
       "link": "https://www.moltis.org",
       "hn_link": "https://news.ycombinator.com/item?id=46993587",
-      "points": 72,
-      "comments": 25,
+      "points": 74,
+      "comments": 26,
       "published": "2026-02-12",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
@@ -2566,7 +2434,7 @@
       "title": "[D] We scanned 18,000 exposed OpenClaw instances and found 15% of community skills contain malicious instructions",
       "subreddit": "MachineLearning",
       "link": "https://reddit.com/r/MachineLearning/comments/1r30nzv/d_we_scanned_18000_exposed_openclaw_instances_and/",
-      "score": 89,
+      "score": 91,
       "comments": 17,
       "published": "2026-02-12",
       "matched_keyword": "agent",
@@ -2588,7 +2456,7 @@
       "title": "1Password open sources a benchmark to stop AI agents from leaking credentials",
       "subreddit": "artificial",
       "link": "https://reddit.com/r/artificial/comments/1r3gbrx/1password_open_sources_a_benchmark_to_stop_ai/",
-      "score": 29,
+      "score": 28,
       "comments": 5,
       "published": "2026-02-13",
       "matched_keyword": "agent",
@@ -2599,7 +2467,7 @@
       "title": "[D] PhD application did not go well, considering research while working fulltime",
       "subreddit": "MachineLearning",
       "link": "https://reddit.com/r/MachineLearning/comments/1r0ulu3/d_phd_application_did_not_go_well_considering/",
-      "score": 18,
+      "score": 20,
       "comments": 8,
       "published": "2026-02-10",
       "matched_keyword": "collaboration",
@@ -2610,9 +2478,20 @@
       "title": "[R] On Randomness in Agentic Evals",
       "subreddit": "MachineLearning",
       "link": "https://reddit.com/r/MachineLearning/comments/1r0wpn8/r_on_randomness_in_agentic_evals/",
-      "score": 13,
+      "score": 14,
       "comments": 2,
       "published": "2026-02-10",
+      "matched_keyword": "agent",
+      "source": "reddit"
+    },
+    {
+      "id": "1r3dja8",
+      "title": "Humanity's Pattern of Delayed Harm Intervention Is The Threat, Not AI.",
+      "subreddit": "artificial",
+      "link": "https://reddit.com/r/artificial/comments/1r3dja8/humanitys_pattern_of_delayed_harm_intervention_is/",
+      "score": 11,
+      "comments": 20,
+      "published": "2026-02-12",
       "matched_keyword": "agent",
       "source": "reddit"
     },
@@ -2632,20 +2511,31 @@
       "title": "[WARNING] Kimi.com (ok computer + other agents) CRYPTO STEALING MALWARE",
       "subreddit": "artificial",
       "link": "https://reddit.com/r/artificial/comments/1qyjktt/warning_kimicom_ok_computer_other_agents_crypto/",
-      "score": 11,
+      "score": 10,
       "comments": 3,
       "published": "2026-02-07",
       "matched_keyword": "agent",
       "source": "reddit"
     },
     {
-      "id": "1r3dja8",
-      "title": "Humanity's Pattern of Delayed Harm Intervention Is The Threat, Not AI.",
+      "id": "1r2wpd2",
+      "title": "Planoai 0.4.6 🚀 Signals-based tracing for agents via a terminal UI",
       "subreddit": "artificial",
-      "link": "https://reddit.com/r/artificial/comments/1r3dja8/humanitys_pattern_of_delayed_harm_intervention_is/",
-      "score": 10,
-      "comments": 20,
+      "link": "https://reddit.com/r/artificial/comments/1r2wpd2/planoai_046_signalsbased_tracing_for_agents_via_a/",
+      "score": 9,
+      "comments": 3,
       "published": "2026-02-12",
+      "matched_keyword": "agent",
+      "source": "reddit"
+    },
+    {
+      "id": "1r45700",
+      "title": "I've been building a P2P protocol for distributed 1-bit inference on CPU. Here are the real benchmarks across AMD and Intel.",
+      "subreddit": "LocalLLaMA",
+      "link": "https://reddit.com/r/LocalLLaMA/comments/1r45700/ive_been_building_a_p2p_protocol_for_distributed/",
+      "score": 7,
+      "comments": 2,
+      "published": "2026-02-13",
       "matched_keyword": "agent",
       "source": "reddit"
     },
@@ -2661,23 +2551,12 @@
       "source": "reddit"
     },
     {
-      "id": "1r2wpd2",
-      "title": "Planoai 0.4.6 🚀 Signals-based tracing for agents via a terminal UI",
-      "subreddit": "artificial",
-      "link": "https://reddit.com/r/artificial/comments/1r2wpd2/planoai_046_signalsbased_tracing_for_agents_via_a/",
-      "score": 5,
-      "comments": 3,
-      "published": "2026-02-12",
-      "matched_keyword": "agent",
-      "source": "reddit"
-    },
-    {
-      "id": "1r45700",
-      "title": "I've been building a P2P protocol for distributed 1-bit inference on CPU. Here are the real benchmarks across AMD and Intel.",
+      "id": "1r42beh",
+      "title": "Fake linux environment?",
       "subreddit": "LocalLLaMA",
-      "link": "https://reddit.com/r/LocalLLaMA/comments/1r45700/ive_been_building_a_p2p_protocol_for_distributed/",
+      "link": "https://reddit.com/r/LocalLLaMA/comments/1r42beh/fake_linux_environment/",
       "score": 5,
-      "comments": 2,
+      "comments": 16,
       "published": "2026-02-13",
       "matched_keyword": "agent",
       "source": "reddit"
@@ -2698,20 +2577,9 @@
       "title": "Izwi v0.1.0-alpha is out: new desktop app for local audio inference",
       "subreddit": "artificial",
       "link": "https://reddit.com/r/artificial/comments/1r2yblf/izwi_v010alpha_is_out_new_desktop_app_for_local/",
-      "score": 4,
+      "score": 5,
       "comments": 5,
       "published": "2026-02-12",
-      "matched_keyword": "agent",
-      "source": "reddit"
-    },
-    {
-      "id": "1r42beh",
-      "title": "Fake linux environment?",
-      "subreddit": "LocalLLaMA",
-      "link": "https://reddit.com/r/LocalLLaMA/comments/1r42beh/fake_linux_environment/",
-      "score": 4,
-      "comments": 16,
-      "published": "2026-02-13",
       "matched_keyword": "agent",
       "source": "reddit"
     },
@@ -2727,17 +2595,6 @@
       "source": "reddit"
     },
     {
-      "id": "1r0eau4",
-      "title": "[D] Benchmarking deterministic schema enforcement vs. long-context prompting for SOP adherence in 8B models",
-      "subreddit": "MachineLearning",
-      "link": "https://reddit.com/r/MachineLearning/comments/1r0eau4/d_benchmarking_deterministic_schema_enforcement/",
-      "score": 2,
-      "comments": 1,
-      "published": "2026-02-09",
-      "matched_keyword": "agent",
-      "source": "reddit"
-    },
-    {
       "id": "1r41h6v",
       "title": "How do you handle agent loops and cost overruns in production?",
       "subreddit": "LocalLLaMA",
@@ -2749,21 +2606,32 @@
       "source": "reddit"
     },
     {
-      "id": "1r43xfh",
-      "title": "Show r/LocalLLaMA: Clonar – A Node.js Agentic RAG pipeline with 8-stage multihop reasoning",
+      "id": "1r3yl5i",
+      "title": "Omni-Crawler: from a ton of links to a single md file to feed your LLMs",
       "subreddit": "LocalLLaMA",
-      "link": "https://reddit.com/r/LocalLLaMA/comments/1r43xfh/show_rlocalllama_clonar_a_nodejs_agentic_rag/",
-      "score": 1,
+      "link": "https://reddit.com/r/LocalLLaMA/comments/1r3yl5i/omnicrawler_from_a_ton_of_links_to_a_single_md/",
+      "score": 2,
       "comments": 2,
       "published": "2026-02-13",
       "matched_keyword": "agent",
       "source": "reddit"
     },
     {
-      "id": "1r3yl5i",
-      "title": "Omni-Crawler: from a ton of links to a single md file to feed your LLMs",
+      "id": "1r47a79",
+      "title": "AI Developer Tools Map (2026 Edition)",
       "subreddit": "LocalLLaMA",
-      "link": "https://reddit.com/r/LocalLLaMA/comments/1r3yl5i/omnicrawler_from_a_ton_of_links_to_a_single_md/",
+      "link": "https://reddit.com/r/LocalLLaMA/comments/1r47a79/ai_developer_tools_map_2026_edition/",
+      "score": 1,
+      "comments": 0,
+      "published": "2026-02-13",
+      "matched_keyword": "agent",
+      "source": "reddit"
+    },
+    {
+      "id": "1r43xfh",
+      "title": "Show r/LocalLLaMA: Clonar – A Node.js Agentic RAG pipeline with 8-stage multihop reasoning",
+      "subreddit": "LocalLLaMA",
+      "link": "https://reddit.com/r/LocalLLaMA/comments/1r43xfh/show_rlocalllama_clonar_a_nodejs_agentic_rag/",
       "score": 1,
       "comments": 2,
       "published": "2026-02-13",
@@ -2815,17 +2683,6 @@
       "source": "reddit"
     },
     {
-      "id": "1r46yy5",
-      "title": "GPT 5.2 Pro + Claude 4.6 Opus For $5/Month",
-      "subreddit": "artificial",
-      "link": "https://reddit.com/r/artificial/comments/1r46yy5/gpt_52_pro_claude_46_opus_for_5month/",
-      "score": 0,
-      "comments": 0,
-      "published": "2026-02-13",
-      "matched_keyword": "agent",
-      "source": "reddit"
-    },
-    {
       "id": "1r3w2jp",
       "title": "Are vector databases fundamentally insufficient for long-term LLM memory?",
       "subreddit": "LocalLLaMA",
@@ -2835,6 +2692,279 @@
       "published": "2026-02-13",
       "matched_keyword": "agent",
       "source": "reddit"
+    },
+    {
+      "id": "1r46yy5",
+      "title": "GPT 5.2 Pro + Claude 4.6 Opus For $5/Month",
+      "subreddit": "artificial",
+      "link": "https://reddit.com/r/artificial/comments/1r46yy5/gpt_52_pro_claude_46_opus_for_5month/",
+      "score": 0,
+      "comments": 1,
+      "published": "2026-02-13",
+      "matched_keyword": "agent",
+      "source": "reddit"
+    }
+  ],
+  "blogs": [
+    {
+      "名称": "Anthropic Research",
+      "链接": "https://anthropic.com/research",
+      "说明": "Claude生态，MCP协议，human-AI交互理念"
+    },
+    {
+      "名称": "OpenAI Research",
+      "链接": "https://openai.com/research",
+      "说明": "GPT系列、agent框架、ChatGPT产品迭代"
+    },
+    {
+      "名称": "Google DeepMind",
+      "链接": "https://deepmind.google/research",
+      "说明": "Gemini、agent研究、AI safety"
+    },
+    {
+      "名称": "Microsoft Research Blog",
+      "链接": "https://microsoft.com/en-us/research/blog",
+      "说明": "HAX Toolkit, Human-AI Interaction Guidelines, Copilot"
+    },
+    {
+      "名称": "Meta AI (FAIR)",
+      "链接": "https://ai.meta.com/research",
+      "说明": "Llama开源生态"
+    },
+    {
+      "名称": "Amazon Science",
+      "链接": "https://amazon.science",
+      "说明": "应用型AI研究"
+    },
+    {
+      "名称": "Apple Machine Learning",
+      "链接": "https://machinelearning.apple.com",
+      "说明": "设备端AI、隐私AI"
+    },
+    {
+      "名称": "Hugging Face Blog",
+      "链接": "https://huggingface.co/blog",
+      "说明": "开源模型、工具、社区趋势"
+    },
+    {
+      "名称": "LangChain Blog",
+      "链接": "https://blog.langchain.dev",
+      "说明": "Agent框架生态风向标"
+    }
+  ],
+  "newsletters": [
+    {
+      "名称": "Simon Willison's Blog",
+      "链接": "https://simonwillison.net",
+      "作者": "Simon Willison",
+      "说明": "LLM生态最全面的实践者视角"
+    },
+    {
+      "名称": "Ahead of AI",
+      "链接": "https://magazine.sebastianraschka.com",
+      "作者": "Sebastian Raschka",
+      "说明": "LLM研究深度解读"
+    },
+    {
+      "名称": "Interconnects",
+      "链接": "https://interconnects.ai",
+      "作者": "Nathan Lambert",
+      "说明": "RLHF/对齐方向"
+    },
+    {
+      "名称": "Latent Space",
+      "链接": "https://latent.space",
+      "作者": "Swyx & Alessio",
+      "说明": "AI工程师视角，agent和tooling"
+    },
+    {
+      "名称": "MIT Technology Review",
+      "链接": "https://technologyreview.com",
+      "作者": "编辑团队",
+      "说明": "日刊科技新闻"
+    },
+    {
+      "名称": "The Batch",
+      "链接": "https://deeplearning.ai/the-batch",
+      "作者": "Andrew Ng",
+      "说明": "AI新闻周报"
+    },
+    {
+      "名称": "Import AI",
+      "链接": "https://importai.substack.com",
+      "作者": "Jack Clark",
+      "说明": "偏policy和大趋势"
+    },
+    {
+      "名称": "阮一峰的网络日志",
+      "链接": "https://ruanyifeng.com/blog",
+      "作者": "阮一峰",
+      "说明": "中文技术圈信号"
+    }
+  ],
+  "researchers": [
+    {
+      "姓名": "Sherry Tongshuang Wu",
+      "平台": "X",
+      "Handle": "@tongshuangwu",
+      "说明": "HCI×NLP，human-AI interaction"
+    },
+    {
+      "姓名": "Saleema Amershi",
+      "平台": "X",
+      "Handle": "@sabornershi",
+      "说明": "Human-AI Interaction Guidelines"
+    },
+    {
+      "姓名": "Gagan Bansal",
+      "平台": "X",
+      "Handle": "@gaaborned",
+      "说明": "Human-AI teaming"
+    },
+    {
+      "姓名": "Q. Vera Liao",
+      "平台": "X",
+      "Handle": "@qaborned",
+      "说明": "Explainable AI, responsible AI in HCI"
+    },
+    {
+      "姓名": "Kenneth Holstein",
+      "平台": "X",
+      "Handle": "@kenholstein",
+      "说明": "Human-AI系统评估，教育AI"
+    },
+    {
+      "姓名": "Lydia Chilton",
+      "平台": "X",
+      "Handle": "@lyaborned",
+      "说明": "AI创造力，人机协作写作"
+    },
+    {
+      "姓名": "Michael Bernstein",
+      "平台": "X",
+      "Handle": "@msb",
+      "说明": "Generative agents, social computing"
+    },
+    {
+      "姓名": "Mina Lee",
+      "平台": "X",
+      "Handle": "@maborned",
+      "说明": "Human-AI collaborative writing"
+    },
+    {
+      "姓名": "Aniket Kittur",
+      "平台": "X",
+      "Handle": "@nkittur",
+      "说明": "Sensemaking, knowledge work with AI"
+    },
+    {
+      "姓名": "April Wang",
+      "平台": "X",
+      "Handle": "—",
+      "说明": "Programming + HCI + AI"
+    },
+    {
+      "姓名": "Toby Jia-Jun Li",
+      "平台": "X",
+      "Handle": "@tobyjiajun",
+      "说明": "End-user programming, human-AI systems"
+    },
+    {
+      "姓名": "Dakuo Wang",
+      "平台": "X",
+      "Handle": "@dakuowang",
+      "说明": "Human-AI collaboration, CSCW"
+    },
+    {
+      "姓名": "Percy Liang",
+      "平台": "X",
+      "Handle": "@percyliang",
+      "说明": "LLM evaluation框架"
+    },
+    {
+      "姓名": "Simon Willison",
+      "平台": "X",
+      "Handle": "@simonw",
+      "说明": "LLM工具生态最佳信息源"
+    },
+    {
+      "姓名": "Andrej Karpathy",
+      "平台": "X",
+      "Handle": "@karpathy",
+      "说明": "深度技术解读"
+    },
+    {
+      "姓名": "Swyx",
+      "平台": "X",
+      "Handle": "@swyx",
+      "说明": "AI工程/agent生态trend"
+    },
+    {
+      "姓名": "Eric Horvitz",
+      "平台": "LinkedIn",
+      "Handle": "—",
+      "说明": "MSR Chief Scientist, 大趋势预判"
+    },
+    {
+      "姓名": "Ben Shneiderman",
+      "平台": "LinkedIn",
+      "Handle": "—",
+      "说明": "Human-centered AI倡导者"
+    },
+    {
+      "姓名": "Ece Kamar",
+      "平台": "LinkedIn",
+      "Handle": "—",
+      "说明": "Human-AI complementarity"
+    }
+  ],
+  "podcasts": [
+    {
+      "名称": "Latent Space Podcast",
+      "链接": "https://latent.space",
+      "说明": "AI工程最前沿，agent相关讨论"
+    },
+    {
+      "名称": "TWIML AI Podcast",
+      "链接": "https://twimlai.com",
+      "说明": "学术+工业混合视角"
+    },
+    {
+      "名称": "NeurIPS/CHI 录播",
+      "链接": "https://youtube.com",
+      "说明": "重要talk的录播"
+    }
+  ],
+  "conferences": [
+    {
+      "名称": "CHI GenAICHI Workshop",
+      "频率": "年度",
+      "说明": "Generative AI × HCI"
+    },
+    {
+      "名称": "HHAI Conference",
+      "频率": "年度",
+      "说明": "Hybrid Human-AI Intelligence"
+    },
+    {
+      "名称": "CHI TREW Workshop",
+      "频率": "年度",
+      "说明": "Trust & Reliance in Human-AI Workflows"
+    },
+    {
+      "名称": "ACL/EMNLP HCI+NLP Workshop",
+      "频率": "年度",
+      "说明": "HCI×NLP交叉"
+    },
+    {
+      "名称": "IUI Conference",
+      "频率": "年度",
+      "说明": "Intelligent User Interfaces"
+    },
+    {
+      "名称": "NeurIPS/ICML Agent Workshops",
+      "频率": "年度",
+      "说明": "系统/ML视角的agent研究"
     }
   ]
 }
