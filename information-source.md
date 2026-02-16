@@ -242,6 +242,12 @@ r/MachineLearning, r/LocalLLaMA, r/artificial
 ### Reddit 过滤关键词
 agent, human-AI, agentic, collaboration, qualitative
 
+### Reddit 关注帖子
+
+| 标题 | 链接 | 说明 |
+|------|------|------|
+| Anyone actually using OpenClaw? | https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/ | r/LocalLLaMA — OpenClaw 真实用户讨论 |
+
 ### 时间窗口
 7
 
