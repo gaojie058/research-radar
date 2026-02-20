@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-20T16:11:27.555330",
+    "fetched_at": "2026-02-20T16:29:12.370837",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1570,8 +1570,8 @@
       "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
       "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
       "hn_link": "https://news.ycombinator.com/item?id=47083145",
-      "points": 473,
-      "comments": 409,
+      "points": 477,
+      "comments": 412,
       "published": "2026-02-20",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -1614,7 +1614,7 @@
       "title": "Measuring AI agent autonomy in practice",
       "link": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "hn_link": "https://news.ycombinator.com/item?id=47073947",
-      "points": 108,
+      "points": 109,
       "comments": 49,
       "published": "2026-02-19",
       "matched_keyword": "AI agent",
@@ -1819,6 +1819,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47088813",
+      "title": "Show HN: Tropes.fyi – Name and shame AI writing",
+      "link": "https://tropes.fyi/",
+      "hn_link": "https://news.ycombinator.com/item?id=47088813",
+      "points": 3,
+      "comments": 1,
+      "published": "2026-02-20",
+      "matched_keyword": "human-AI",
+      "source": "hackernews"
+    },
+    {
       "id": "47045159",
       "title": "AI is slowly munching away my passion",
       "link": "https://whynot.fail/human/ai-is-slowly-munching-away-my-passion/",
@@ -1929,17 +1940,6 @@
       "source": "hackernews"
     },
     {
-      "id": "47088813",
-      "title": "Show HN: Tropes.fyi – Name and shame AI writing",
-      "link": "https://tropes.fyi/",
-      "hn_link": "https://news.ycombinator.com/item?id=47088813",
-      "points": 2,
-      "comments": 0,
-      "published": "2026-02-20",
-      "matched_keyword": "human-AI",
-      "source": "hackernews"
-    },
-    {
       "id": "47013797",
       "title": "Close enough to explain: on collaboration, AI, and staying close to the code",
       "link": "http://stdout.alesr.me/posts/close-enough-to-explain/",
@@ -1973,6 +1973,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47087332",
+      "title": "Show HN: Remote-OpenCode – Control your AI coding assistant from Discord",
+      "link": "https://github.com/RoundTable02/remote-opencode",
+      "hn_link": "https://news.ycombinator.com/item?id=47087332",
+      "points": 2,
+      "comments": 2,
+      "published": "2026-02-20",
+      "matched_keyword": "AI assistant",
+      "source": "hackernews"
+    },
+    {
       "id": "47061684",
       "title": "Investigating the Downstream Effect of AI Assistants on Software Maintainability",
       "link": "https://arxiv.org/abs/2507.00788",
@@ -1980,17 +1991,6 @@
       "points": 2,
       "comments": 2,
       "published": "2026-02-18",
-      "matched_keyword": "AI assistant",
-      "source": "hackernews"
-    },
-    {
-      "id": "47087332",
-      "title": "Show HN: Remote-OpenCode – Control your AI coding assistant from Discord",
-      "link": "https://github.com/RoundTable02/remote-opencode",
-      "hn_link": "https://news.ycombinator.com/item?id=47087332",
-      "points": 2,
-      "comments": 1,
-      "published": "2026-02-20",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
     },
@@ -2441,6 +2441,60 @@
       "链接": "https://www.upenn.edu/",
       "类型": "🏢 University",
       "说明": "$8K research/travel fund + faculty mentoring. Penn postdocs/grad students only"
+    },
+    {
+      "名称": "RGC Early Career Scheme (ECS)",
+      "链接": "https://www.ugc.edu.hk/eng/rgc/funding_opport/ecs/",
+      "类型": "🇭🇰 HK Grant",
+      "说明": "最高HK$2M/5yr, tenure-track AP入职前3年. 成功率~33%. Deadline: ~10月底. 香港新AP最重要的起步grant"
+    },
+    {
+      "名称": "RGC General Research Fund (GRF)",
+      "链接": "https://www.ugc.edu.hk/eng/rgc/funding_opport/grf/",
+      "类型": "🇭🇰 HK Grant",
+      "说明": "最高HK$2M, 成功率~30%, UGC大学academic staff"
+    },
+    {
+      "名称": "RGC Collaborative Research Fund (CRF)",
+      "链接": "https://www.ugc.edu.hk/eng/rgc/funding_opport/crf/",
+      "类型": "🇭🇰 HK Grant",
+      "说明": "最高HK$10M, 跨学科跨院校合作. 适合大型human-AI collaboration项目"
+    },
+    {
+      "名称": "RGC Research Impact Fund (RIF)",
+      "链接": "https://www.ugc.edu.hk/eng/rgc/funding_opport/rif/",
+      "类型": "🇭🇰 HK Grant",
+      "说明": "侧重societal impact. 适合AI-for-qualitative-analysis方向, impact story很强"
+    },
+    {
+      "名称": "Singapore NRF Fellowship",
+      "链接": "https://www.nrf.gov.sg/grants/nrff/",
+      "类型": "🇸🇬 SG Grant",
+      "说明": "最高SGD 3M(~US$2M)/5yr, 40岁以下all nationalities. 最prestigious early career grant, SUTD背景加分"
+    },
+    {
+      "名称": "MOE Academic Research Fund (AcRF)",
+      "链接": "https://www.moe.gov.sg/",
+      "类型": "🇸🇬 SG Grant",
+      "说明": "Tier 1: 新AP通常可拿到. Tier 2: 竞争性grant需向MOE申请"
+    },
+    {
+      "名称": "AISG Research-Governance Joint Grant",
+      "链接": "https://aisingapore.org/research/joint-grant-call/",
+      "类型": "🇸🇬 SG Grant",
+      "说明": "AI governance + human-machine interaction + social resilience. Research profile完美match: AI + social science + trustworthy AI"
+    },
+    {
+      "名称": "ARC DECRA",
+      "链接": "https://www.arc.gov.au/",
+      "类型": "🇦🇺 AU Grant",
+      "说明": "3yr, 年薪$126K + 项目经费$50K/yr. 成功率13.1%. DE27申请: 2026.1.28-3.11. 申Sydney的话这个很关键"
+    },
+    {
+      "名称": "ARC Future Fellowships",
+      "链接": "https://www.arc.gov.au/",
+      "类型": "🇦🇺 AU Grant",
+      "说明": "Mid-career researcher. FT26已关闭, 关注FT27"
     },
     {
       "名称": "ACM SIGCHI Open Positions",

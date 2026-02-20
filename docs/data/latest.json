@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-20T16:11:27.555330",
+    "fetched_at": "2026-02-20T16:29:12.370837",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1570,8 +1570,8 @@
       "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
       "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
       "hn_link": "https://news.ycombinator.com/item?id=47083145",
-      "points": 473,
-      "comments": 409,
+      "points": 477,
+      "comments": 412,
       "published": "2026-02-20",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -1614,7 +1614,7 @@
       "title": "Measuring AI agent autonomy in practice",
       "link": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "hn_link": "https://news.ycombinator.com/item?id=47073947",
-      "points": 108,
+      "points": 109,
       "comments": 49,
       "published": "2026-02-19",
       "matched_keyword": "AI agent",
@@ -1819,6 +1819,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47088813",
+      "title": "Show HN: Tropes.fyi – Name and shame AI writing",
+      "link": "https://tropes.fyi/",
+      "hn_link": "https://news.ycombinator.com/item?id=47088813",
+      "points": 3,
+      "comments": 1,
+      "published": "2026-02-20",
+      "matched_keyword": "human-AI",
+      "source": "hackernews"
+    },
+    {
       "id": "47045159",
       "title": "AI is slowly munching away my passion",
       "link": "https://whynot.fail/human/ai-is-slowly-munching-away-my-passion/",
@@ -1929,17 +1940,6 @@
       "source": "hackernews"
     },
     {
-      "id": "47088813",
-      "title": "Show HN: Tropes.fyi – Name and shame AI writing",
-      "link": "https://tropes.fyi/",
-      "hn_link": "https://news.ycombinator.com/item?id=47088813",
-      "points": 2,
-      "comments": 0,
-      "published": "2026-02-20",
-      "matched_keyword": "human-AI",
-      "source": "hackernews"
-    },
-    {
       "id": "47013797",
       "title": "Close enough to explain: on collaboration, AI, and staying close to the code",
       "link": "http://stdout.alesr.me/posts/close-enough-to-explain/",
@@ -1973,6 +1973,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47087332",
+      "title": "Show HN: Remote-OpenCode – Control your AI coding assistant from Discord",
+      "link": "https://github.com/RoundTable02/remote-opencode",
+      "hn_link": "https://news.ycombinator.com/item?id=47087332",
+      "points": 2,
+      "comments": 2,
+      "published": "2026-02-20",
+      "matched_keyword": "AI assistant",
+      "source": "hackernews"
+    },
+    {
       "id": "47061684",
       "title": "Investigating the Downstream Effect of AI Assistants on Software Maintainability",
       "link": "https://arxiv.org/abs/2507.00788",
@@ -1980,17 +1991,6 @@
       "points": 2,
       "comments": 2,
       "published": "2026-02-18",
-      "matched_keyword": "AI assistant",
-      "source": "hackernews"
-    },
-    {
-      "id": "47087332",
-      "title": "Show HN: Remote-OpenCode – Control your AI coding assistant from Discord",
-      "link": "https://github.com/RoundTable02/remote-opencode",
-      "hn_link": "https://news.ycombinator.com/item?id=47087332",
-      "points": 2,
-      "comments": 1,
-      "published": "2026-02-20",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
     },
