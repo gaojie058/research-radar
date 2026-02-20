@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-20T16:56:22.257529",
+    "fetched_at": "2026-02-20T17:04:58.043914",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1455,79 +1455,150 @@
   ],
   "semantic_scholar": [
     {
-      "id": "822f705e1d2058d8cb698a365effddaf7277e1f4",
-      "title": "Human-centered AI to promote youth mental health: a serendipitous natural experiment enabled by a digital health platform",
+      "id": "a6dcab0c8fe8d36e947334f3c0e92332b2d5f393",
+      "title": "Multi-Round Human-AI Collaboration with User-Specified Requirements",
       "authors": [
-        "T. Katapally",
-        "Nadine Elsahli",
-        "S. Ibrahim",
-        "Jasmin Bhawra"
+        "Sima Noorani",
+        "Shayan Kiyani",
+        "Hamed Hassani",
+        "George Pappas"
       ],
-      "summary": "Background Health systems are struggling to deliver timely preventive care, particularly for marginalized populations, necessitating integration across health, education, and social services. For Indigenous youth in rural communities, fragmented services, isolation, and limited culturally safe options worsen mental health disparities. Interactive technologies, particularly human-centered artificial intelligence (AI)-enabled digital health platforms grounded in human-computer interaction (HCI), c",
-      "published": "2026-02-02",
+      "summary": "As humans increasingly rely on multiround conversational AI for high stakes decisions, principled frameworks are needed to ensure such interactions reliably improve decision quality. We adopt a human centric view governed by two principles: counterfactual harm, ensuring the AI does not undermine human strengths, and complementarity, ensuring it adds value where the human is prone to err. We formalize these concepts via user defined rules, allowing users to specify exactly what harm and complemen",
+      "published": "2026-02-19",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/822f705e1d2058d8cb698a365effddaf7277e1f4",
-      "matched_keyword": "human-centered AI systems",
+      "link": "https://www.semanticscholar.org/paper/a6dcab0c8fe8d36e947334f3c0e92332b2d5f393",
+      "matched_keyword": "human-AI collaboration LLM",
       "source": "semantic_scholar"
     },
     {
-      "id": "802f3d25799b1a1e9543e97031f24e8f009770f4",
-      "title": "An HCAI Methodological Framework: Putting it Into Action to Enable Human-Centered AI",
+      "id": "4682903363bc1ab7885673fe7b5fa2b94210eda1",
+      "title": "Human-AI Collaboration in Large Language Model-Integrated Building Energy Management Systems: The Role of User Domain Knowledge and AI Literacy",
       "authors": [
-        "Wei Xu",
-        "Zaifeng Gao",
-        "Marvin J. Dainoff"
+        "Wooyoung Jung",
+        "Kahyun Jeon",
+        "Prosper Babon-Ayeng"
       ],
-      "summary": "Human-centered artificial intelligence (HCAI) is a design philosophy that prioritizes humans in the design, development, deployment, and use of AI systems, aiming to maximize AI’s benefits while mitigating its negative impacts. Despite its growing prominence in literature, the lack of methodological guidance for its implementation poses challenges to HCAI practice. To address this gap, this article proposes a comprehensive HCAI methodological framework (HCAI-MF) comprising five key components: H",
+      "summary": "This study aimed to comprehend how user domain knowledge and artificial intelligence (AI) literacy impact the effective use of human-AI interactive building energy management system (BEMS). While prior studies have investigated the potential of integrating large language models (LLMs) into BEMS or building energy modeling, very few studies have examined how user interact with such systems. We conducted a systematic role-playing experiment, where 85 human subjects interacted with an advanced gene",
+      "published": "2026-02-18",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/4682903363bc1ab7885673fe7b5fa2b94210eda1",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "527519dd69b8ad85a09b642b62be3ea2a8b00b55",
+      "title": "Deriving Instructional Insights from Human-LLM Co-Evaluation of Student Collaboration in Data-Centric Programming",
+      "authors": [
+        "Marshall An",
+        "Christine Kwon",
+        "Yoonjae Lee",
+        "Ji-Hyeon Hur",
+        "Dongho Lee"
+      ],
+      "summary": "This quasi-experimental study integrates a large language model (LLM) with expert qualitative analysis to examine how instructional design variations in computer-supported collaborative learning (CSCL) shape collaboration in data-centric programming. We collected 73 team transcripts from two contrasting CSCL designs deployed across five course offerings: a closed-ended variant with prescribed solution paths and auto-graded milestones, and an open-ended variant supporting exploratory tasks with m",
+      "published": "2026-02-17",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/527519dd69b8ad85a09b642b62be3ea2a8b00b55",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
+      "title": "Jokeasy: Exploring Human-AI Collaboration in Thematic Joke Generation",
+      "authors": [
+        "Yate Ge",
+        "Lin Tian",
+        "Chiqian Xu",
+        "Luyao Xu",
+        "Meiying Li"
+      ],
+      "summary": "Thematic jokes are central to stand-up comedy, sitcoms, and public speaking, where contexts and punchlines rely on fresh material - news, anecdotes, and cultural references that resonate with the audience. Recent advances in Large Language Models (LLMs) have enabled interactive joke generation through conversational interfaces. Although LLMs enable interactive joke generation, ordinary conversational interfaces seldom give creators enough agency, control, or timely access to such source material",
+      "published": "2026-02-10",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "0bf6ab530c50492142bf37789e81e6637315a012",
+      "title": "From Human-Human Collaboration to Human-Agent Collaboration: A Vision, Design Philosophy, and an Empirical Framework for Achieving Successful Partnerships Between Humans and LLM Agents",
+      "authors": [
+        "Bingsheng Yao",
+        "Chaoran Chen",
+        "A. Wang",
+        "Sherry Tongshuang Wu",
+        "T. Li"
+      ],
+      "summary": "The emergence of Large Language Model (LLM) agents enables us to build agent-based intelligent systems that move beyond the role of a\"tool\"to become genuine collaborators with humans, thereby realizing a novel human-agent collaboration paradigm. Our vision is that LLM agents should resemble remote human collaborators, which allows HCI researchers to ground the future exploration in decades of research on trust, awareness, and common ground in remote human collaboration, while also revealing the ",
+      "published": "2026-02-05",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/0bf6ab530c50492142bf37789e81e6637315a012",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "604d0e8c191f7d11a919f3cda1cd037b6036a36c",
+      "title": "Success and failure of human-AI collaboration in clinical reasoning: An experimental study on challenging real-world cases.",
+      "authors": [
+        "Kai Tzu-iunn Ong",
+        "Junwon Seo",
+        "Hyojun Kim",
+        "Jiwoo Kim",
+        "Jihoon Kim"
+      ],
+      "summary": "BACKGROUND\nWhile conversational human-AI collaboration (HAC) using large language models (LLM) has shown potential to enhance clinical reasoning, its effectiveness in highly specialized and challenging clinical scenarios remains unclear. This study aimed to evaluate the effectiveness of HAC and analyzed the causes of its success and failure.\n\n\nMETHODS\nA crossover experimental study was conducted using 30 challenging cases from JAMA Ophthalmology. Thirty participants (10 board-certified ophthalmo",
       "published": "2026-02-01",
-      "citations": 11,
-      "link": "https://www.semanticscholar.org/paper/802f3d25799b1a1e9543e97031f24e8f009770f4",
-      "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "1ba6983531e7c074c1d70fea993c3f6ca64d2969",
-      "title": "Designing Understandable and Fair AI for Learning: The PEARL Framework for Human-Centered Educational AI",
-      "authors": [
-        "S. Dakshit",
-        "Kouider Mokhtari",
-        "A. Khalid"
-      ],
-      "summary": "As artificial intelligence (AI) is increasingly used in classrooms, tutoring systems, and learning platforms, it is essential that these tools are not only powerful, but also easy to understand, fair, and supportive of real learning. Many current AI systems can generate fluent responses or accurate predictions, yet they often fail to clearly explain their decisions, reflect students’ cultural contexts, or give learners and educators meaningful control. This gap can reduce trust and limit the edu",
-      "published": "2026-01-28",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/1ba6983531e7c074c1d70fea993c3f6ca64d2969",
-      "matched_keyword": "human-centered AI systems",
+      "link": "https://www.semanticscholar.org/paper/604d0e8c191f7d11a919f3cda1cd037b6036a36c",
+      "matched_keyword": "human-AI collaboration LLM",
       "source": "semantic_scholar"
     },
     {
-      "id": "5b732ee2ff422121aa66cd4b0fa207ca54216df6",
-      "title": "Intercultural Human-Centered AI for Automotive Systems: Bridging ASPICE Processes and Intelligent Human Systems Integration",
+      "id": "192a166871cf394d97cb8c6cf09e73325a2800dd",
+      "title": "Exploring Human-AI Collaboration Dynamics in LLM-supported Engineering Project-Based Learning",
       "authors": [
-        "Rüdiger Heimgärtner"
-      ],
-      "summary": "The integration of Artificial Intelligence into safety-critical automotive systems demands approaches that combine technical rigor with cultural and human-centred sensitivity. While Automotive SPICE (ASPICE) ensures structured engineering practices, it lacks explicit guidance on integrating intercultural human factors and intelligent AI-driven support. This paper proposes a framework for Intercultural Human-Centred AI that bridges ASPICE-based practices with intelligent human systems integration",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/5b732ee2ff422121aa66cd4b0fa207ca54216df6",
-      "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "37952a875dc6a5f3507546773d5eaa834d926cc2",
-      "title": "Enhancing obstacle detectability in tunnel look-ahead systems through human-centered explainable AI and inverse inference",
-      "authors": [
-        "Yanlong Niu",
-        "Huaigu Tang",
-        "E. Nilot",
-        "Yuhan Zhou",
-        "Yunyue Elita Li"
+        "Xuan Qiu",
+        "Tin Nok Mak"
       ],
       "summary": "",
       "published": "2026",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/37952a875dc6a5f3507546773d5eaa834d926cc2",
-      "matched_keyword": "human-centered AI systems",
+      "link": "https://www.semanticscholar.org/paper/192a166871cf394d97cb8c6cf09e73325a2800dd",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "66ea1aa845a34c6693e11d31789a0eec330433de",
+      "title": "Human-LLM Collaboration Framework for Translating Health Instruments",
+      "authors": [
+        "Hind Bitar",
+        "Omaima Almatrafi",
+        "Amal Babour",
+        "Ohoud Alzamzami",
+        "Mayda Alrige"
+      ],
+      "summary": "Large language models have revolutionized various sectors, including education and healthcare, by demonstrating significant advancements in producing human-like text and enhancing translation accuracy. Despite these advancements, the conventional process of cross-cultural instrument translation remains labor-intensive, expensive, and heavily dependent on the expertise of human professionals, including translators and healthcare specialists. The objective of this study is to address the translati",
+      "published": "2026",
+      "citations": 0,
+      "link": "https://www.semanticscholar.org/paper/66ea1aa845a34c6693e11d31789a0eec330433de",
+      "matched_keyword": "human-AI collaboration LLM",
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "a785dc215f8dd317f272e1db008ee9fa0733850e",
+      "title": "CCM-FCC: LLM-powered cognition-centered AI agent framework for proactive human-robot collaboration",
+      "authors": [
+        "Pengfei Ding",
+        "Jie Zhang",
+        "Peng Zhang",
+        "Hongsen Li",
+        "Dexian Wang"
+      ],
+      "summary": "",
+      "published": "2026",
+      "citations": 2,
+      "link": "https://www.semanticscholar.org/paper/a785dc215f8dd317f272e1db008ee9fa0733850e",
+      "matched_keyword": "human-AI collaboration LLM",
       "source": "semantic_scholar"
     },
     {
@@ -1646,8 +1717,8 @@
       "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
       "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
       "hn_link": "https://news.ycombinator.com/item?id=47083145",
-      "points": 482,
-      "comments": 416,
+      "points": 483,
+      "comments": 417,
       "published": "2026-02-20",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -2449,6 +2520,90 @@
       "链接": "https://neurips.cc",
       "频率": "年度",
       "说明": "系统/ML视角的agent研究"
+    },
+    {
+      "名称": "CHI",
+      "链接": "https://chi2026.acm.org",
+      "频率": "年度",
+      "说明": "ACM顶会, Human-Computer Interaction核心会议"
+    },
+    {
+      "名称": "CSCW",
+      "链接": "https://cscw.acm.org",
+      "频率": "年度",
+      "说明": "Computer-Supported Cooperative Work, 协作与社会计算"
+    },
+    {
+      "名称": "UIST",
+      "链接": "https://uist.acm.org",
+      "频率": "年度",
+      "说明": "User Interface Software and Technology"
+    },
+    {
+      "名称": "ICSE",
+      "链接": "https://conf.researchr.org/home/icse-2026",
+      "频率": "年度",
+      "说明": "软件工程顶会, AI4SE/SE4AI方向"
+    },
+    {
+      "名称": "ICLR",
+      "链接": "https://iclr.cc",
+      "频率": "年度",
+      "说明": "表示学习顶会, LLM/foundation model前沿"
+    },
+    {
+      "名称": "NeurIPS",
+      "链接": "https://neurips.cc",
+      "频率": "年度",
+      "说明": "ML/AI最大顶会, agent/alignment/human-AI"
+    },
+    {
+      "名称": "ICML",
+      "链接": "https://icml.cc",
+      "频率": "年度",
+      "说明": "机器学习顶会"
+    },
+    {
+      "名称": "ACL",
+      "链接": "https://www.aclweb.org",
+      "频率": "年度",
+      "说明": "NLP顶会, human-LLM interaction相关"
+    },
+    {
+      "名称": "EMNLP",
+      "链接": "https://www.aclweb.org",
+      "频率": "年度",
+      "说明": "NLP顶会, empirical methods"
+    },
+    {
+      "名称": "AAAI",
+      "链接": "https://aaai.org",
+      "频率": "年度",
+      "说明": "综合AI顶会, human-AI collaboration track"
+    },
+    {
+      "名称": "FAccT",
+      "链接": "https://facctconference.org",
+      "频率": "年度",
+      "说明": "Fairness, Accountability, Transparency in AI"
+    },
+    {
+      "名称": "AIES",
+      "链接": "https://www.aies-conference.com",
+      "频率": "年度",
+      "说明": "AI, Ethics, and Society"
+    },
+    {
+      "名称": "DIS",
+      "链接": "https://dis.acm.org",
+      "频率": "年度",
+      "说明": "Designing Interactive Systems"
+    },
+    {
+      "名称": "ASSETS",
+      "链接": "https://assets.acm.org",
+      "频率": "年度",
+      "说明": "Accessible Computing, AI accessibility"
     }
   ],
   "opportunities": [
