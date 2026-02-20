@@ -250,7 +250,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 0.75rem;
-    max-width: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
   }
 
   .content.grid-mode .card {
@@ -747,8 +750,8 @@ function render() {
   const isStatic = meta && meta.static;
   const hasUserItems = getCollection().some(i => i.category === currentCategory);
   const confSection = document.getElementById('conf-section');
-  // Grid layout for static categories
-  container.classList.toggle('grid-mode', isStatic && currentCategory !== 'mycollection');
+  // Grid layout for all categories
+  container.classList.add('grid-mode');
   kwSection.style.display = (!isStatic && currentCategory !== 'mycollection') ? '' : 'none';
   regionSection.style.display = currentCategory === 'opportunities' ? '' : 'none';
   confSection.style.display = currentCategory === 'conferences' ? '' : 'none';
@@ -1171,7 +1174,7 @@ render = function() {
   const form = document.getElementById('collection-form');
   if (currentCategory === 'mycollection') {
     form.style.display = '';
-    document.getElementById('content').classList.remove('grid-mode');
+    document.getElementById('content').classList.add('grid-mode');
     renderCollection();
     return;
   }
