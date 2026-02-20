@@ -347,5 +347,8 @@ agent, human-AI, agentic, collaboration, qualitative
 | AISG Research-Governance Joint Grant | https://aisingapore.org/research/joint-grant-call/ | 🇸🇬 SG Grant | AI governance + human-machine interaction + social resilience. Research profile完美match: AI + social science + trustworthy AI |
 | ARC DECRA | https://www.arc.gov.au/ | 🇦🇺 AU Grant | 3yr, 年薪$126K + 项目经费$50K/yr. 成功率13.1%. DE27申请: 2026.1.28-3.11. 申Sydney的话这个很关键 |
 | ARC Future Fellowships | https://www.arc.gov.au/ | 🇦🇺 AU Grant | Mid-career researcher. FT26已关闭, 关注FT27 |
+| ARC Discovery Projects | https://www.arc.gov.au/ | 🇦🇺 AU Grant | 澳洲core research grant, 类似NSF standard grant. 拿到faculty后申请 |
+| ARC Linkage Projects | https://www.arc.gov.au/ | 🇦🇺 AU Grant | 需industry partner合作. 适合open-source tool有industry adoption的情况 |
+| Microsoft Research Fellowship 2026 | https://www.microsoft.com/en-us/research/academic-program/phd-fellowship/ | 🌏 International | 美加$47K, 欧洲$27K, 亚太$17K. 覆盖human-AI collaboration. 2026轮次已过(Dec 2025), 关注2027 |
 | ACM SIGCHI Open Positions | https://sigchi.org/resources/open-positions/ | 📋 Job Board | HCI academic positions |
 | CRA Job Board | https://cra.org/ads/ | 📋 Job Board | CS academic positions |

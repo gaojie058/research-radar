@@ -2497,6 +2497,24 @@
       "说明": "Mid-career researcher. FT26已关闭, 关注FT27"
     },
     {
+      "名称": "ARC Discovery Projects",
+      "链接": "https://www.arc.gov.au/",
+      "类型": "🇦🇺 AU Grant",
+      "说明": "澳洲core research grant, 类似NSF standard grant. 拿到faculty后申请"
+    },
+    {
+      "名称": "ARC Linkage Projects",
+      "链接": "https://www.arc.gov.au/",
+      "类型": "🇦🇺 AU Grant",
+      "说明": "需industry partner合作. 适合open-source tool有industry adoption的情况"
+    },
+    {
+      "名称": "Microsoft Research Fellowship 2026",
+      "链接": "https://www.microsoft.com/en-us/research/academic-program/phd-fellowship/",
+      "类型": "🌏 International",
+      "说明": "美加$47K, 欧洲$27K, 亚太$17K. 覆盖human-AI collaboration. 2026轮次已过(Dec 2025), 关注2027"
+    },
+    {
       "名称": "ACM SIGCHI Open Positions",
       "链接": "https://sigchi.org/resources/open-positions/",
       "类型": "📋 Job Board",
