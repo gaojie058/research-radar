@@ -327,9 +327,16 @@ agent, human-AI, agentic, collaboration, qualitative
 
 | 名称 | 链接 | 类型 | 说明 |
 |------|------|------|------|
-| NSF CAREER Award | https://www.nsf.gov/funding/opportunities?fund_program_desc=CAREER | Grant | Junior faculty, 5-year research funding |
-| NSF CISE Core Programs | https://www.nsf.gov/cise/funding.jsp | Grant | Computer Science research grants |
-| CRA-WP Scholarships | https://cra.org/cra-wp/ | Fellowship | Women in computing research |
-| ACM SIGCHI Open Positions | https://sigchi.org/resources/open-positions/ | Job Board | HCI academic positions |
-| CRA Job Board | https://cra.org/ads/ | Job Board | CS academic positions |
-| Computing Research Association | https://cra.org | Resource | CS research community resources |
+| NSF CAREER Award | https://www.nsf.gov/funding/opportunities?fund_program_desc=CAREER | 🏛️ NSF Grant | ≥$400K/5yr, tenure-track AP, most prestigious early career award. Deadline: ~July yearly. 拿到faculty offer后优先准备 |
+| NSF CRII (Research Initiation) | https://www.nsf.gov/funding/opportunities?fund_program_desc=CRII | 🏛️ NSF Grant | ≤$175K/24mo, non-R1 early career, PhD后3年内未拿过联邦PI grant. 适合刚入职non-R1的新AP |
+| NSF CISE Future CoRe | https://www.nsf.gov/cise/funding.jsp | 🏛️ NSF Grant | $150K-$250K/yr, max $1M/4yr. 覆盖human-AI interaction, NLP, SE. Deadline: Feb 5, 2026. 与研究方向高度匹配 |
+| NSF EAGER | https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504784 | 🏛️ NSF Grant | 高风险高回报exploratory research, AI×社会交叉(human-AI, bias, fairness). 需program officer邀请/推荐 |
+| NSF Engineering Postdoc Fellowship | https://www.nsf.gov/funding/ | 🏛️ NSF Fellowship | Stipend + travel, 2年. 仅限US citizens/permanent residents |
+| CRA Trustworthy AI Fellowship | https://cra.org/ | 🎓 Fellowship | ⏰ $17K stipend + travel. PhD 2023.5-2025.7. Deadline: March 31, 2026. Human-AI + qualitative背景很match |
+| Cooperative AI Foundation Grants | https://www.cooperativeai.com/ | 🎓 Foundation | 最高GBP 100K/12mo, early-career track (PhD后2-3年). AI合作、多智能体系统 |
+| Sloan Metascience & AI Postdoc | https://sloan.org/ | 🎓 Fellowship | 最高$250K/2yr. Social sciences方向, AI对科学研究的影响 |
+| iSchools Research Grants | https://ischools.org/ | 🎓 Grant | Early career faculty & PhD students. July deadline, 主题每年变. Information science相关 |
+| Stanford HAI Seed Grants | https://hai.stanford.edu/ | 🏢 University | 最高$75K/12mo. Stanford affiliated only. Augmenting human capabilities & human-AI interaction |
+| Penn AI Fellowship | https://www.upenn.edu/ | 🏢 University | $8K research/travel fund + faculty mentoring. Penn postdocs/grad students only |
+| ACM SIGCHI Open Positions | https://sigchi.org/resources/open-positions/ | 📋 Job Board | HCI academic positions |
+| CRA Job Board | https://cra.org/ads/ | 📋 Job Board | CS academic positions |
