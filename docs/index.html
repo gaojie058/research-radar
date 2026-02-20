@@ -803,7 +803,7 @@ function render() {
       const typeIcon = item.type === 'author' ? '👤' : item.type === 'note' ? '📝' : item.type === 'opportunity' ? '💼' : '📎';
       const titleHtml = item.url ? `<a href="${escapeHtml(item.url)}" target="_blank">${escapeHtml(item.title)}</a>` : escapeHtml(item.title);
       const tags = item.tags ? item.tags.split(',').map(t => t.trim()).filter(Boolean).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('') : '';
-      return `<div class="card"><div class="card-header"><div class="card-source-indicator" style="background:#e74c3c"></div><div style="flex:1"><div class="card-title">${titleHtml}</div>${item.notes ? `<div class="card-summary">${escapeHtml(item.notes)}</div>` : ''}<div class="card-meta"><span class="tag" style="border-left:2px solid #e74c3c;padding-left:0.5rem">${typeIcon} My Addition</span>${tags}</div></div></div></div>`;
+      return `<div class="card"><div class="card-header"><div class="card-source-indicator" style="background:#e74c3c"></div><div style="flex:1"><div class="card-title" style="display:flex;justify-content:space-between;align-items:center">${titleHtml}<button class="remove-collection-btn" data-added-at="${item.addedAt}" style="background:none;border:none;cursor:pointer;color:var(--text-muted);font-size:0.9rem;padding:2px 6px;border-radius:4px;opacity:0.5;transition:opacity 0.15s" onmouseover="this.style.opacity=1;this.style.color='#e74c3c'" onmouseout="this.style.opacity=0.5;this.style.color='var(--text-muted)'" title="Remove">✕</button></div>${item.notes ? `<div class="card-summary">${escapeHtml(item.notes)}</div>` : ''}<div class="card-meta"><span class="tag" style="border-left:2px solid #e74c3c;padding-left:0.5rem">${typeIcon} My Addition</span>${tags}</div></div></div></div>`;
     };
 
     // Apply source filter
@@ -1036,6 +1036,17 @@ document.getElementById('region-pills').addEventListener('click', e => {
   currentRegion = region;
   document.querySelectorAll('#region-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   if (region !== 'all') pill.classList.add('active');
+  render();
+});
+
+// ─── Remove Collection Item (delegated) ───
+document.getElementById('content').addEventListener('click', e => {
+  const btn = e.target.closest('.remove-collection-btn');
+  if (!btn) return;
+  const addedAt = Number(btn.dataset.addedAt);
+  if (!confirm('Remove this item?')) return;
+  const items = getCollection().filter(i => i.addedAt !== addedAt);
+  saveCollection(items);
   render();
 });
 
