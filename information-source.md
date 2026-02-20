@@ -338,5 +338,14 @@ agent, human-AI, agentic, collaboration, qualitative
 | iSchools Research Grants | https://ischools.org/ | 🎓 Grant | Early career faculty & PhD students. July deadline, 主题每年变. Information science相关 |
 | Stanford HAI Seed Grants | https://hai.stanford.edu/ | 🏢 University | 最高$75K/12mo. Stanford affiliated only. Augmenting human capabilities & human-AI interaction |
 | Penn AI Fellowship | https://www.upenn.edu/ | 🏢 University | $8K research/travel fund + faculty mentoring. Penn postdocs/grad students only |
+| RGC Early Career Scheme (ECS) | https://www.ugc.edu.hk/eng/rgc/funding_opport/ecs/ | 🇭🇰 HK Grant | 最高HK$2M/5yr, tenure-track AP入职前3年. 成功率~33%. Deadline: ~10月底. 香港新AP最重要的起步grant |
+| RGC General Research Fund (GRF) | https://www.ugc.edu.hk/eng/rgc/funding_opport/grf/ | 🇭🇰 HK Grant | 最高HK$2M, 成功率~30%, UGC大学academic staff |
+| RGC Collaborative Research Fund (CRF) | https://www.ugc.edu.hk/eng/rgc/funding_opport/crf/ | 🇭🇰 HK Grant | 最高HK$10M, 跨学科跨院校合作. 适合大型human-AI collaboration项目 |
+| RGC Research Impact Fund (RIF) | https://www.ugc.edu.hk/eng/rgc/funding_opport/rif/ | 🇭🇰 HK Grant | 侧重societal impact. 适合AI-for-qualitative-analysis方向, impact story很强 |
+| Singapore NRF Fellowship | https://www.nrf.gov.sg/grants/nrff/ | 🇸🇬 SG Grant | 最高SGD 3M(~US$2M)/5yr, 40岁以下all nationalities. 最prestigious early career grant, SUTD背景加分 |
+| MOE Academic Research Fund (AcRF) | https://www.moe.gov.sg/ | 🇸🇬 SG Grant | Tier 1: 新AP通常可拿到. Tier 2: 竞争性grant需向MOE申请 |
+| AISG Research-Governance Joint Grant | https://aisingapore.org/research/joint-grant-call/ | 🇸🇬 SG Grant | AI governance + human-machine interaction + social resilience. Research profile完美match: AI + social science + trustworthy AI |
+| ARC DECRA | https://www.arc.gov.au/ | 🇦🇺 AU Grant | 3yr, 年薪$126K + 项目经费$50K/yr. 成功率13.1%. DE27申请: 2026.1.28-3.11. 申Sydney的话这个很关键 |
+| ARC Future Fellowships | https://www.arc.gov.au/ | 🇦🇺 AU Grant | Mid-career researcher. FT26已关闭, 关注FT27 |
 | ACM SIGCHI Open Positions | https://sigchi.org/resources/open-positions/ | 📋 Job Board | HCI academic positions |
 | CRA Job Board | https://cra.org/ads/ | 📋 Job Board | CS academic positions |
