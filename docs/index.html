@@ -498,6 +498,18 @@
 <div class="keyword-section" id="keyword-section">
   <div class="keyword-pills" id="keyword-pills"></div>
 </div>
+<div class="keyword-section" id="region-section" style="display:none">
+  <div class="keyword-pills" id="region-pills">
+    <span class="keyword-pill" data-region="all">All</span>
+    <span class="keyword-pill" data-region="🏛️">🇺🇸 US</span>
+    <span class="keyword-pill" data-region="🇭🇰">🇭🇰 Hong Kong</span>
+    <span class="keyword-pill" data-region="🇸🇬">🇸🇬 Singapore</span>
+    <span class="keyword-pill" data-region="🇦🇺">🇦🇺 Australia</span>
+    <span class="keyword-pill" data-region="🎓">🎓 Fellowship</span>
+    <span class="keyword-pill" data-region="🏢">🏢 University</span>
+    <span class="keyword-pill" data-region="📋">📋 Job Board</span>
+  </div>
+</div>
 
 <!-- My Collection Input Form (hidden by default) -->
 <div id="collection-form" style="display:none; padding:1rem 2rem; border-bottom:1px solid var(--border); background:var(--surface);">
@@ -546,6 +558,7 @@ let allItems = [];
 let staticData = {};
 let currentCategory = 'all';
 let currentKeyword = '';
+let currentRegion = 'all';
 let searchQuery = '';
 
 const sourceColors = {
@@ -668,16 +681,27 @@ function render() {
   const container = document.getElementById('content');
   const kwSection = document.getElementById('keyword-section');
 
-  // Show keyword pills only for fetched-data categories
-  if (meta && meta.static) {
+  const regionSection = document.getElementById('region-section');
+
+  // Show keyword pills only for fetched-data categories, region pills for opportunities
+  if (currentCategory === 'opportunities') {
     kwSection.style.display = 'none';
+    regionSection.style.display = '';
+  } else if (meta && meta.static) {
+    kwSection.style.display = 'none';
+    regionSection.style.display = 'none';
   } else {
     kwSection.style.display = '';
+    regionSection.style.display = 'none';
   }
 
   // Static link categories
   if (meta && meta.static) {
     let items = staticData[currentCategory] || [];
+    // Region filter for opportunities
+    if (currentCategory === 'opportunities' && currentRegion !== 'all') {
+      items = items.filter(i => (i['\u7c7b\u578b'] || '').includes(currentRegion));
+    }
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       items = items.filter(i => Object.values(i).join(' ').toLowerCase().includes(q));
@@ -818,9 +842,11 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
   currentCategory = tab.dataset.category;
-  // Clear keyword filter when switching tabs
+  // Clear filters when switching tabs
   currentKeyword = '';
+  currentRegion = 'all';
   document.querySelectorAll('.keyword-pill').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#region-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   render();
 });
 
@@ -840,6 +866,17 @@ document.addEventListener('keydown', e => {
     searchQuery = '';
     render();
   }
+});
+
+// ─── Region Filter (opportunities) ───
+document.getElementById('region-pills').addEventListener('click', e => {
+  const pill = e.target.closest('.keyword-pill');
+  if (!pill) return;
+  const region = pill.dataset.region;
+  currentRegion = region;
+  document.querySelectorAll('#region-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  if (region !== 'all') pill.classList.add('active');
+  render();
 });
 
 // ─── My Collection (localStorage) ───
