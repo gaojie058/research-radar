@@ -407,6 +407,10 @@
     <span class="source-dot" style="background:var(--accent-conferences)"></span>
     会议 <span class="count" id="count-conferences">—</span>
   </button>
+  <button class="tab" data-category="mycollection" style="margin-left:auto">
+    <span class="source-dot" style="background:#e74c3c"></span>
+    📌 My Collection <span class="count" id="count-mycollection">—</span>
+  </button>
 </div>
 
 <div class="stats-bar" id="stats-bar">
@@ -434,6 +438,39 @@
 
 <div class="keyword-section" id="keyword-section">
   <div class="keyword-pills" id="keyword-pills"></div>
+</div>
+
+<!-- My Collection Input Form (hidden by default) -->
+<div id="collection-form" style="display:none; padding:1rem 2rem; border-bottom:1px solid var(--border); background:var(--surface);">
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-end;">
+    <div style="flex:1; min-width:200px;">
+      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Type</label>
+      <select id="col-type" style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem; background:var(--bg);">
+        <option value="link">📎 Link / Paper</option>
+        <option value="author">👤 Author to Follow</option>
+        <option value="note">📝 Note / Info</option>
+      </select>
+    </div>
+    <div style="flex:3; min-width:300px;">
+      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Title / Name</label>
+      <input id="col-title" type="text" placeholder="Paper title, author name, or note title..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+    </div>
+    <div style="flex:3; min-width:300px;">
+      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">URL (optional)</label>
+      <input id="col-url" type="text" placeholder="https://..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+    </div>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-end; margin-top:0.75rem;">
+    <div style="flex:3; min-width:300px;">
+      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Notes / Description</label>
+      <textarea id="col-notes" placeholder="Why is this interesting? Key takeaways..." rows="2" style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem; resize:vertical;"></textarea>
+    </div>
+    <div style="flex:1; min-width:150px;">
+      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Tags (comma separated)</label>
+      <input id="col-tags" type="text" placeholder="HCI, LLM, agent..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+    </div>
+    <button id="col-submit" style="padding:0.5rem 1.5rem; background:#e74c3c; color:white; border:none; border-radius:6px; font-family:var(--font-mono); font-size:0.8rem; cursor:pointer; font-weight:600; white-space:nowrap;">+ Add</button>
+  </div>
 </div>
 
 <div class="content" id="content">
@@ -738,6 +775,115 @@ document.addEventListener('keydown', e => {
     render();
   }
 });
+
+// ─── My Collection (localStorage) ───
+const COLLECTION_KEY = 'sophia-select-collection';
+
+function getCollection() {
+  try { return JSON.parse(localStorage.getItem(COLLECTION_KEY) || '[]'); } catch { return []; }
+}
+
+function saveCollection(items) {
+  localStorage.setItem(COLLECTION_KEY, JSON.stringify(items));
+  document.getElementById('count-mycollection').textContent = items.length;
+}
+
+function renderCollection() {
+  const container = document.getElementById('content');
+  const form = document.getElementById('collection-form');
+  form.style.display = '';
+  
+  let items = getCollection();
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    items = items.filter(i => [i.title, i.url, i.notes, i.tags, i.type].join(' ').toLowerCase().includes(q));
+  }
+
+  if (items.length === 0) {
+    container.innerHTML = '<div class="empty-state">No items yet. Use the form above to add links, authors, or notes.</div>';
+    return;
+  }
+
+  // Sort newest first
+  items.sort((a, b) => (b.addedAt || 0) - (a.addedAt || 0));
+
+  container.innerHTML = items.map((item, idx) => {
+    const typeIcon = item.type === 'author' ? '👤' : item.type === 'note' ? '📝' : '📎';
+    const typeLabel = item.type === 'author' ? 'Author' : item.type === 'note' ? 'Note' : 'Link';
+    const titleHtml = item.url
+      ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>`
+      : escapeHtml(item.title);
+    const tags = item.tags ? item.tags.split(',').map(t => t.trim()).filter(Boolean).map(t =>
+      `<span class="tag">${escapeHtml(t)}</span>`
+    ).join('') : '';
+    const date = item.addedAt ? new Date(item.addedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '';
+
+    return `
+      <div class="card">
+        <div class="card-header">
+          <div class="card-source-indicator" style="background:#e74c3c"></div>
+          <div style="flex:1">
+            <div class="card-title">${titleHtml}</div>
+            ${item.notes ? `<div class="card-summary">${escapeHtml(item.notes)}</div>` : ''}
+            <div class="card-meta">
+              <span class="tag" style="border-left:2px solid #e74c3c;padding-left:0.5rem">${typeIcon} ${typeLabel}</span>
+              <span class="tag-date">${date}</span>
+              ${tags}
+              <button onclick="deleteCollectionItem(${idx})" style="background:none;border:none;cursor:pointer;font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);margin-left:auto;">✕ remove</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function deleteCollectionItem(idx) {
+  const items = getCollection();
+  items.splice(idx, 1);
+  saveCollection(items);
+  renderCollection();
+}
+
+// Form submit
+document.getElementById('col-submit').addEventListener('click', () => {
+  const title = document.getElementById('col-title').value.trim();
+  if (!title) { document.getElementById('col-title').focus(); return; }
+
+  const items = getCollection();
+  items.push({
+    type: document.getElementById('col-type').value,
+    title,
+    url: document.getElementById('col-url').value.trim(),
+    notes: document.getElementById('col-notes').value.trim(),
+    tags: document.getElementById('col-tags').value.trim(),
+    addedAt: Date.now(),
+  });
+  saveCollection(items);
+
+  // Clear form
+  document.getElementById('col-title').value = '';
+  document.getElementById('col-url').value = '';
+  document.getElementById('col-notes').value = '';
+  document.getElementById('col-tags').value = '';
+
+  renderCollection();
+});
+
+// Patch render to handle mycollection
+const _originalRender = render;
+render = function() {
+  const form = document.getElementById('collection-form');
+  if (currentCategory === 'mycollection') {
+    form.style.display = '';
+    renderCollection();
+    return;
+  }
+  form.style.display = 'none';
+  _originalRender();
+};
+
+// Init collection count
+document.getElementById('count-mycollection').textContent = getCollection().length;
 
 // ─── Init ───
 loadData();
