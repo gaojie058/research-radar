@@ -314,28 +314,30 @@ agent, human-AI, agentic, collaboration, qualitative
 
 ### 会议/Workshop
 
-| 名称 | 链接 | 领域 | Deadline | 说明 |
-|------|------|------|----------|------|
-| CHI 2026 | https://chi2026.acm.org | HCI | 2025-09-12 | ACM顶会, Human-Computer Interaction核心会议 |
-| CSCW 2026 | https://cscw.acm.org | HCI | 2026-01-15 | Computer-Supported Cooperative Work, 协作与社会计算 |
-| UIST 2026 | https://uist.acm.org | HCI | 2026-04-02 | User Interface Software and Technology |
-| IUI 2026 | https://iui.acm.org | HCI | 2025-10-10 | Intelligent User Interfaces |
-| DIS 2026 | https://dis.acm.org | HCI | 2026-02-07 | Designing Interactive Systems |
-| ASSETS 2026 | https://assets.acm.org | HCI | 2026-04-15 | Accessible Computing, AI accessibility |
-| NeurIPS 2026 | https://neurips.cc | AI-ML | 2026-05-16 | ML/AI最大顶会, agent/alignment/human-AI |
-| ICML 2026 | https://icml.cc | AI-ML | 2026-01-31 | 机器学习顶会 |
-| ICLR 2026 | https://iclr.cc | AI-ML | 2025-10-01 | 表示学习顶会, LLM/foundation model前沿 |
-| AAAI 2026 | https://aaai.org | AI-ML | 2025-08-15 | 综合AI顶会, human-AI collaboration track |
-| ACL 2026 | https://www.aclweb.org | NLP | 2026-02-15 | NLP顶会, human-LLM interaction相关 |
-| EMNLP 2026 | https://www.aclweb.org | NLP | 2026-06-01 | NLP顶会, empirical methods |
-| ICSE 2026 | https://conf.researchr.org/home/icse-2026 | SE | 2025-08-01 | 软件工程顶会, AI4SE/SE4AI方向 |
-| FAccT 2026 | https://facctconference.org | Ethics | 2026-01-29 | Fairness, Accountability, Transparency in AI |
-| AIES 2026 | https://www.aies-conference.com | Ethics | 2026-02-18 | AI, Ethics, and Society |
-| HHAI 2026 | https://hhai-conference.org | HCI | 2026-03-01 | Hybrid Human-AI Intelligence |
-| CHI GenAICHI Workshop | https://genai-chi.github.io | Workshop | 2026-02-20 | Generative AI × HCI |
-| CHI TREW Workshop | https://trew-workshop.github.io | Workshop | 2026-02-20 | Trust & Reliance in Human-AI Workflows |
-| ACL/EMNLP HCI+NLP Workshop | https://aclanthology.org | Workshop | TBD | HCI×NLP交叉 |
-| NeurIPS/ICML Agent Workshops | https://neurips.cc | Workshop | TBD | 系统/ML视角的agent研究 |
+| 名称 | 链接 | 领域 | Deadline | 会议日期 | 说明 |
+|------|------|------|----------|----------|------|
+| TEI 2026 | https://tei.acm.org/2026/ | HCI | 2025-09-19 | 2026-03-08 | Tangible, Embedded, Embodied Interaction. Chicago, USA |
+| IUI 2026 | https://iui.acm.org | HCI | 2025-10-10 | 2026-03-23 | Intelligent User Interfaces. Paphos, Cyprus |
+| CHI 2026 | https://chi2026.acm.org | HCI | 2025-09-12 | 2026-04-26 | ACM顶会, Human-Computer Interaction核心会议. Yokohama, Japan |
+| ICLR 2026 | https://iclr.cc | AI-ML | 2025-10-01 | 2026-04-24 | 表示学习顶会, LLM/foundation model前沿. Singapore |
+| ICSE 2026 | https://conf.researchr.org/home/icse-2026 | SE | 2025-08-01 | 2026-04-27 | 软件工程顶会, AI4SE/SE4AI方向. Milan, Italy |
+| FAccT 2026 | https://facctconference.org | Ethics | 2026-01-29 | 2026-06-03 | Fairness, Accountability, Transparency in AI. Athens, Greece |
+| HHAI 2026 | https://hhai-conference.org | HCI | 2026-03-01 | 2026-06-15 | Hybrid Human-AI Intelligence. Malmö, Sweden |
+| DIS 2026 | https://dis.acm.org | HCI | 2026-02-07 | 2026-06-28 | Designing Interactive Systems |
+| CSCW 2026 | https://cscw.acm.org | HCI | 2026-01-15 | 2026-07-11 | Computer-Supported Cooperative Work. Bergen, Norway |
+| ICML 2026 | https://icml.cc | AI-ML | 2026-01-31 | 2026-07-18 | 机器学习顶会. San Francisco, USA |
+| HCI International 2026 | https://2026.hci.international/ | HCI | 2026-02-28 | 2026-07-26 | Montreal, Canada. 28th International Conference on HCI |
+| ACL 2026 | https://www.aclweb.org | NLP | 2026-02-15 | 2026-08-01 | NLP顶会, human-LLM interaction相关 |
+| AIES 2026 | https://www.aies-conference.com | Ethics | 2026-02-18 | 2026-08-04 | AI, Ethics, and Society |
+| ASSETS 2026 | https://assets.acm.org | HCI | 2026-04-15 | 2026-10-25 | Accessible Computing, AI accessibility |
+| UIST 2026 | https://uist.acm.org | HCI | 2026-04-02 | 2026-10-26 | User Interface Software and Technology. Lisbon, Portugal |
+| NeurIPS 2026 | https://neurips.cc | AI-ML | 2026-05-16 | 2026-12-06 | ML/AI最大顶会, agent/alignment/human-AI |
+| EMNLP 2026 | https://www.aclweb.org | NLP | 2026-06-01 | 2026-12-10 | NLP顶会, empirical methods |
+| AAAI 2026 | https://aaai.org | AI-ML | 2025-08-15 | 2026-02-20 | 综合AI顶会, human-AI collaboration track. Philadelphia, USA |
+| CHI GenAICHI Workshop | https://genai-chi.github.io | Workshop | 2026-02-20 | 2026-04-26 | Generative AI × HCI (co-located with CHI) |
+| CHI TREW Workshop | https://trew-workshop.github.io | Workshop | 2026-02-20 | 2026-04-26 | Trust & Reliance in Human-AI Workflows (co-located with CHI) |
+| ACL/EMNLP HCI+NLP Workshop | https://aclanthology.org | Workshop | TBD | TBD | HCI×NLP交叉 |
+| NeurIPS/ICML Agent Workshops | https://neurips.cc | Workshop | TBD | TBD | 系统/ML视角的agent研究 |
 
 ### Career/Grant Opportunities
 

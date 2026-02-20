@@ -2514,136 +2514,171 @@
   ],
   "conferences": [
     {
-      "名称": "CHI 2026",
-      "链接": "https://chi2026.acm.org",
+      "名称": "TEI 2026",
+      "链接": "https://tei.acm.org/2026/",
       "领域": "HCI",
-      "Deadline": "2025-09-12",
-      "说明": "ACM顶会, Human-Computer Interaction核心会议"
-    },
-    {
-      "名称": "CSCW 2026",
-      "链接": "https://cscw.acm.org",
-      "领域": "HCI",
-      "Deadline": "2026-01-15",
-      "说明": "Computer-Supported Cooperative Work, 协作与社会计算"
-    },
-    {
-      "名称": "UIST 2026",
-      "链接": "https://uist.acm.org",
-      "领域": "HCI",
-      "Deadline": "2026-04-02",
-      "说明": "User Interface Software and Technology"
+      "Deadline": "2025-09-19",
+      "会议日期": "2026-03-08",
+      "说明": "Tangible, Embedded, Embodied Interaction. Chicago, USA"
     },
     {
       "名称": "IUI 2026",
       "链接": "https://iui.acm.org",
       "领域": "HCI",
       "Deadline": "2025-10-10",
-      "说明": "Intelligent User Interfaces"
+      "会议日期": "2026-03-23",
+      "说明": "Intelligent User Interfaces. Paphos, Cyprus"
     },
     {
-      "名称": "DIS 2026",
-      "链接": "https://dis.acm.org",
+      "名称": "CHI 2026",
+      "链接": "https://chi2026.acm.org",
       "领域": "HCI",
-      "Deadline": "2026-02-07",
-      "说明": "Designing Interactive Systems"
-    },
-    {
-      "名称": "ASSETS 2026",
-      "链接": "https://assets.acm.org",
-      "领域": "HCI",
-      "Deadline": "2026-04-15",
-      "说明": "Accessible Computing, AI accessibility"
-    },
-    {
-      "名称": "NeurIPS 2026",
-      "链接": "https://neurips.cc",
-      "领域": "AI-ML",
-      "Deadline": "2026-05-16",
-      "说明": "ML/AI最大顶会, agent/alignment/human-AI"
-    },
-    {
-      "名称": "ICML 2026",
-      "链接": "https://icml.cc",
-      "领域": "AI-ML",
-      "Deadline": "2026-01-31",
-      "说明": "机器学习顶会"
+      "Deadline": "2025-09-12",
+      "会议日期": "2026-04-26",
+      "说明": "ACM顶会, Human-Computer Interaction核心会议. Yokohama, Japan"
     },
     {
       "名称": "ICLR 2026",
       "链接": "https://iclr.cc",
       "领域": "AI-ML",
       "Deadline": "2025-10-01",
-      "说明": "表示学习顶会, LLM/foundation model前沿"
-    },
-    {
-      "名称": "AAAI 2026",
-      "链接": "https://aaai.org",
-      "领域": "AI-ML",
-      "Deadline": "2025-08-15",
-      "说明": "综合AI顶会, human-AI collaboration track"
-    },
-    {
-      "名称": "ACL 2026",
-      "链接": "https://www.aclweb.org",
-      "领域": "NLP",
-      "Deadline": "2026-02-15",
-      "说明": "NLP顶会, human-LLM interaction相关"
-    },
-    {
-      "名称": "EMNLP 2026",
-      "链接": "https://www.aclweb.org",
-      "领域": "NLP",
-      "Deadline": "2026-06-01",
-      "说明": "NLP顶会, empirical methods"
+      "会议日期": "2026-04-24",
+      "说明": "表示学习顶会, LLM/foundation model前沿. Singapore"
     },
     {
       "名称": "ICSE 2026",
       "链接": "https://conf.researchr.org/home/icse-2026",
       "领域": "SE",
       "Deadline": "2025-08-01",
-      "说明": "软件工程顶会, AI4SE/SE4AI方向"
+      "会议日期": "2026-04-27",
+      "说明": "软件工程顶会, AI4SE/SE4AI方向. Milan, Italy"
     },
     {
       "名称": "FAccT 2026",
       "链接": "https://facctconference.org",
       "领域": "Ethics",
       "Deadline": "2026-01-29",
-      "说明": "Fairness, Accountability, Transparency in AI"
-    },
-    {
-      "名称": "AIES 2026",
-      "链接": "https://www.aies-conference.com",
-      "领域": "Ethics",
-      "Deadline": "2026-02-18",
-      "说明": "AI, Ethics, and Society"
+      "会议日期": "2026-06-03",
+      "说明": "Fairness, Accountability, Transparency in AI. Athens, Greece"
     },
     {
       "名称": "HHAI 2026",
       "链接": "https://hhai-conference.org",
       "领域": "HCI",
       "Deadline": "2026-03-01",
-      "说明": "Hybrid Human-AI Intelligence"
+      "会议日期": "2026-06-15",
+      "说明": "Hybrid Human-AI Intelligence. Malmö, Sweden"
+    },
+    {
+      "名称": "DIS 2026",
+      "链接": "https://dis.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-02-07",
+      "会议日期": "2026-06-28",
+      "说明": "Designing Interactive Systems"
+    },
+    {
+      "名称": "CSCW 2026",
+      "链接": "https://cscw.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-01-15",
+      "会议日期": "2026-07-11",
+      "说明": "Computer-Supported Cooperative Work. Bergen, Norway"
+    },
+    {
+      "名称": "ICML 2026",
+      "链接": "https://icml.cc",
+      "领域": "AI-ML",
+      "Deadline": "2026-01-31",
+      "会议日期": "2026-07-18",
+      "说明": "机器学习顶会. San Francisco, USA"
+    },
+    {
+      "名称": "HCI International 2026",
+      "链接": "https://2026.hci.international/",
+      "领域": "HCI",
+      "Deadline": "2026-02-28",
+      "会议日期": "2026-07-26",
+      "说明": "Montreal, Canada. 28th International Conference on HCI"
+    },
+    {
+      "名称": "ACL 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "Deadline": "2026-02-15",
+      "会议日期": "2026-08-01",
+      "说明": "NLP顶会, human-LLM interaction相关"
+    },
+    {
+      "名称": "AIES 2026",
+      "链接": "https://www.aies-conference.com",
+      "领域": "Ethics",
+      "Deadline": "2026-02-18",
+      "会议日期": "2026-08-04",
+      "说明": "AI, Ethics, and Society"
+    },
+    {
+      "名称": "ASSETS 2026",
+      "链接": "https://assets.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-04-15",
+      "会议日期": "2026-10-25",
+      "说明": "Accessible Computing, AI accessibility"
+    },
+    {
+      "名称": "UIST 2026",
+      "链接": "https://uist.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-04-02",
+      "会议日期": "2026-10-26",
+      "说明": "User Interface Software and Technology. Lisbon, Portugal"
+    },
+    {
+      "名称": "NeurIPS 2026",
+      "链接": "https://neurips.cc",
+      "领域": "AI-ML",
+      "Deadline": "2026-05-16",
+      "会议日期": "2026-12-06",
+      "说明": "ML/AI最大顶会, agent/alignment/human-AI"
+    },
+    {
+      "名称": "EMNLP 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "Deadline": "2026-06-01",
+      "会议日期": "2026-12-10",
+      "说明": "NLP顶会, empirical methods"
+    },
+    {
+      "名称": "AAAI 2026",
+      "链接": "https://aaai.org",
+      "领域": "AI-ML",
+      "Deadline": "2025-08-15",
+      "会议日期": "2026-02-20",
+      "说明": "综合AI顶会, human-AI collaboration track. Philadelphia, USA"
     },
     {
       "名称": "CHI GenAICHI Workshop",
       "链接": "https://genai-chi.github.io",
       "领域": "Workshop",
       "Deadline": "2026-02-20",
-      "说明": "Generative AI × HCI"
+      "会议日期": "2026-04-26",
+      "说明": "Generative AI × HCI (co-located with CHI)"
     },
     {
       "名称": "CHI TREW Workshop",
       "链接": "https://trew-workshop.github.io",
       "领域": "Workshop",
       "Deadline": "2026-02-20",
-      "说明": "Trust & Reliance in Human-AI Workflows"
+      "会议日期": "2026-04-26",
+      "说明": "Trust & Reliance in Human-AI Workflows (co-located with CHI)"
     },
     {
       "名称": "ACL/EMNLP HCI+NLP Workshop",
       "链接": "https://aclanthology.org",
       "领域": "Workshop",
       "Deadline": "TBD",
+      "会议日期": "TBD",
       "说明": "HCI×NLP交叉"
     },
     {
@@ -2651,6 +2686,7 @@
       "链接": "https://neurips.cc",
       "领域": "Workshop",
       "Deadline": "TBD",
+      "会议日期": "TBD",
       "说明": "系统/ML视角的agent研究"
     }
   ],

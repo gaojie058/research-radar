@@ -526,6 +526,7 @@
     <span class="keyword-pill" data-deadline="upcoming">⏰ Upcoming</span>
     <span class="keyword-pill" data-deadline="passed">✅ Passed</span>
     <span class="keyword-pill" data-deadline="tbd">❓ TBD</span>
+    <span class="keyword-pill" data-deadline="happening">🔴 Happening Soon</span>
   </div>
 </div>
 <div class="keyword-section" id="source-section" style="display:none">
@@ -625,7 +626,7 @@ const categoryMeta = {
   newsletters: { static: true, color: 'var(--accent-newsletters)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u4f5c\u8005' },
   researchers: { static: true, color: 'var(--accent-researchers)', nameKey: '\u59d3\u540d', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u5e73\u53f0' },
   podcasts:    { static: true, color: 'var(--accent-podcasts)',    nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
-  conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u9886\u57df', deadlineKey: 'Deadline' },
+  conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u9886\u57df', deadlineKey: 'Deadline', confDateKey: '\u4f1a\u8bae\u65e5\u671f' },
   opportunities: { static: true, color: 'var(--accent-opportunities)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u7c7b\u578b' },
 };
 
@@ -751,6 +752,13 @@ function render() {
       if (currentDeadline !== 'all') {
         const now = new Date();
         items = items.filter(i => {
+          if (currentDeadline === 'happening') {
+            const cd = i['\u4f1a\u8bae\u65e5\u671f'] || '';
+            if (!cd || cd === 'TBD') return false;
+            const cdDate = new Date(cd);
+            const diffDays = Math.ceil((cdDate - now) / 86400000);
+            return diffDays >= -3 && diffDays <= 60; // happening within 60 days
+          }
           const dl = i['Deadline'] || '';
           if (currentDeadline === 'tbd') return !dl || dl === 'TBD';
           const dlDate = new Date(dl);
@@ -899,6 +907,22 @@ function renderLinkCard(item, meta) {
   const desc = item[meta.descKey] || '';
   const extra = meta.extraKey ? item[meta.extraKey] || '' : '';
 
+  // Conference date badge
+  let confDateBadge = '';
+  if (meta.confDateKey && item[meta.confDateKey] && item[meta.confDateKey] !== 'TBD') {
+    const cd = new Date(item[meta.confDateKey]);
+    const now = new Date();
+    const diffDays = Math.ceil((cd - now) / 86400000);
+    const dateStr = item[meta.confDateKey];
+    if (diffDays >= -3 && diffDays <= 0) {
+      confDateBadge = `<span class="tag" style="color:#e74c3c;font-weight:600">🔴 NOW! ${dateStr}</span>`;
+    } else if (diffDays > 0 && diffDays <= 30) {
+      confDateBadge = `<span class="tag" style="color:#e67e22;font-weight:600">🟠 ${dateStr} (in ${diffDays}d)</span>`;
+    } else if (diffDays > 0) {
+      confDateBadge = `<span class="tag" style="color:#2980b9">📆 ${dateStr}</span>`;
+    }
+  }
+
   // Deadline badge for conferences
   let deadlineBadge = '';
   if (meta.deadlineKey && item[meta.deadlineKey]) {
@@ -931,6 +955,7 @@ function renderLinkCard(item, meta) {
           <div class="card-title">${titleHtml}</div>
           <div class="card-meta" style="margin-top:0.3rem">
             ${extra ? `<span class="tag">${escapeHtml(extra)}</span>` : ''}
+            ${confDateBadge}
             ${deadlineBadge}
           </div>
           ${desc ? `<div class="card-summary">${escapeHtml(desc)}</div>` : ''}
