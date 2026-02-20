@@ -511,6 +511,23 @@
     <span class="keyword-pill" data-region="📋">📋 Job Board</span>
   </div>
 </div>
+<div class="keyword-section" id="conf-section" style="display:none">
+  <div class="keyword-pills" id="conf-field-pills">
+    <span class="keyword-pill" data-field="all">All Fields</span>
+    <span class="keyword-pill" data-field="HCI">🖥️ HCI</span>
+    <span class="keyword-pill" data-field="AI-ML">🤖 AI/ML</span>
+    <span class="keyword-pill" data-field="NLP">💬 NLP</span>
+    <span class="keyword-pill" data-field="SE">⚙️ SE</span>
+    <span class="keyword-pill" data-field="Ethics">⚖️ Ethics</span>
+    <span class="keyword-pill" data-field="Workshop">🔬 Workshop</span>
+  </div>
+  <div class="keyword-pills" id="conf-deadline-pills" style="margin-top:0.4rem">
+    <span class="keyword-pill" data-deadline="all">All Deadlines</span>
+    <span class="keyword-pill" data-deadline="upcoming">⏰ Upcoming</span>
+    <span class="keyword-pill" data-deadline="passed">✅ Passed</span>
+    <span class="keyword-pill" data-deadline="tbd">❓ TBD</span>
+  </div>
+</div>
 <div class="keyword-section" id="source-section" style="display:none">
   <div class="keyword-pills" id="source-pills">
     <span class="keyword-pill" data-source="all">All</span>
@@ -583,6 +600,8 @@ let currentCategory = 'all';
 let currentKeyword = '';
 let currentRegion = 'all';
 let currentSource = 'all';
+let currentField = 'all';
+let currentDeadline = 'all';
 let searchQuery = '';
 
 const sourceColors = {
@@ -606,7 +625,7 @@ const categoryMeta = {
   newsletters: { static: true, color: 'var(--accent-newsletters)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u4f5c\u8005' },
   researchers: { static: true, color: 'var(--accent-researchers)', nameKey: '\u59d3\u540d', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u5e73\u53f0' },
   podcasts:    { static: true, color: 'var(--accent-podcasts)',    nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
-  conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u9891\u7387' },
+  conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u9886\u57df', deadlineKey: 'Deadline' },
   opportunities: { static: true, color: 'var(--accent-opportunities)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u7c7b\u578b' },
 };
 
@@ -711,8 +730,10 @@ function render() {
   // Show appropriate filter bars
   const isStatic = meta && meta.static;
   const hasUserItems = getCollection().some(i => i.category === currentCategory);
+  const confSection = document.getElementById('conf-section');
   kwSection.style.display = (!isStatic && currentCategory !== 'mycollection') ? '' : 'none';
   regionSection.style.display = currentCategory === 'opportunities' ? '' : 'none';
+  confSection.style.display = currentCategory === 'conferences' ? '' : 'none';
   sourceSection.style.display = (isStatic && hasUserItems) ? '' : 'none';
 
   // Static link categories
@@ -721,6 +742,22 @@ function render() {
     // Region filter for opportunities
     if (currentCategory === 'opportunities' && currentRegion !== 'all') {
       items = items.filter(i => (i['\u7c7b\u578b'] || '').includes(currentRegion));
+    }
+    // Field + deadline filter for conferences
+    if (currentCategory === 'conferences') {
+      if (currentField !== 'all') {
+        items = items.filter(i => (i['\u9886\u57df'] || '') === currentField);
+      }
+      if (currentDeadline !== 'all') {
+        const now = new Date();
+        items = items.filter(i => {
+          const dl = i['Deadline'] || '';
+          if (currentDeadline === 'tbd') return !dl || dl === 'TBD';
+          const dlDate = new Date(dl);
+          if (isNaN(dlDate)) return currentDeadline === 'tbd';
+          return currentDeadline === 'upcoming' ? dlDate >= now : dlDate < now;
+        });
+      }
     }
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
@@ -862,6 +899,26 @@ function renderLinkCard(item, meta) {
   const desc = item[meta.descKey] || '';
   const extra = meta.extraKey ? item[meta.extraKey] || '' : '';
 
+  // Deadline badge for conferences
+  let deadlineBadge = '';
+  if (meta.deadlineKey && item[meta.deadlineKey]) {
+    const dl = item[meta.deadlineKey];
+    if (dl === 'TBD') {
+      deadlineBadge = '<span class="tag" style="color:#999">❓ TBD</span>';
+    } else {
+      const dlDate = new Date(dl);
+      const now = new Date();
+      const diffDays = Math.ceil((dlDate - now) / 86400000);
+      if (diffDays < 0) {
+        deadlineBadge = `<span class="tag" style="color:#999;text-decoration:line-through">📅 ${dl}</span>`;
+      } else if (diffDays <= 30) {
+        deadlineBadge = `<span class="tag" style="color:#e74c3c;font-weight:600">⏰ ${dl} (${diffDays}d left!)</span>`;
+      } else {
+        deadlineBadge = `<span class="tag" style="color:#27ae60">📅 ${dl} (${diffDays}d)</span>`;
+      }
+    }
+  }
+
   const titleHtml = url
     ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(name)}</a>`
     : escapeHtml(name);
@@ -872,7 +929,10 @@ function renderLinkCard(item, meta) {
         <div class="card-source-indicator" style="background:${color}"></div>
         <div style="flex:1">
           <div class="card-title">${titleHtml}</div>
-          ${extra ? `<div class="card-authors">${escapeHtml(extra)}</div>` : ''}
+          <div class="card-meta" style="margin-top:0.3rem">
+            ${extra ? `<span class="tag">${escapeHtml(extra)}</span>` : ''}
+            ${deadlineBadge}
+          </div>
           ${desc ? `<div class="card-summary">${escapeHtml(desc)}</div>` : ''}
         </div>
       </div>
@@ -895,9 +955,13 @@ document.getElementById('tabs').addEventListener('click', e => {
   currentKeyword = '';
   currentRegion = 'all';
   currentSource = 'all';
+  currentField = 'all';
+  currentDeadline = 'all';
   document.querySelectorAll('.keyword-pill').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#region-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#source-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#conf-field-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#conf-deadline-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   render();
 });
 
@@ -927,6 +991,24 @@ document.getElementById('region-pills').addEventListener('click', e => {
   currentRegion = region;
   document.querySelectorAll('#region-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   if (region !== 'all') pill.classList.add('active');
+  render();
+});
+
+// ─── Conference Filters (field + deadline) ───
+document.getElementById('conf-field-pills').addEventListener('click', e => {
+  const pill = e.target.closest('.keyword-pill');
+  if (!pill) return;
+  currentField = pill.dataset.field;
+  document.querySelectorAll('#conf-field-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  if (currentField !== 'all') pill.classList.add('active');
+  render();
+});
+document.getElementById('conf-deadline-pills').addEventListener('click', e => {
+  const pill = e.target.closest('.keyword-pill');
+  if (!pill) return;
+  currentDeadline = pill.dataset.deadline;
+  document.querySelectorAll('#conf-deadline-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  if (currentDeadline !== 'all') pill.classList.add('active');
   render();
 });
 

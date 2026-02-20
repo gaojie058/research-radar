@@ -2486,124 +2486,144 @@
   ],
   "conferences": [
     {
-      "名称": "CHI GenAICHI Workshop",
-      "链接": "https://genai-chi.github.io",
-      "频率": "年度",
-      "说明": "Generative AI × HCI"
+      "名称": "CHI 2026",
+      "链接": "https://chi2026.acm.org",
+      "领域": "HCI",
+      "Deadline": "2025-09-12",
+      "说明": "ACM顶会, Human-Computer Interaction核心会议"
     },
     {
-      "名称": "HHAI Conference",
+      "名称": "CSCW 2026",
+      "链接": "https://cscw.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-01-15",
+      "说明": "Computer-Supported Cooperative Work, 协作与社会计算"
+    },
+    {
+      "名称": "UIST 2026",
+      "链接": "https://uist.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-04-02",
+      "说明": "User Interface Software and Technology"
+    },
+    {
+      "名称": "IUI 2026",
+      "链接": "https://iui.acm.org",
+      "领域": "HCI",
+      "Deadline": "2025-10-10",
+      "说明": "Intelligent User Interfaces"
+    },
+    {
+      "名称": "DIS 2026",
+      "链接": "https://dis.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-02-07",
+      "说明": "Designing Interactive Systems"
+    },
+    {
+      "名称": "ASSETS 2026",
+      "链接": "https://assets.acm.org",
+      "领域": "HCI",
+      "Deadline": "2026-04-15",
+      "说明": "Accessible Computing, AI accessibility"
+    },
+    {
+      "名称": "NeurIPS 2026",
+      "链接": "https://neurips.cc",
+      "领域": "AI-ML",
+      "Deadline": "2026-05-16",
+      "说明": "ML/AI最大顶会, agent/alignment/human-AI"
+    },
+    {
+      "名称": "ICML 2026",
+      "链接": "https://icml.cc",
+      "领域": "AI-ML",
+      "Deadline": "2026-01-31",
+      "说明": "机器学习顶会"
+    },
+    {
+      "名称": "ICLR 2026",
+      "链接": "https://iclr.cc",
+      "领域": "AI-ML",
+      "Deadline": "2025-10-01",
+      "说明": "表示学习顶会, LLM/foundation model前沿"
+    },
+    {
+      "名称": "AAAI 2026",
+      "链接": "https://aaai.org",
+      "领域": "AI-ML",
+      "Deadline": "2025-08-15",
+      "说明": "综合AI顶会, human-AI collaboration track"
+    },
+    {
+      "名称": "ACL 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "Deadline": "2026-02-15",
+      "说明": "NLP顶会, human-LLM interaction相关"
+    },
+    {
+      "名称": "EMNLP 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "Deadline": "2026-06-01",
+      "说明": "NLP顶会, empirical methods"
+    },
+    {
+      "名称": "ICSE 2026",
+      "链接": "https://conf.researchr.org/home/icse-2026",
+      "领域": "SE",
+      "Deadline": "2025-08-01",
+      "说明": "软件工程顶会, AI4SE/SE4AI方向"
+    },
+    {
+      "名称": "FAccT 2026",
+      "链接": "https://facctconference.org",
+      "领域": "Ethics",
+      "Deadline": "2026-01-29",
+      "说明": "Fairness, Accountability, Transparency in AI"
+    },
+    {
+      "名称": "AIES 2026",
+      "链接": "https://www.aies-conference.com",
+      "领域": "Ethics",
+      "Deadline": "2026-02-18",
+      "说明": "AI, Ethics, and Society"
+    },
+    {
+      "名称": "HHAI 2026",
       "链接": "https://hhai-conference.org",
-      "频率": "年度",
+      "领域": "HCI",
+      "Deadline": "2026-03-01",
       "说明": "Hybrid Human-AI Intelligence"
+    },
+    {
+      "名称": "CHI GenAICHI Workshop",
+      "链接": "https://genai-chi.github.io",
+      "领域": "Workshop",
+      "Deadline": "2026-02-20",
+      "说明": "Generative AI × HCI"
     },
     {
       "名称": "CHI TREW Workshop",
       "链接": "https://trew-workshop.github.io",
-      "频率": "年度",
+      "领域": "Workshop",
+      "Deadline": "2026-02-20",
       "说明": "Trust & Reliance in Human-AI Workflows"
     },
     {
       "名称": "ACL/EMNLP HCI+NLP Workshop",
       "链接": "https://aclanthology.org",
-      "频率": "年度",
+      "领域": "Workshop",
+      "Deadline": "TBD",
       "说明": "HCI×NLP交叉"
-    },
-    {
-      "名称": "IUI Conference",
-      "链接": "https://iui.acm.org",
-      "频率": "年度",
-      "说明": "Intelligent User Interfaces"
     },
     {
       "名称": "NeurIPS/ICML Agent Workshops",
       "链接": "https://neurips.cc",
-      "频率": "年度",
+      "领域": "Workshop",
+      "Deadline": "TBD",
       "说明": "系统/ML视角的agent研究"
-    },
-    {
-      "名称": "CHI",
-      "链接": "https://chi2026.acm.org",
-      "频率": "年度",
-      "说明": "ACM顶会, Human-Computer Interaction核心会议"
-    },
-    {
-      "名称": "CSCW",
-      "链接": "https://cscw.acm.org",
-      "频率": "年度",
-      "说明": "Computer-Supported Cooperative Work, 协作与社会计算"
-    },
-    {
-      "名称": "UIST",
-      "链接": "https://uist.acm.org",
-      "频率": "年度",
-      "说明": "User Interface Software and Technology"
-    },
-    {
-      "名称": "ICSE",
-      "链接": "https://conf.researchr.org/home/icse-2026",
-      "频率": "年度",
-      "说明": "软件工程顶会, AI4SE/SE4AI方向"
-    },
-    {
-      "名称": "ICLR",
-      "链接": "https://iclr.cc",
-      "频率": "年度",
-      "说明": "表示学习顶会, LLM/foundation model前沿"
-    },
-    {
-      "名称": "NeurIPS",
-      "链接": "https://neurips.cc",
-      "频率": "年度",
-      "说明": "ML/AI最大顶会, agent/alignment/human-AI"
-    },
-    {
-      "名称": "ICML",
-      "链接": "https://icml.cc",
-      "频率": "年度",
-      "说明": "机器学习顶会"
-    },
-    {
-      "名称": "ACL",
-      "链接": "https://www.aclweb.org",
-      "频率": "年度",
-      "说明": "NLP顶会, human-LLM interaction相关"
-    },
-    {
-      "名称": "EMNLP",
-      "链接": "https://www.aclweb.org",
-      "频率": "年度",
-      "说明": "NLP顶会, empirical methods"
-    },
-    {
-      "名称": "AAAI",
-      "链接": "https://aaai.org",
-      "频率": "年度",
-      "说明": "综合AI顶会, human-AI collaboration track"
-    },
-    {
-      "名称": "FAccT",
-      "链接": "https://facctconference.org",
-      "频率": "年度",
-      "说明": "Fairness, Accountability, Transparency in AI"
-    },
-    {
-      "名称": "AIES",
-      "链接": "https://www.aies-conference.com",
-      "频率": "年度",
-      "说明": "AI, Ethics, and Society"
-    },
-    {
-      "名称": "DIS",
-      "链接": "https://dis.acm.org",
-      "频率": "年度",
-      "说明": "Designing Interactive Systems"
-    },
-    {
-      "名称": "ASSETS",
-      "链接": "https://assets.acm.org",
-      "频率": "年度",
-      "说明": "Accessible Computing, AI accessibility"
     }
   ],
   "opportunities": [
