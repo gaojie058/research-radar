@@ -442,34 +442,36 @@
 
 <!-- My Collection Input Form (hidden by default) -->
 <div id="collection-form" style="display:none; padding:1rem 2rem; border-bottom:1px solid var(--border); background:var(--surface);">
-  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-end;">
-    <div style="flex:1; min-width:200px;">
-      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Type</label>
-      <select id="col-type" style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem; background:var(--bg);">
-        <option value="link">📎 Link / Paper</option>
-        <option value="author">👤 Author to Follow</option>
-        <option value="note">📝 Note / Info</option>
-      </select>
+  <div style="display:flex; flex-direction:column; gap:0.6rem; max-width:640px;">
+    <div style="display:flex; gap:0.75rem;">
+      <div style="width:140px;">
+        <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Type</label>
+        <select id="col-type" style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem; background:var(--bg);">
+          <option value="link">📎 Link / Paper</option>
+          <option value="author">👤 Author</option>
+          <option value="note">📝 Note</option>
+        </select>
+      </div>
+      <div style="flex:1;">
+        <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Title / Name</label>
+        <input id="col-title" type="text" placeholder="Paper title, author name, or note..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+      </div>
     </div>
-    <div style="flex:3; min-width:300px;">
-      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Title / Name</label>
-      <input id="col-title" type="text" placeholder="Paper title, author name, or note title..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
-    </div>
-    <div style="flex:3; min-width:300px;">
+    <div>
       <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">URL (optional)</label>
       <input id="col-url" type="text" placeholder="https://..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
     </div>
-  </div>
-  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-end; margin-top:0.75rem;">
-    <div style="flex:3; min-width:300px;">
+    <div>
       <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Notes / Description</label>
       <textarea id="col-notes" placeholder="Why is this interesting? Key takeaways..." rows="2" style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem; resize:vertical;"></textarea>
     </div>
-    <div style="flex:1; min-width:150px;">
-      <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Tags (comma separated)</label>
-      <input id="col-tags" type="text" placeholder="HCI, LLM, agent..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+    <div style="display:flex; gap:0.75rem; align-items:flex-end;">
+      <div style="flex:1;">
+        <label style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.25rem;">Tags (comma separated)</label>
+        <input id="col-tags" type="text" placeholder="HCI, LLM, agent..." style="width:100%; padding:0.5rem; border:1px solid var(--border); border-radius:6px; font-family:var(--font-sans); font-size:0.85rem;">
+      </div>
+      <button id="col-submit" style="padding:0.5rem 1.5rem; background:#e74c3c; color:white; border:none; border-radius:6px; font-family:var(--font-mono); font-size:0.8rem; cursor:pointer; font-weight:600; white-space:nowrap; height:36px;">+ Add</button>
     </div>
-    <button id="col-submit" style="padding:0.5rem 1.5rem; background:#e74c3c; color:white; border:none; border-radius:6px; font-family:var(--font-mono); font-size:0.8rem; cursor:pointer; font-weight:600; white-space:nowrap;">+ Add</button>
   </div>
 </div>
 
