@@ -819,7 +819,7 @@ function render() {
   const confSection = document.getElementById('conf-section');
   // Grid layout for all categories
   container.classList.add('grid-mode');
-  kwSection.style.display = (!isStatic && currentCategory !== 'mycollection') ? '' : 'none';
+  kwSection.style.display = (currentCategory === 'papers') ? '' : 'none';
   regionSection.style.display = currentCategory === 'opportunities' ? '' : 'none';
   confSection.style.display = currentCategory === 'conferences' ? '' : 'none';
   sourceSection.style.display = (isStatic && hasUserItems) ? '' : 'none';
