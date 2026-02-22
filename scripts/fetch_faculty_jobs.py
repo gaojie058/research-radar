@@ -115,7 +115,7 @@ def fetch_github_cs_wiki():
             
             jobs.append({
                 "title": f"{name} — Faculty Position",
-                "url": link or f"https://github.com/academic-cs-jobs/cs-faculty-jobs-{year}",
+                "link": link or f"https://github.com/academic-cs-jobs/cs-faculty-jobs-{year}",
                 "source": "faculty_jobs",
                 "summary": summary[:300],
                 "region": region,
@@ -173,7 +173,7 @@ def fetch_csrankings_jobs():
         
         jobs.append({
             "title": f"{institution} — {summary[:80]}",
-            "url": link if link.startswith("http") else f"https://drafty.cs.brown.edu{link}" if link else "https://drafty.cs.brown.edu/csopenpositions/",
+            "link": link if link.startswith("http") else f"https://drafty.cs.brown.edu{link}" if link else "https://drafty.cs.brown.edu/csopenpositions/",
             "source": "faculty_jobs",
             "summary": summary[:300],
             "region": region,
@@ -190,7 +190,7 @@ def get_curated_job_boards():
     return [
         {
             "title": "🔍 CRA Career Center — CS Faculty Positions",
-            "url": "https://careercenter.cra.org/?s=&post_type=job_listing&search_category%5B%5D=faculty",
+            "link": "https://careercenter.cra.org/?s=&post_type=job_listing&search_category%5B%5D=faculty",
             "source": "faculty_jobs",
             "summary": "Computing Research Association job board. Largest source of CS academic positions in North America.",
             "region": "🇺🇸 US",
@@ -200,7 +200,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 HigherEdJobs — CS & IT Faculty",
-            "url": "https://www.higheredjobs.com/faculty/search.cfm?JobCat=93",
+            "link": "https://www.higheredjobs.com/faculty/search.cfm?JobCat=93",
             "source": "faculty_jobs",
             "summary": "Large US-focused academic job board. Filter by Computer Science / IT category.",
             "region": "🇺🇸 US",
@@ -210,7 +210,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 AcademicJobsOnline — Computer Science",
-            "url": "https://academicjobsonline.org/ajo/jobs?department=Computer+Science",
+            "link": "https://academicjobsonline.org/ajo/jobs?department=Computer+Science",
             "source": "faculty_jobs",
             "summary": "Global academic recruitment platform. Strong for R1 universities.",
             "region": "🌐 Global",
@@ -220,7 +220,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 Times Higher Education — CS Academic Jobs",
-            "url": "https://www.timeshighereducation.com/unijobs/en/listing/computer-science/",
+            "link": "https://www.timeshighereducation.com/unijobs/en/listing/computer-science/",
             "source": "faculty_jobs",
             "summary": "Global academic job listings, strong for UK/Europe/Asia/Australia.",
             "region": "🌐 Global",
@@ -230,7 +230,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 jobs.ac.uk — CS & IT",
-            "url": "https://www.jobs.ac.uk/search/?activeFacet=subjectFacet&subjectFacet%5B0%5D=Computing+%26+IT",
+            "link": "https://www.jobs.ac.uk/search/?activeFacet=subjectFacet&subjectFacet%5B0%5D=Computing+%26+IT",
             "source": "faculty_jobs",
             "summary": "UK & Ireland academic positions. Best source for British universities.",
             "region": "🇬🇧 UK",
@@ -240,7 +240,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 EuroScienceJobs — Computer Science",
-            "url": "https://www.eurosciencejobs.com/jobs/computer_science",
+            "link": "https://www.eurosciencejobs.com/jobs/computer_science",
             "source": "faculty_jobs",
             "summary": "European academic positions across all countries.",
             "region": "🇪🇺 Europe",
@@ -250,7 +250,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 CSRankings Open Positions",
-            "url": "https://drafty.cs.brown.edu/csopenpositions/",
+            "link": "https://drafty.cs.brown.edu/csopenpositions/",
             "source": "faculty_jobs",
             "summary": "Community-maintained list of CS open positions worldwide. Updated frequently by the community.",
             "region": "🌐 Global",
@@ -260,7 +260,7 @@ def get_curated_job_boards():
         },
         {
             "title": "🔍 GitHub CS Faculty Jobs Wiki 2026",
-            "url": "https://github.com/academic-cs-jobs",
+            "link": "https://github.com/academic-cs-jobs",
             "source": "faculty_jobs",
             "summary": "Community-maintained spreadsheet/wiki tracking CS faculty openings and their status.",
             "region": "🌐 Global",
