@@ -2907,6 +2907,66 @@
       "链接": "https://cra.org/ads/",
       "类型": "📋 Job Board",
       "说明": "CS academic positions"
+    },
+    {
+      "名称": "Anthropic — Societal Impacts Research Scientist",
+      "链接": "https://www.anthropic.com/careers",
+      "类型": "🏢 Industry AI",
+      "说明": "用Clio等工具分析真实用户与Claude的交互模式，评估模型行为，与fine-tuning/safeguards/policy团队跨职能协作。你的human-AI交互+qualitative analysis背景直接对口"
+    },
+    {
+      "名称": "Google DeepMind — Responsible AI Researcher",
+      "链接": "https://deepmind.google/about/careers/",
+      "类型": "🏢 Industry AI",
+      "说明": "研究AI系统的社会影响与安全评估。需要HCI+NLP交叉背景，mixed methods能力。与你的trust/transparency研究方向契合"
+    },
+    {
+      "名称": "OpenAI — Societal Impact / Policy Research",
+      "链接": "https://openai.com/careers/",
+      "类型": "🏢 Industry AI",
+      "说明": "评估AI模型的经济与社会影响（如Economic Index），需要定量+定性mixed methods。你的CollabCoder/MindCoder经验是独特优势"
+    },
+    {
+      "名称": "Dovetail — Head of Research / Research Lead",
+      "链接": "https://dovetail.com/careers/",
+      "类型": "🏢 AI Research Tools",
+      "说明": "AI驱动的qualitative research工具，本质就是MindCoder的商业化版本。你既有学术深度又有系统开发经验，非常契合"
+    },
+    {
+      "名称": "ATLAS.ti — AI Research Scientist",
+      "链接": "https://atlasti.com/careers",
+      "类型": "🏢 AI Research Tools",
+      "说明": "已集成AI coding功能的老牌质性分析工具。需要理解qualitative workflow+AI集成的人，你的MindCoder经验完美匹配"
+    },
+    {
+      "名称": "Quals.ai / Listen Labs — Research Product Lead",
+      "链接": "https://www.quals.ai/",
+      "类型": "🏢 AI Research Tools",
+      "说明": "新一代AI qualitative研究平台。Product Research Scientist角色，需要学术深度+实际系统开发经验"
+    },
+    {
+      "名称": "Google / Meta / Microsoft — UX Research Scientist (AI Tools)",
+      "链接": "https://careers.google.com/",
+      "类型": "🏢 Big Tech UX",
+      "说明": "大厂UX Research团队探索AI增强研究流程。你HCI+NLP交叉背景+qualitative workflow理解适合Staff UXR或Research Scientist"
+    },
+    {
+      "名称": "GitHub Copilot / Cursor / Sourcegraph — Human-AI Interaction Research",
+      "链接": "https://github.com/about/careers",
+      "类型": "🏢 Dev Tools",
+      "说明": "CodeMap的codebase understanding方向与developer tools核心需求高度重合。需要懂human-AI collaboration又懂code comprehension的人"
+    },
+    {
+      "名称": "Replit — AI UX Researcher",
+      "链接": "https://replit.com/site/careers",
+      "类型": "🏢 Dev Tools",
+      "说明": "AI-native编程环境，需要研究人如何与AI协作编程。你的CodeMap+human-AI interaction背景非常对口"
+    },
+    {
+      "名称": "Dropbox — Research Scientist, AI-Enhanced Workflows",
+      "链接": "https://www.dropbox.com/jobs",
+      "类型": "🏢 Big Tech UX",
+      "说明": "探索AI如何增强知识工作者的工作流程。HCI+AI交叉方向，与你的研究兴趣高度一致"
     }
   ]
 }
