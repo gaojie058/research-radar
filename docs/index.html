@@ -113,23 +113,65 @@
   /* ─── Layout: Sidebar + Main ─── */
   .main-layout {
     display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 0;
     overflow: hidden;
   }
 
-  /* ─── Sidebar Navigation ─── */
-  .tabs {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    border-right: 1px solid var(--border);
-    padding: 0.5rem 0;
-    width: 180px;
+  /* ─── Hamburger Tab Selector ─── */
+  .tab-hamburger-wrap {
+    position: relative;
     flex-shrink: 0;
-    overflow-y: auto;
-    background: var(--surface);
+    width: 100%;
+    z-index: 100;
   }
+
+  .tab-hamburger-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    color: var(--text);
+    background: var(--surface);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .tab-hamburger-btn:hover { background: var(--surface-hover); }
+
+  .hamburger-icon { font-size: 1.1rem; }
+  .hamburger-label { font-weight: 600; }
+  .hamburger-count { 
+    background: var(--tag-bg); 
+    padding: 0.1rem 0.5rem; 
+    border-radius: 10px; 
+    font-size: 0.7rem; 
+    color: var(--text-dim); 
+  }
+  .hamburger-arrow { margin-left: auto; color: var(--text-muted); font-size: 0.8rem; }
+
+  .tab-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 101;
+  }
+
+  .tab-dropdown.open { display: flex; flex-direction: column; }
 
   .tab {
     padding: 0.55rem 1rem;
@@ -425,8 +467,8 @@
   @media (max-width: 768px) {
     .header { padding: 1rem; flex-wrap: wrap; }
     .main-layout { flex-direction: column; }
-    .tabs { flex-direction: row; width: 100%; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--border); padding: 0; }
-    .tab { border-left: none; border-bottom: 2px solid transparent; padding: 0.5rem 0.8rem; font-size: 0.7rem; }
+    .tab-hamburger-wrap { width: 100%; }
+    .tab-dropdown { left: 0; right: 0; }
     .tab.active { border-left-color: transparent; border-bottom-color: var(--text); }
     .content { padding: 1rem; }
     .stats-bar { padding: 0.8rem 1rem; gap: 1.2rem; }
@@ -452,49 +494,58 @@
 </div>
 
 <div class="main-layout">
-<div class="tabs" id="tabs">
-  <button class="tab active" data-category="all">
-    全部 <span class="count" id="count-all">—</span>
+<div class="tab-hamburger-wrap" id="tabs">
+  <button class="tab-hamburger-btn" id="tab-hamburger-btn">
+    <span class="hamburger-icon">☰</span>
+    <span class="hamburger-label" id="hamburger-label">全部</span>
+    <span class="hamburger-count" id="hamburger-count"></span>
+    <span class="hamburger-arrow">▾</span>
   </button>
-  <button class="tab" data-category="papers">
-    <span class="source-dot" style="background:var(--accent-papers)"></span>
-    学术论文 <span class="count" id="count-papers">—</span>
-  </button>
-  <button class="tab" data-category="discussions">
-    <span class="source-dot" style="background:var(--accent-discussions)"></span>
-    社区讨论 <span class="count" id="count-discussions">—</span>
-  </button>
-  <button class="tab" data-category="blogs">
-    <span class="source-dot" style="background:var(--accent-blogs)"></span>
-    实验室博客 <span class="count" id="count-blogs">—</span>
-  </button>
-  <button class="tab" data-category="newsletters">
-    <span class="source-dot" style="background:var(--accent-newsletters)"></span>
-    Newsletter <span class="count" id="count-newsletters">—</span>
-  </button>
-  <button class="tab" data-category="researchers">
-    <span class="source-dot" style="background:var(--accent-researchers)"></span>
-    推荐关注 <span class="count" id="count-researchers">—</span>
-  </button>
-  <button class="tab" data-category="podcasts">
-    <span class="source-dot" style="background:var(--accent-podcasts)"></span>
-    播客 <span class="count" id="count-podcasts">—</span>
-  </button>
-  <button class="tab" data-category="conferences">
-    <span class="source-dot" style="background:var(--accent-conferences)"></span>
-    会议 <span class="count" id="count-conferences">—</span>
-  </button>
-  <button class="tab" data-category="faculty_jobs">
-    <span class="source-dot" style="background:#e91e63"></span>
-    🎓 Faculty Jobs <span class="count" id="count-faculty_jobs">—</span>
-  </button>
-  <button class="tab" data-category="opportunities">
-    <span class="source-dot" style="background:var(--accent-opportunities)"></span>
-    Career/Grants <span class="count" id="count-opportunities">—</span>
-  </button>
+  <div class="tab-dropdown" id="tab-dropdown">
+    <button class="tab active" data-category="all">
+      全部 <span class="count" id="count-all">—</span>
+    </button>
+    <button class="tab" data-category="papers">
+      <span class="source-dot" style="background:var(--accent-papers)"></span>
+      学术论文 <span class="count" id="count-papers">—</span>
+    </button>
+    <button class="tab" data-category="discussions">
+      <span class="source-dot" style="background:var(--accent-discussions)"></span>
+      社区讨论 <span class="count" id="count-discussions">—</span>
+    </button>
+    <button class="tab" data-category="blogs">
+      <span class="source-dot" style="background:var(--accent-blogs)"></span>
+      实验室博客 <span class="count" id="count-blogs">—</span>
+    </button>
+    <button class="tab" data-category="newsletters">
+      <span class="source-dot" style="background:var(--accent-newsletters)"></span>
+      Newsletter <span class="count" id="count-newsletters">—</span>
+    </button>
+    <button class="tab" data-category="researchers">
+      <span class="source-dot" style="background:var(--accent-researchers)"></span>
+      推荐关注 <span class="count" id="count-researchers">—</span>
+    </button>
+    <button class="tab" data-category="podcasts">
+      <span class="source-dot" style="background:var(--accent-podcasts)"></span>
+      播客 <span class="count" id="count-podcasts">—</span>
+    </button>
+    <button class="tab" data-category="conferences">
+      <span class="source-dot" style="background:var(--accent-conferences)"></span>
+      会议 <span class="count" id="count-conferences">—</span>
+    </button>
+    <button class="tab" data-category="faculty_jobs">
+      <span class="source-dot" style="background:#e91e63"></span>
+      🎓 Faculty Jobs <span class="count" id="count-faculty_jobs">—</span>
+    </button>
+    <button class="tab" data-category="opportunities">
+      <span class="source-dot" style="background:var(--accent-opportunities)"></span>
+      Career/Grants <span class="count" id="count-opportunities">—</span>
+    </button>
+  </div>
 </div>
 
 <div class="main-right">
+<!-- Hamburger tab is part of main-right now -->
 <div class="stats-bar" id="stats-bar">
   <div class="stat">
     <div class="stat-value" id="stat-total">—</div>
@@ -1005,6 +1056,35 @@ function escapeHtml(str) {
   return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// ─── Hamburger Tab Menu ───
+const hamburgerBtn = document.getElementById('tab-hamburger-btn');
+const tabDropdown = document.getElementById('tab-dropdown');
+const hamburgerLabel = document.getElementById('hamburger-label');
+const hamburgerCount = document.getElementById('hamburger-count');
+
+function updateHamburgerLabel() {
+  const activeTab = document.querySelector('.tab.active');
+  if (activeTab) {
+    // Get text without count
+    const clone = activeTab.cloneNode(true);
+    const countEl = clone.querySelector('.count');
+    const countText = countEl ? countEl.textContent : '';
+    if (countEl) countEl.remove();
+    hamburgerLabel.textContent = clone.textContent.trim();
+    hamburgerCount.textContent = countText;
+  }
+}
+
+hamburgerBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  tabDropdown.classList.toggle('open');
+});
+
+// Close dropdown on outside click
+document.addEventListener('click', () => {
+  tabDropdown.classList.remove('open');
+});
+
 // ─── Events ───
 document.getElementById('tabs').addEventListener('click', e => {
   const tab = e.target.closest('.tab');
@@ -1012,6 +1092,9 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
   currentCategory = tab.dataset.category;
+  // Close dropdown and update label
+  tabDropdown.classList.remove('open');
+  updateHamburgerLabel();
   // Clear filters when switching tabs
   currentKeyword = '';
   currentRegion = 'all';
@@ -1025,6 +1108,9 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('#conf-deadline-pills .keyword-pill').forEach(p => p.classList.remove('active'));
   render();
 });
+
+// Initialize hamburger label
+updateHamburgerLabel();
 
 document.getElementById('search').addEventListener('input', e => {
   searchQuery = e.target.value;
