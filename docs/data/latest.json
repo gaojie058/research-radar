@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-23T18:38:45.754648",
+    "fetched_at": "2026-02-23T19:25:22.066560",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1550,8 +1550,8 @@
       "title": "Claws are now a new layer on top of LLM agents",
       "link": "https://twitter.com/karpathy/status/2024987174077432126",
       "hn_link": "https://news.ycombinator.com/item?id=47096253",
-      "points": 404,
-      "comments": 913,
+      "points": 405,
+      "comments": 914,
       "published": "2026-02-21",
       "matched_keyword": "LLM agent",
       "source": "hackernews"
@@ -1583,8 +1583,8 @@
       "title": "Cord: Coordinating Trees of AI Agents",
       "link": "https://www.june.kim/cord",
       "hn_link": "https://news.ycombinator.com/item?id=47096466",
-      "points": 153,
-      "comments": 75,
+      "points": 154,
+      "comments": 78,
       "published": "2026-02-21",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -1605,7 +1605,7 @@
       "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
       "hn_link": "https://news.ycombinator.com/item?id=47051956",
-      "points": 119,
+      "points": 120,
       "comments": 81,
       "published": "2026-02-17",
       "matched_keyword": "AI agent",
@@ -1634,6 +1634,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47117169",
+      "title": "Aqua: A CLI message tool for AI agents",
+      "link": "https://github.com/quailyquaily/aqua",
+      "hn_link": "https://news.ycombinator.com/item?id=47117169",
+      "points": 65,
+      "comments": 32,
+      "published": "2026-02-23",
+      "matched_keyword": "AI agent",
+      "source": "hackernews"
+    },
+    {
       "id": "47117408",
       "title": "Agentic Software Engineering Book",
       "link": "https://agenticse-book.github.io/",
@@ -1642,17 +1653,6 @@
       "comments": 34,
       "published": "2026-02-23",
       "matched_keyword": "agentic",
-      "source": "hackernews"
-    },
-    {
-      "id": "47117169",
-      "title": "Aqua: A CLI message tool for AI agents",
-      "link": "https://github.com/quailyquaily/aqua",
-      "hn_link": "https://news.ycombinator.com/item?id=47117169",
-      "points": 62,
-      "comments": 32,
-      "published": "2026-02-23",
-      "matched_keyword": "AI agent",
       "source": "hackernews"
     },
     {
@@ -1942,6 +1942,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47126631",
+      "title": "Baudbot: Always-on AI assistant for dev teams",
+      "link": "https://github.com/modem-dev/baudbot",
+      "hn_link": "https://news.ycombinator.com/item?id=47126631",
+      "points": 2,
+      "comments": 0,
+      "published": "2026-02-23",
+      "matched_keyword": "AI assistant",
+      "source": "hackernews"
+    },
+    {
       "id": "47093782",
       "title": "AI coding assistant Cline compromised to create more OpenClaw chaos",
       "link": "https://www.theregister.com/2026/02/20/openclaw_snuck_into_cline_package/",
@@ -1949,17 +1960,6 @@
       "points": 2,
       "comments": 0,
       "published": "2026-02-20",
-      "matched_keyword": "AI assistant",
-      "source": "hackernews"
-    },
-    {
-      "id": "47062888",
-      "title": "We scaled our AI assistant to use virtually unlimited number of tools",
-      "link": "https://gaia-fork-k7yngvswe-gaias-projects-2dead09b.vercel.app/blog/how-tool-calling-works",
-      "hn_link": "https://news.ycombinator.com/item?id=47062888",
-      "points": 2,
-      "comments": 0,
-      "published": "2026-02-18",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
     },
@@ -2265,6 +2265,106 @@
       "链接": "https://x.com/_xiang_chen_",
       "平台": "X",
       "说明": "Interactive AI systems"
+    }
+  ],
+  "seminars": [
+    {
+      "名称": "Stanford HAI Seminar",
+      "链接": "https://hai.stanford.edu/events",
+      "机构": "Stanford",
+      "频率": "每周",
+      "说明": "Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播"
+    },
+    {
+      "名称": "Stanford CS547 HCI Seminar",
+      "链接": "https://hci.stanford.edu/courses/cs547/",
+      "机构": "Stanford CS",
+      "频率": "每周",
+      "说明": "HCI 方向专题 seminar，常有 human-AI interaction 相关 talk"
+    },
+    {
+      "名称": "CMU HCII Seminar Series",
+      "链接": "https://www.hcii.cmu.edu/news/seminars/upcoming",
+      "机构": "CMU HCII",
+      "频率": "每周五",
+      "说明": "HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等"
+    },
+    {
+      "名称": "UMich HCI Seminar",
+      "链接": "https://cse.engin.umich.edu/events/all-seminars/hci/",
+      "机构": "U Michigan",
+      "频率": "不定期",
+      "说明": "Q. Vera Liao 所在校，HCI + AI 方向"
+    },
+    {
+      "名称": "UMich AI Seminar",
+      "链接": "https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/",
+      "机构": "U Michigan",
+      "频率": "不定期",
+      "说明": "NLP + AI 方向，self-supervised learning、LLM"
+    },
+    {
+      "名称": "MIT AI for Society Seminar",
+      "链接": "https://ai4society.mit.edu/seminar/",
+      "机构": "MIT",
+      "频率": "不定期",
+      "说明": "AI 与社会交叉，法律、政策、human-AI 角度"
+    },
+    {
+      "名称": "MSR People-Centric AI Events",
+      "链接": "https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/",
+      "机构": "Microsoft Research",
+      "频率": "不定期",
+      "说明": "Human-AI interaction、Copilot 生态、HAX Toolkit"
+    },
+    {
+      "名称": "Berkeley NLP Seminar",
+      "链接": "https://www.ischool.berkeley.edu/events/nlp",
+      "机构": "UC Berkeley",
+      "频率": "双周",
+      "说明": "NLP 最新研究 invited talks"
+    },
+    {
+      "名称": "Rice AI Seminar Series",
+      "链接": "https://kenkennedy.rice.edu/ai-seminar",
+      "机构": "Rice University",
+      "频率": "不定期",
+      "说明": "AI/ML、fairness 方向"
+    },
+    {
+      "名称": "Georgia Tech HCI Events",
+      "链接": "https://mshci.gatech.edu/events",
+      "机构": "Georgia Tech",
+      "频率": "不定期",
+      "说明": "People-centered tech approach"
+    },
+    {
+      "名称": "UIUC CIRSS Speaker Series",
+      "链接": "https://cirss.ischool.illinois.edu/",
+      "机构": "UIUC iSchool",
+      "频率": "学期制",
+      "说明": "Spring 2025 主题: Generative AI and the Future of Research"
+    },
+    {
+      "名称": "Stanford HAI YouTube",
+      "链接": "https://www.youtube.com/@StanfordHAI",
+      "机构": "Stanford",
+      "频率": "录播",
+      "说明": "所有 HAI seminar 录播，包括 AI+Education Summit"
+    },
+    {
+      "名称": "ACM SIGCHI YouTube",
+      "链接": "https://www.youtube.com/@acmsigchi",
+      "机构": "ACM",
+      "频率": "录播",
+      "说明": "CHI/CSCW/UIST 等会议 talk 录播"
+    },
+    {
+      "名称": "Microsoft Research YouTube",
+      "链接": "https://www.youtube.com/@MicrosoftResearch",
+      "机构": "Microsoft",
+      "频率": "录播",
+      "说明": "MSR seminar 录播"
     }
   ],
   "podcasts": [
@@ -2676,7 +2776,7 @@
       "summary": "Computing Research Association job board. Largest source of CS academic positions in North America.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -2686,7 +2786,7 @@
       "summary": "Large US-focused academic job board. Filter by Computer Science / IT category.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -2696,7 +2796,7 @@
       "summary": "Global academic recruitment platform. Strong for R1 universities.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2706,7 +2806,7 @@
       "summary": "Global academic job listings, strong for UK/Europe/Asia/Australia.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2716,7 +2816,7 @@
       "summary": "UK & Ireland academic positions. Best source for British universities.",
       "region": "🇬🇧 UK",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🇬🇧 UK"
     },
     {
@@ -2726,7 +2826,7 @@
       "summary": "European academic positions across all countries.",
       "region": "🇪🇺 Europe",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🇪🇺 Europe"
     },
     {
@@ -2736,7 +2836,7 @@
       "summary": "Community-maintained list of CS open positions worldwide. Updated frequently by the community.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2746,7 +2846,7 @@
       "summary": "Community-maintained spreadsheet/wiki tracking CS faculty openings and their status.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771872021,
+      "ts": 1771874812,
       "matched_keyword": "🌐 Global"
     }
   ]
