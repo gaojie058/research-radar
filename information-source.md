@@ -322,6 +322,15 @@ agent, human-AI, agentic, collaboration, qualitative
 | Stanford HAI YouTube | https://www.youtube.com/@StanfordHAI | Stanford | 录播 | 所有 HAI seminar 录播，包括 AI+Education Summit |
 | ACM SIGCHI YouTube | https://www.youtube.com/@acmsigchi | ACM | 录播 | CHI/CSCW/UIST 等会议 talk 录播 |
 | Microsoft Research YouTube | https://www.youtube.com/@MicrosoftResearch | Microsoft | 录播 | MSR seminar 录播 |
+| CMU S3D Software Research Seminar | https://s3d.cmu.edu/events/index.html | CMU S3D | 每周一 | Software research in progress，周一 3:30-5pm，SE + AI 交叉 |
+| UCI ISR Events | https://isr.uci.edu/events/ext-events.html | UC Irvine ISR | 不定期 | Institute for Software Research，SE community 核心 |
+| UCL CREST Open Workshops | https://www.ucl.ac.uk/crest/crest-open-workshops | UCL CREST | 不定期 | SE testing/search-based SE/program analysis |
+| HumanAISE Workshop | https://humanai4se.github.io/ | ICSE co-located | 年度 | Human-Centered AI for SE，与你研究最直接相关（AI4SE + human-centered） |
+| AI4SE & SE4AI Workshop | https://sercuarc.org/ai4se-se4ai-research-application-workshop/ | SERC/Army | 年度 | 系统工程 + AI 交叉，industry + research |
+| AIware Conference | https://2025.aiwareconf.org/ | FSE co-located | 年度 | AI-powered software engineering，keynotes + research track |
+| AI Coding Summit | https://aicodingsummit.com/ | GitNation | 年度 | AI-powered dev tools，Copilot/Cursor 等实践者视角 |
+| MSR Research Talks: AI for SE | https://www.microsoft.com/en-us/research/video/research-talks-ai-for-software-development/ | Microsoft Research | 录播 | AI for software development 专题 talks |
+| GitHub Next / DX Podcast | https://getdx.com/podcast/ | GitHub/DX | 不定期 | Developer productivity + AI coding assistants 研究，Eirini Kalliamvakou 等 |
 
 ### 播客
 
