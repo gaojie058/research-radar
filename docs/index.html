@@ -26,6 +26,7 @@
     --accent-blogs: #27ae60;
     --accent-newsletters: #2980b9;
     --accent-researchers: #e91e63;
+    --accent-seminars: #7c4dff;
     --accent-podcasts: #ff9800;
     --accent-conferences: #00897b;
     --accent-opportunities: #5c6bc0;
@@ -525,6 +526,10 @@
       <span class="source-dot" style="background:var(--accent-researchers)"></span>
       推荐关注 <span class="count" id="count-researchers">—</span>
     </button>
+    <button class="tab" data-category="seminars">
+      <span class="source-dot" style="background:var(--accent-seminars)"></span>
+      Seminars/Talks <span class="count" id="count-seminars">—</span>
+    </button>
     <button class="tab" data-category="podcasts">
       <span class="source-dot" style="background:var(--accent-podcasts)"></span>
       播客 <span class="count" id="count-podcasts">—</span>
@@ -640,6 +645,7 @@
           <option value="blogs">🔬 实验室博客</option>
           <option value="newsletters">📰 Newsletter</option>
           <option value="researchers">👤 推荐关注</option>
+          <option value="seminars">🎓 Seminars/Talks</option>
           <option value="podcasts">🎙️ 播客</option>
           <option value="conferences">🏛️ 会议</option>
           <option value="opportunities">💼 Career/Grants</option>
@@ -707,6 +713,7 @@ const categoryMeta = {
   blogs:       { static: true, color: 'var(--accent-blogs)',       nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
   newsletters: { static: true, color: 'var(--accent-newsletters)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u4f5c\u8005' },
   researchers: { static: true, color: 'var(--accent-researchers)', nameKey: '\u59d3\u540d', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u5e73\u53f0' },
+  seminars:    { static: true, color: 'var(--accent-seminars)',   nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u673a\u6784' },
   podcasts:    { static: true, color: 'var(--accent-podcasts)',    nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e' },
   conferences: { static: true, color: 'var(--accent-conferences)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u9886\u57df', deadlineKey: 'Deadline', confDateKey: '\u4f1a\u8bae\u65e5\u671f' },
   opportunities: { static: true, color: 'var(--accent-opportunities)', nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u7c7b\u578b' },
@@ -732,6 +739,7 @@ async function loadData() {
       blogs: data.blogs || [],
       newsletters: data.newsletters || [],
       researchers: data.researchers || [],
+      seminars: data.seminars || [],
       podcasts: data.podcasts || [],
       conferences: data.conferences || [],
       opportunities: data.opportunities || [],
@@ -753,6 +761,7 @@ async function loadData() {
     document.getElementById('count-blogs').textContent = staticData.blogs.length;
     document.getElementById('count-newsletters').textContent = staticData.newsletters.length;
     document.getElementById('count-researchers').textContent = staticData.researchers.length;
+    document.getElementById('count-seminars').textContent = staticData.seminars.length;
     document.getElementById('count-podcasts').textContent = staticData.podcasts.length;
     document.getElementById('count-conferences').textContent = staticData.conferences.length;
     document.getElementById('count-opportunities').textContent = staticData.opportunities.length;

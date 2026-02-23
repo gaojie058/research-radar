@@ -2869,5 +2869,105 @@
       "ts": 1771835068,
       "matched_keyword": "🌐 Global"
     }
+  ],
+  "seminars": [
+    {
+      "名称": "Stanford HAI Seminar",
+      "机构": "Stanford",
+      "频率": "每周",
+      "链接": "https://hai.stanford.edu/events",
+      "说明": "Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播"
+    },
+    {
+      "名称": "Stanford CS547 HCI Seminar",
+      "机构": "Stanford CS",
+      "频率": "每周",
+      "链接": "https://hci.stanford.edu/courses/cs547/",
+      "说明": "HCI 方向专题 seminar，常有 human-AI interaction 相关 talk"
+    },
+    {
+      "名称": "CMU HCII Seminar Series",
+      "机构": "CMU HCII",
+      "频率": "每周五",
+      "链接": "https://www.hcii.cmu.edu/news/seminars/upcoming",
+      "说明": "HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等"
+    },
+    {
+      "名称": "UMich HCI Seminar",
+      "机构": "U Michigan",
+      "频率": "不定期",
+      "链接": "https://cse.engin.umich.edu/events/all-seminars/hci/",
+      "说明": "Q. Vera Liao 所在校，HCI + AI 方向"
+    },
+    {
+      "名称": "UMich AI Seminar",
+      "机构": "U Michigan",
+      "频率": "不定期",
+      "链接": "https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/",
+      "说明": "NLP + AI 方向，self-supervised learning、LLM"
+    },
+    {
+      "名称": "MIT AI for Society Seminar",
+      "机构": "MIT",
+      "频率": "不定期",
+      "链接": "https://ai4society.mit.edu/seminar/",
+      "说明": "AI 与社会交叉，法律、政策、human-AI 角度"
+    },
+    {
+      "名称": "MSR People-Centric AI Events",
+      "机构": "Microsoft Research",
+      "频率": "不定期",
+      "链接": "https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/",
+      "说明": "Human-AI interaction、Copilot 生态、HAX Toolkit"
+    },
+    {
+      "名称": "Berkeley NLP Seminar",
+      "机构": "UC Berkeley",
+      "频率": "双周",
+      "链接": "https://www.ischool.berkeley.edu/events/nlp",
+      "说明": "NLP 最新研究 invited talks"
+    },
+    {
+      "名称": "Rice AI Seminar Series",
+      "机构": "Rice University",
+      "频率": "不定期",
+      "链接": "https://kenkennedy.rice.edu/ai-seminar",
+      "说明": "AI/ML、fairness 方向"
+    },
+    {
+      "名称": "Georgia Tech HCI Events",
+      "机构": "Georgia Tech",
+      "频率": "不定期",
+      "链接": "https://mshci.gatech.edu/events",
+      "说明": "People-centered tech approach"
+    },
+    {
+      "名称": "UIUC CIRSS Speaker Series",
+      "机构": "UIUC iSchool",
+      "频率": "学期制",
+      "链接": "https://cirss.ischool.illinois.edu/",
+      "说明": "Spring 2025 主题: Generative AI and the Future of Research"
+    },
+    {
+      "名称": "Stanford HAI YouTube",
+      "机构": "Stanford",
+      "频率": "录播",
+      "链接": "https://www.youtube.com/@StanfordHAI",
+      "说明": "所有 HAI seminar 录播，包括 AI+Education Summit"
+    },
+    {
+      "名称": "ACM SIGCHI YouTube",
+      "机构": "ACM",
+      "频率": "录播",
+      "链接": "https://www.youtube.com/@acmsigchi",
+      "说明": "CHI/CSCW/UIST 等会议 talk 录播"
+    },
+    {
+      "名称": "Microsoft Research YouTube",
+      "机构": "Microsoft",
+      "频率": "录播",
+      "链接": "https://www.youtube.com/@MicrosoftResearch",
+      "说明": "MSR seminar 录播"
+    }
   ]
 }
