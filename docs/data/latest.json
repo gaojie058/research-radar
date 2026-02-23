@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-23T22:39:56.339503",
+    "fetched_at": "2026-02-23T22:45:19.713783",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1244,23 +1244,6 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "29a1c260033b71035b5514c55febe18909113e11",
-      "title": "NeuDiff Agent: A Governed AI Workflow for Single-Crystal Neutron Crystallography",
-      "authors": [
-        "Zhongcan Xiao",
-        "Leyi Zhang",
-        "Guannan Zhang",
-        "Xiaoping Wang Neutron Scattering Division",
-        "Oak Ridge National Laboratory"
-      ],
-      "summary": "Large-scale facilities increasingly face analysis and reporting latency as the limiting step in scientific throughput, particularly for structurally and magnetically complex samples that require iterative reduction, integration, refinement, and validation. To improve time-to-result and analysis efficiency, NeuDiff Agent is introduced as a governed, tool-using AI workflow for TOPAZ at the Spallation Neutron Source that takes instrument data products through reduction, integration, refinement, and",
-      "published": "2026-02-18",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/29a1c260033b71035b5514c55febe18909113e11",
-      "matched_keyword": "AI agent workflow",
-      "source": "semantic_scholar"
-    },
-    {
       "id": "527519dd69b8ad85a09b642b62be3ea2a8b00b55",
       "title": "Deriving Instructional Insights from Human-LLM Co-Evaluation of Student Collaboration in Data-Centric Programming",
       "authors": [
@@ -1275,22 +1258,6 @@
       "citations": 0,
       "link": "https://www.semanticscholar.org/paper/527519dd69b8ad85a09b642b62be3ea2a8b00b55",
       "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "e0d1a005ae6b2adecd6c78a160e5b2da1f97f054",
-      "title": "Generative AI for interdisciplinary collaborative design: an agent-based workflow orchestration framework guided by R³ invariants",
-      "authors": [
-        "Ruohao Gao",
-        "Lingwan Huang",
-        "Zenghui Wang",
-        "Shijian Cang"
-      ],
-      "summary": "",
-      "published": "2026-02-12",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/e0d1a005ae6b2adecd6c78a160e5b2da1f97f054",
-      "matched_keyword": "AI agent workflow",
       "source": "semantic_scholar"
     },
     {
@@ -1328,37 +1295,20 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "f8f14298320d24e5965d932a4513610b89940aae",
-      "title": "An AI Agent for Automated Causal Inference in Epidemiology",
+      "id": "8b82fa412642816f7db5deaed364a836ebdd201d",
+      "title": "Thinking Makes LLM Agents Introverted: How Mandatory Thinking Can Backfire in User-Engaged Agents",
       "authors": [
-        "H. Liu",
-        "K. Shi",
-        "A. Li",
-        "X. Li",
-        "J. Chu"
+        "Jiatong Li",
+        "Changdae Oh",
+        "Hyeong Kyu Choi",
+        "Jindong Wang",
+        "Sharon Li"
       ],
-      "summary": "",
-      "published": "2026-02-06",
+      "summary": "Eliciting reasoning has emerged as a powerful technique for improving the performance of large language models (LLMs) on complex tasks by inducing thinking. However, their effectiveness in realistic user-engaged agent scenarios remains unclear. In this paper, we conduct a comprehensive study on the effect of explicit thinking in user-engaged LLM agents. Our experiments span across seven models, three benchmarks, and two thinking instantiations, and we evaluate them through both a quantitative re",
+      "published": "2026-02-08",
       "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/f8f14298320d24e5965d932a4513610b89940aae",
-      "matched_keyword": "AI agent workflow",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "79943a6125980b551b485446b7a307692fd8e3dc",
-      "title": "Multi-agent AI",
-      "authors": [
-        "Simeon Allmendinger",
-        "Lukas Bonenberger",
-        "Kathrin Endres",
-        "Dominik Fetzer",
-        "H. Gimpel"
-      ],
-      "summary": "",
-      "published": "2026-02-06",
-      "citations": 2,
-      "link": "https://www.semanticscholar.org/paper/79943a6125980b551b485446b7a307692fd8e3dc",
-      "matched_keyword": "AI agent workflow",
+      "link": "https://www.semanticscholar.org/paper/8b82fa412642816f7db5deaed364a836ebdd201d",
+      "matched_keyword": "LLM qualitative analysis",
       "source": "semantic_scholar"
     },
     {
@@ -1427,21 +1377,6 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "d5d656f4328e4eb0c170421b4d8b186a4e0549ef",
-      "title": "Designing AI Agent Workflows for Consumer Behavior Applications: A Practitioner's Framework",
-      "authors": [
-        "Pratik Khedekar",
-        "Abhishek Vangipuram",
-        "Sravan Reddy Kathi"
-      ],
-      "summary": "The rapid advancement of large language model capabilities has created unprecedented opportunities for AI agent systems in consumer behavior applications, yet translating generic agent capabilities into production-ready business solutions remains challenging. While existing research provides automated workflow generation methods and generic architectural patterns, no systematic methodology exists for designing agent workflows that address the unique requirements of consumer behavior domains incl",
-      "published": "2026-02-01",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/d5d656f4328e4eb0c170421b4d8b186a4e0549ef",
-      "matched_keyword": "AI agent workflow",
-      "source": "semantic_scholar"
-    },
-    {
       "id": "b7a0a1d5d16fc1994c2242878653906ba015455b",
       "title": "LeagueBot: A Voice LLM Companion of Cognitive and Emotional Support for Novice Players in Competitive Games",
       "authors": [
@@ -1484,23 +1419,6 @@
       "citations": 0,
       "link": "https://www.semanticscholar.org/paper/5eb71f6e5f5bf8b1f7299601df0eb309576edc96",
       "matched_keyword": "LLM qualitative analysis",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "663b9b66552b16d2874dbb93e815a8c4e3d1cc2d",
-      "title": "AI Agent with Browser Automation",
-      "authors": [
-        "Abdul Mateen",
-        "Priyanka K R",
-        "Chethana BM",
-        "Leela C",
-        "Sujith Kumar S"
-      ],
-      "summary": "This project presents the design and implementation of an intelligent AI agent capable of performing automated actions within a web browser environment. The proposed system integrates natural-language understanding, task decomposition, and browser-level automation to execute user- defined goals such as data extraction, form submission, website navigation, report generation, and repetitive workflow operations. The agent combines machine learning models with rule-based logic to accurately interpre",
-      "published": "2026-01-27",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/663b9b66552b16d2874dbb93e815a8c4e3d1cc2d",
-      "matched_keyword": "AI agent workflow",
       "source": "semantic_scholar"
     },
     {
@@ -1549,21 +1467,6 @@
       "citations": 2,
       "link": "https://www.semanticscholar.org/paper/a785dc215f8dd317f272e1db008ee9fa0733850e",
       "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "7321344ff13d71d7f1c6035636751206d0590782",
-      "title": "LLM QLoRA Fine-Tuning of Llama, DeepSeek, and Qwen: A Skyrim Case Study",
-      "authors": [
-        "M. E. Monteiro",
-        "Marcos Talau",
-        "Heitor Silvério Lopes"
-      ],
-      "summary": "Fine-tuning Large Language Models (LLMs) for domains that demand extensive background knowledge, such as video game lore, involves navigating trade-offs between model architecture, scale, and the organization of training data. In this study, we examine these factors through the use of Quantized Low-Rank Adaptation (QLoRA) applied to the lore of Skyrim®. Our analysis considers nine models from the DeepSeek, Llama, and Qwen families at three parameter scales (~8B, ~13B, and ~33B). Each model was f",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/7321344ff13d71d7f1c6035636751206d0590782",
-      "matched_keyword": "LLM qualitative analysis",
       "source": "semantic_scholar"
     },
     {
@@ -1735,7 +1638,7 @@
       "link": "https://github.com/tnm/zclaw",
       "hn_link": "https://news.ycombinator.com/item?id=47100232",
       "points": 276,
-      "comments": 148,
+      "comments": 149,
       "published": "2026-02-21",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
@@ -1757,7 +1660,7 @@
       "link": "https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/",
       "hn_link": "https://news.ycombinator.com/item?id=47067395",
       "points": 141,
-      "comments": 50,
+      "comments": 51,
       "published": "2026-02-18",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -2016,6 +1919,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47076849",
+      "title": "Idea: Medbook and Other Ideas",
+      "link": "https://news.ycombinator.com/item?id=47076849",
+      "hn_link": "https://news.ycombinator.com/item?id=47076849",
+      "points": 3,
+      "comments": 1,
+      "published": "2026-02-19",
+      "matched_keyword": "AI collaboration",
+      "source": "hackernews"
+    },
+    {
       "id": "47059771",
       "title": "Wordpress.com adds an AI Assistant that can edit, adjust styles, create images",
       "link": "https://techcrunch.com/2026/02/17/wordpress-com-adds-an-ai-assistant-that-can-edit-adjust-styles-create-images-and-more/",
@@ -2078,6 +1992,28 @@
       "points": 2,
       "comments": 0,
       "published": "2026-02-20",
+      "matched_keyword": "AI collaboration",
+      "source": "hackernews"
+    },
+    {
+      "id": "47096307",
+      "title": "Show HN: Universal ROS bridge for AI agents – control robots with LLMs",
+      "link": "https://github.com/webthree549-bot/agent-ros-bridge",
+      "hn_link": "https://news.ycombinator.com/item?id=47096307",
+      "points": 2,
+      "comments": 1,
+      "published": "2026-02-21",
+      "matched_keyword": "AI collaboration",
+      "source": "hackernews"
+    },
+    {
+      "id": "47066016",
+      "title": "Show HN: Sniptail – Turn Slack into a team interface for AI coding agents",
+      "link": "https://github.com/Justkog/sniptail",
+      "hn_link": "https://news.ycombinator.com/item?id=47066016",
+      "points": 2,
+      "comments": 0,
+      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     },
@@ -2199,6 +2135,17 @@
       "points": 1,
       "comments": 0,
       "published": "2026-02-20",
+      "matched_keyword": "AI collaboration",
+      "source": "hackernews"
+    },
+    {
+      "id": "47063668",
+      "title": "Show HN: Supervisor IDE – Command center for coding agents in complex projects",
+      "link": "https://nexroo.ai/supervisor",
+      "hn_link": "https://news.ycombinator.com/item?id=47063668",
+      "points": 1,
+      "comments": 0,
+      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     }
@@ -2435,184 +2382,184 @@
       "链接": "https://hai.stanford.edu/events",
       "机构": "Stanford",
       "频率": "每周",
-      "说明": "Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播",
-      "标签": "HCI,AI"
+      "标签": "HCI,AI",
+      "说明": "Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播"
     },
     {
       "名称": "Stanford CS547 HCI Seminar",
       "链接": "https://hci.stanford.edu/courses/cs547/",
       "机构": "Stanford CS",
       "频率": "每周",
-      "说明": "HCI 方向专题 seminar，常有 human-AI interaction 相关 talk",
-      "标签": "HCI"
+      "标签": "HCI",
+      "说明": "HCI 方向专题 seminar，常有 human-AI interaction 相关 talk"
     },
     {
       "名称": "CMU HCII Seminar Series",
       "链接": "https://www.hcii.cmu.edu/news/seminars/upcoming",
       "机构": "CMU HCII",
       "频率": "每周五",
-      "说明": "HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等",
-      "标签": "HCI"
+      "标签": "HCI",
+      "说明": "HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等"
     },
     {
       "名称": "UMich HCI Seminar",
       "链接": "https://cse.engin.umich.edu/events/all-seminars/hci/",
       "机构": "U Michigan",
       "频率": "不定期",
-      "说明": "Q. Vera Liao 所在校，HCI + AI 方向",
-      "标签": "HCI"
+      "标签": "HCI",
+      "说明": "Q. Vera Liao 所在校，HCI + AI 方向"
     },
     {
       "名称": "UMich AI Seminar",
       "链接": "https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/",
       "机构": "U Michigan",
       "频率": "不定期",
-      "说明": "NLP + AI 方向，self-supervised learning、LLM",
-      "标签": "AI"
+      "标签": "AI",
+      "说明": "NLP + AI 方向，self-supervised learning、LLM"
     },
     {
       "名称": "MIT AI for Society Seminar",
       "链接": "https://ai4society.mit.edu/seminar/",
       "机构": "MIT",
       "频率": "不定期",
-      "说明": "AI 与社会交叉，法律、政策、human-AI 角度",
-      "标签": "AI,HCI"
+      "标签": "AI,HCI",
+      "说明": "AI 与社会交叉，法律、政策、human-AI 角度"
     },
     {
       "名称": "MSR People-Centric AI Events",
       "链接": "https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/",
       "机构": "Microsoft Research",
       "频率": "不定期",
-      "说明": "Human-AI interaction、Copilot 生态、HAX Toolkit",
-      "标签": "HCI,AI"
+      "标签": "HCI,AI",
+      "说明": "Human-AI interaction、Copilot 生态、HAX Toolkit"
     },
     {
       "名称": "Berkeley NLP Seminar",
       "链接": "https://www.ischool.berkeley.edu/events/nlp",
       "机构": "UC Berkeley",
       "频率": "双周",
-      "说明": "NLP 最新研究 invited talks",
-      "标签": "AI"
+      "标签": "AI",
+      "说明": "NLP 最新研究 invited talks"
     },
     {
       "名称": "Rice AI Seminar Series",
       "链接": "https://kenkennedy.rice.edu/ai-seminar",
       "机构": "Rice University",
       "频率": "不定期",
-      "说明": "AI/ML、fairness 方向",
-      "标签": "AI"
+      "标签": "AI",
+      "说明": "AI/ML、fairness 方向"
     },
     {
       "名称": "Georgia Tech HCI Events",
       "链接": "https://mshci.gatech.edu/events",
       "机构": "Georgia Tech",
       "频率": "不定期",
-      "说明": "People-centered tech approach",
-      "标签": "HCI"
+      "标签": "HCI",
+      "说明": "People-centered tech approach"
     },
     {
       "名称": "UIUC CIRSS Speaker Series",
       "链接": "https://cirss.ischool.illinois.edu/",
       "机构": "UIUC iSchool",
       "频率": "学期制",
-      "说明": "Spring 2025 主题: Generative AI and the Future of Research",
-      "标签": "AI,HCI"
+      "标签": "AI,HCI",
+      "说明": "Spring 2025 主题: Generative AI and the Future of Research"
     },
     {
       "名称": "Stanford HAI YouTube",
       "链接": "https://www.youtube.com/@StanfordHAI",
       "机构": "Stanford",
       "频率": "录播",
-      "说明": "所有 HAI seminar 录播，包括 AI+Education Summit",
-      "标签": "HCI,AI"
+      "标签": "HCI,AI",
+      "说明": "所有 HAI seminar 录播，包括 AI+Education Summit"
     },
     {
       "名称": "ACM SIGCHI YouTube",
       "链接": "https://www.youtube.com/@acmsigchi",
       "机构": "ACM",
       "频率": "录播",
-      "说明": "CHI/CSCW/UIST 等会议 talk 录播",
-      "标签": "HCI"
+      "标签": "HCI",
+      "说明": "CHI/CSCW/UIST 等会议 talk 录播"
     },
     {
       "名称": "Microsoft Research YouTube",
       "链接": "https://www.youtube.com/@MicrosoftResearch",
       "机构": "Microsoft",
       "频率": "录播",
-      "说明": "MSR seminar 录播",
-      "标签": "AI,HCI,SE"
+      "标签": "AI,HCI,SE",
+      "说明": "MSR seminar 录播"
     },
     {
       "名称": "CMU S3D Software Research Seminar",
       "链接": "https://s3d.cmu.edu/events/index.html",
       "机构": "CMU S3D",
       "频率": "每周一",
-      "说明": "Software research in progress，周一 3:30-5pm，SE + AI 交叉",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "Software research in progress，周一 3:30-5pm，SE + AI 交叉"
     },
     {
       "名称": "UCI ISR Events",
       "链接": "https://isr.uci.edu/events/ext-events.html",
       "机构": "UC Irvine ISR",
       "频率": "不定期",
-      "说明": "Institute for Software Research，SE community 核心",
-      "标签": "SE"
+      "标签": "SE",
+      "说明": "Institute for Software Research，SE community 核心"
     },
     {
       "名称": "UCL CREST Open Workshops",
       "链接": "https://www.ucl.ac.uk/crest/crest-open-workshops",
       "机构": "UCL CREST",
       "频率": "不定期",
-      "说明": "SE testing/search-based SE/program analysis",
-      "标签": "SE"
+      "标签": "SE",
+      "说明": "SE testing/search-based SE/program analysis"
     },
     {
       "名称": "HumanAISE Workshop",
       "链接": "https://humanai4se.github.io/",
       "机构": "ICSE co-located",
       "频率": "年度",
-      "说明": "Human-Centered AI for SE，与你研究最直接相关（AI4SE + human-centered）",
-      "标签": "SE,AI,HCI"
+      "标签": "SE,AI,HCI",
+      "说明": "Human-Centered AI for SE，与你研究最直接相关（AI4SE + human-centered）"
     },
     {
       "名称": "AI4SE & SE4AI Workshop",
       "链接": "https://sercuarc.org/ai4se-se4ai-research-application-workshop/",
       "机构": "SERC/Army",
       "频率": "年度",
-      "说明": "系统工程 + AI 交叉，industry + research",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "系统工程 + AI 交叉，industry + research"
     },
     {
       "名称": "AIware Conference",
       "链接": "https://2025.aiwareconf.org/",
       "机构": "FSE co-located",
       "频率": "年度",
-      "说明": "AI-powered software engineering，keynotes + research track",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "AI-powered software engineering，keynotes + research track"
     },
     {
       "名称": "AI Coding Summit",
       "链接": "https://aicodingsummit.com/",
       "机构": "GitNation",
       "频率": "年度",
-      "说明": "AI-powered dev tools，Copilot/Cursor 等实践者视角",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "AI-powered dev tools，Copilot/Cursor 等实践者视角"
     },
     {
       "名称": "MSR Research Talks: AI for SE",
       "链接": "https://www.microsoft.com/en-us/research/video/research-talks-ai-for-software-development/",
       "机构": "Microsoft Research",
       "频率": "录播",
-      "说明": "AI for software development 专题 talks",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "AI for software development 专题 talks"
     },
     {
       "名称": "GitHub Next / DX Podcast",
       "链接": "https://getdx.com/podcast/",
       "机构": "GitHub/DX",
       "频率": "不定期",
-      "说明": "Developer productivity + AI coding assistants 研究，Eirini Kalliamvakou 等",
-      "标签": "SE,AI"
+      "标签": "SE,AI",
+      "说明": "Developer productivity + AI coding assistants 研究，Eirini Kalliamvakou 等"
     }
   ],
   "podcasts": [
@@ -3024,7 +2971,7 @@
       "summary": "Computing Research Association job board. Largest source of CS academic positions in North America.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -3034,7 +2981,7 @@
       "summary": "Large US-focused academic job board. Filter by Computer Science / IT category.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -3044,7 +2991,7 @@
       "summary": "Global academic recruitment platform. Strong for R1 universities.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3054,7 +3001,7 @@
       "summary": "Global academic job listings, strong for UK/Europe/Asia/Australia.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3064,7 +3011,7 @@
       "summary": "UK & Ireland academic positions. Best source for British universities.",
       "region": "🇬🇧 UK",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🇬🇧 UK"
     },
     {
@@ -3074,7 +3021,7 @@
       "summary": "European academic positions across all countries.",
       "region": "🇪🇺 Europe",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🇪🇺 Europe"
     },
     {
@@ -3084,7 +3031,7 @@
       "summary": "Community-maintained list of CS open positions worldwide. Updated frequently by the community.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3094,7 +3041,7 @@
       "summary": "Community-maintained spreadsheet/wiki tracking CS faculty openings and their status.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886477,
+      "ts": 1771886807,
       "matched_keyword": "🌐 Global"
     }
   ]
