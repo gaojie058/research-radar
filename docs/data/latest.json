@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-23T08:22:23.736567",
+    "fetched_at": "2026-02-23T18:38:45.754648",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1338,24 +1338,8 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "822f705e1d2058d8cb698a365effddaf7277e1f4",
-      "title": "Human-centered AI to promote youth mental health: a serendipitous natural experiment enabled by a digital health platform",
-      "authors": [
-        "T. Katapally",
-        "Nadine Elsahli",
-        "S. Ibrahim",
-        "Jasmin Bhawra"
-      ],
-      "summary": "Background Health systems are struggling to deliver timely preventive care, particularly for marginalized populations, necessitating integration across health, education, and social services. For Indigenous youth in rural communities, fragmented services, isolation, and limited culturally safe options worsen mental health disparities. Interactive technologies, particularly human-centered artificial intelligence (AI)-enabled digital health platforms grounded in human-computer interaction (HCI), c",
-      "published": "2026-02-02",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/822f705e1d2058d8cb698a365effddaf7277e1f4",
-      "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
       "id": "604d0e8c191f7d11a919f3cda1cd037b6036a36c",
-      "title": "Success and failure of human-AI collaboration in clinical reasoning: An experimental study on challenging real-world cases.",
+      "title": "Success and failure of human-AI collaboration in clinical reasoning: An experimental study on challenging real-world cases",
       "authors": [
         "Kai Tzu-iunn Ong",
         "Junwon Seo",
@@ -1383,36 +1367,6 @@
       "citations": 0,
       "link": "https://www.semanticscholar.org/paper/d5d656f4328e4eb0c170421b4d8b186a4e0549ef",
       "matched_keyword": "AI agent workflow",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "802f3d25799b1a1e9543e97031f24e8f009770f4",
-      "title": "An HCAI Methodological Framework: Putting it Into Action to Enable Human-Centered AI",
-      "authors": [
-        "Wei Xu",
-        "Zaifeng Gao",
-        "Marvin J. Dainoff"
-      ],
-      "summary": "Human-centered artificial intelligence (HCAI) is a design philosophy that prioritizes humans in the design, development, deployment, and use of AI systems, aiming to maximize AI’s benefits while mitigating its negative impacts. Despite its growing prominence in literature, the lack of methodological guidance for its implementation poses challenges to HCAI practice. To address this gap, this article proposes a comprehensive HCAI methodological framework (HCAI-MF) comprising five key components: H",
-      "published": "2026-02-01",
-      "citations": 11,
-      "link": "https://www.semanticscholar.org/paper/802f3d25799b1a1e9543e97031f24e8f009770f4",
-      "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "1ba6983531e7c074c1d70fea993c3f6ca64d2969",
-      "title": "Designing Understandable and Fair AI for Learning: The PEARL Framework for Human-Centered Educational AI",
-      "authors": [
-        "S. Dakshit",
-        "Kouider Mokhtari",
-        "A. Khalid"
-      ],
-      "summary": "As artificial intelligence (AI) is increasingly used in classrooms, tutoring systems, and learning platforms, it is essential that these tools are not only powerful, but also easy to understand, fair, and supportive of real learning. Many current AI systems can generate fluent responses or accurate predictions, yet they often fail to clearly explain their decisions, reflect students’ cultural contexts, or give learners and educators meaningful control. This gap can reduce trust and limit the edu",
-      "published": "2026-01-28",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/1ba6983531e7c074c1d70fea993c3f6ca64d2969",
-      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1478,36 +1432,6 @@
       "citations": 2,
       "link": "https://www.semanticscholar.org/paper/a785dc215f8dd317f272e1db008ee9fa0733850e",
       "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "5b732ee2ff422121aa66cd4b0fa207ca54216df6",
-      "title": "Intercultural Human-Centered AI for Automotive Systems: Bridging ASPICE Processes and Intelligent Human Systems Integration",
-      "authors": [
-        "Rüdiger Heimgärtner"
-      ],
-      "summary": "The integration of Artificial Intelligence into safety-critical automotive systems demands approaches that combine technical rigor with cultural and human-centred sensitivity. While Automotive SPICE (ASPICE) ensures structured engineering practices, it lacks explicit guidance on integrating intercultural human factors and intelligent AI-driven support. This paper proposes a framework for Intercultural Human-Centred AI that bridges ASPICE-based practices with intelligent human systems integration",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/5b732ee2ff422121aa66cd4b0fa207ca54216df6",
-      "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "37952a875dc6a5f3507546773d5eaa834d926cc2",
-      "title": "Enhancing obstacle detectability in tunnel look-ahead systems through human-centered explainable AI and inverse inference",
-      "authors": [
-        "Yanlong Niu",
-        "Huaigu Tang",
-        "E. Nilot",
-        "Yuhan Zhou",
-        "Yunyue Elita Li"
-      ],
-      "summary": "",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/37952a875dc6a5f3507546773d5eaa834d926cc2",
-      "matched_keyword": "human-centered AI systems",
       "source": "semantic_scholar"
     },
     {
@@ -1615,8 +1539,8 @@
       "title": "An AI Agent Published a Hit Piece on Me – The Operator Came Forward",
       "link": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/",
       "hn_link": "https://news.ycombinator.com/item?id=47083145",
-      "points": 527,
-      "comments": 484,
+      "points": 532,
+      "comments": 499,
       "published": "2026-02-20",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -1626,8 +1550,8 @@
       "title": "Claws are now a new layer on top of LLM agents",
       "link": "https://twitter.com/karpathy/status/2024987174077432126",
       "hn_link": "https://news.ycombinator.com/item?id=47096253",
-      "points": 351,
-      "comments": 795,
+      "points": 404,
+      "comments": 913,
       "published": "2026-02-21",
       "matched_keyword": "LLM agent",
       "source": "hackernews"
@@ -1637,8 +1561,8 @@
       "title": "Every company building your AI assistant is now an ad company",
       "link": "https://juno-labs.com/blogs/every-company-building-your-ai-assistant-is-an-ad-company",
       "hn_link": "https://news.ycombinator.com/item?id=47092203",
-      "points": 301,
-      "comments": 164,
+      "points": 311,
+      "comments": 168,
       "published": "2026-02-20",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
@@ -1648,8 +1572,8 @@
       "title": "zclaw: personal AI assistant in under 888 KB, running on an ESP32",
       "link": "https://github.com/tnm/zclaw",
       "hn_link": "https://news.ycombinator.com/item?id=47100232",
-      "points": 213,
-      "comments": 117,
+      "points": 273,
+      "comments": 146,
       "published": "2026-02-21",
       "matched_keyword": "AI assistant",
       "source": "hackernews"
@@ -1659,7 +1583,7 @@
       "title": "Cord: Coordinating Trees of AI Agents",
       "link": "https://www.june.kim/cord",
       "hn_link": "https://news.ycombinator.com/item?id=47096466",
-      "points": 151,
+      "points": 153,
       "comments": 75,
       "published": "2026-02-21",
       "matched_keyword": "AI agent",
@@ -1670,7 +1594,7 @@
       "title": "What years of production-grade concurrency teaches us about building AI agents",
       "link": "https://georgeguimaraes.com/your-agent-orchestrator-is-just-a-bad-clone-of-elixir/",
       "hn_link": "https://news.ycombinator.com/item?id=47067395",
-      "points": 137,
+      "points": 141,
       "comments": 50,
       "published": "2026-02-18",
       "matched_keyword": "AI agent",
@@ -1681,7 +1605,7 @@
       "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
       "hn_link": "https://news.ycombinator.com/item?id=47051956",
-      "points": 118,
+      "points": 119,
       "comments": 81,
       "published": "2026-02-17",
       "matched_keyword": "AI agent",
@@ -1692,8 +1616,8 @@
       "title": "Measuring AI agent autonomy in practice",
       "link": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "hn_link": "https://news.ycombinator.com/item?id=47073947",
-      "points": 117,
-      "comments": 49,
+      "points": 119,
+      "comments": 50,
       "published": "2026-02-19",
       "matched_keyword": "AI agent",
       "source": "hackernews"
@@ -1703,10 +1627,32 @@
       "title": "Productivity gains from AI coding assistants haven’t budged past 10% – survey",
       "link": "https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/",
       "hn_link": "https://news.ycombinator.com/item?id=47077676",
-      "points": 73,
+      "points": 74,
       "comments": 96,
       "published": "2026-02-19",
       "matched_keyword": "AI assistant",
+      "source": "hackernews"
+    },
+    {
+      "id": "47117408",
+      "title": "Agentic Software Engineering Book",
+      "link": "https://agenticse-book.github.io/",
+      "hn_link": "https://news.ycombinator.com/item?id=47117408",
+      "points": 64,
+      "comments": 34,
+      "published": "2026-02-23",
+      "matched_keyword": "agentic",
+      "source": "hackernews"
+    },
+    {
+      "id": "47117169",
+      "title": "Aqua: A CLI message tool for AI agents",
+      "link": "https://github.com/quailyquaily/aqua",
+      "hn_link": "https://news.ycombinator.com/item?id=47117169",
+      "points": 62,
+      "comments": 32,
+      "published": "2026-02-23",
+      "matched_keyword": "AI agent",
       "source": "hackernews"
     },
     {
@@ -1725,7 +1671,7 @@
       "title": "Amazon blames human employees for an AI coding agent's mistake",
       "link": "https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake",
       "hn_link": "https://news.ycombinator.com/item?id=47105637",
-      "points": 22,
+      "points": 24,
       "comments": 8,
       "published": "2026-02-21",
       "matched_keyword": "AI agent",
@@ -1750,17 +1696,6 @@
       "points": 13,
       "comments": 11,
       "published": "2026-02-21",
-      "matched_keyword": "AI agent",
-      "source": "hackernews"
-    },
-    {
-      "id": "47106866",
-      "title": "Apple researchers develop on-device AI agent that interacts with apps for you",
-      "link": "https://9to5mac.com/2026/02/20/apple-researchers-develop-on-device-ai-agent-that-interacts-with-apps-for-you/",
-      "hn_link": "https://news.ycombinator.com/item?id=47106866",
-      "points": 11,
-      "comments": 2,
-      "published": "2026-02-22",
       "matched_keyword": "AI agent",
       "source": "hackernews"
     },
@@ -1795,6 +1730,17 @@
       "comments": 0,
       "published": "2026-02-17",
       "matched_keyword": "agentic",
+      "source": "hackernews"
+    },
+    {
+      "id": "47111179",
+      "title": "Show HN: ByePhone- An AI assistant to automate tedious phone calls",
+      "link": "https://byephone.io/",
+      "hn_link": "https://news.ycombinator.com/item?id=47111179",
+      "points": 5,
+      "comments": 2,
+      "published": "2026-02-22",
+      "matched_keyword": "AI assistant",
       "source": "hackernews"
     },
     {
@@ -1908,17 +1854,6 @@
       "source": "hackernews"
     },
     {
-      "id": "47111179",
-      "title": "Show HN: ByePhone- An AI assistant to automate tedious phone calls",
-      "link": "https://byephone.io/",
-      "hn_link": "https://news.ycombinator.com/item?id=47111179",
-      "points": 3,
-      "comments": 1,
-      "published": "2026-02-22",
-      "matched_keyword": "AI assistant",
-      "source": "hackernews"
-    },
-    {
       "id": "47059771",
       "title": "Wordpress.com adds an AI Assistant that can edit, adjust styles, create images",
       "link": "https://techcrunch.com/2026/02/17/wordpress-com-adds-an-ai-assistant-that-can-edit-adjust-styles-create-images-and-more/",
@@ -1927,17 +1862,6 @@
       "comments": 0,
       "published": "2026-02-18",
       "matched_keyword": "AI assistant",
-      "source": "hackernews"
-    },
-    {
-      "id": "47071653",
-      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
-      "link": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
-      "hn_link": "https://news.ycombinator.com/item?id=47071653",
-      "points": 3,
-      "comments": 1,
-      "published": "2026-02-19",
-      "matched_keyword": "agentic",
       "source": "hackernews"
     },
     {
@@ -1992,28 +1916,6 @@
       "points": 2,
       "comments": 0,
       "published": "2026-02-20",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47096307",
-      "title": "Show HN: Universal ROS bridge for AI agents – control robots with LLMs",
-      "link": "https://github.com/webthree549-bot/agent-ros-bridge",
-      "hn_link": "https://news.ycombinator.com/item?id=47096307",
-      "points": 2,
-      "comments": 1,
-      "published": "2026-02-21",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47066016",
-      "title": "Show HN: Sniptail – Turn Slack into a team interface for AI coding agents",
-      "link": "https://github.com/Justkog/sniptail",
-      "hn_link": "https://news.ycombinator.com/item?id=47066016",
-      "points": 2,
-      "comments": 0,
-      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     },
@@ -2128,17 +2030,6 @@
       "source": "hackernews"
     },
     {
-      "id": "47035701",
-      "title": "Show HN: A \"content compiler\" that turns LLM output into validated artifacts",
-      "link": "https://gixo.ai",
-      "hn_link": "https://news.ycombinator.com/item?id=47035701",
-      "points": 1,
-      "comments": 0,
-      "published": "2026-02-16",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
       "id": "47088361",
       "title": "Software Collaboration in the AI Age",
       "link": "https://spiess.dev/blog/software-collaboration-in-the-ai-age",
@@ -2146,17 +2037,6 @@
       "points": 1,
       "comments": 0,
       "published": "2026-02-20",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47063668",
-      "title": "Show HN: Supervisor IDE – Command center for coding agents in complex projects",
-      "link": "https://nexroo.ai/supervisor",
-      "hn_link": "https://news.ycombinator.com/item?id=47063668",
-      "points": 1,
-      "comments": 0,
-      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     }
@@ -2796,7 +2676,7 @@
       "summary": "Computing Research Association job board. Largest source of CS academic positions in North America.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -2806,7 +2686,7 @@
       "summary": "Large US-focused academic job board. Filter by Computer Science / IT category.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -2816,7 +2696,7 @@
       "summary": "Global academic recruitment platform. Strong for R1 universities.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2826,7 +2706,7 @@
       "summary": "Global academic job listings, strong for UK/Europe/Asia/Australia.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2836,7 +2716,7 @@
       "summary": "UK & Ireland academic positions. Best source for British universities.",
       "region": "🇬🇧 UK",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🇬🇧 UK"
     },
     {
@@ -2846,7 +2726,7 @@
       "summary": "European academic positions across all countries.",
       "region": "🇪🇺 Europe",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🇪🇺 Europe"
     },
     {
@@ -2856,7 +2736,7 @@
       "summary": "Community-maintained list of CS open positions worldwide. Updated frequently by the community.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -2866,108 +2746,8 @@
       "summary": "Community-maintained spreadsheet/wiki tracking CS faculty openings and their status.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771835068,
+      "ts": 1771872021,
       "matched_keyword": "🌐 Global"
-    }
-  ],
-  "seminars": [
-    {
-      "名称": "Stanford HAI Seminar",
-      "机构": "Stanford",
-      "频率": "每周",
-      "链接": "https://hai.stanford.edu/events",
-      "说明": "Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播"
-    },
-    {
-      "名称": "Stanford CS547 HCI Seminar",
-      "机构": "Stanford CS",
-      "频率": "每周",
-      "链接": "https://hci.stanford.edu/courses/cs547/",
-      "说明": "HCI 方向专题 seminar，常有 human-AI interaction 相关 talk"
-    },
-    {
-      "名称": "CMU HCII Seminar Series",
-      "机构": "CMU HCII",
-      "频率": "每周五",
-      "链接": "https://www.hcii.cmu.edu/news/seminars/upcoming",
-      "说明": "HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等"
-    },
-    {
-      "名称": "UMich HCI Seminar",
-      "机构": "U Michigan",
-      "频率": "不定期",
-      "链接": "https://cse.engin.umich.edu/events/all-seminars/hci/",
-      "说明": "Q. Vera Liao 所在校，HCI + AI 方向"
-    },
-    {
-      "名称": "UMich AI Seminar",
-      "机构": "U Michigan",
-      "频率": "不定期",
-      "链接": "https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/",
-      "说明": "NLP + AI 方向，self-supervised learning、LLM"
-    },
-    {
-      "名称": "MIT AI for Society Seminar",
-      "机构": "MIT",
-      "频率": "不定期",
-      "链接": "https://ai4society.mit.edu/seminar/",
-      "说明": "AI 与社会交叉，法律、政策、human-AI 角度"
-    },
-    {
-      "名称": "MSR People-Centric AI Events",
-      "机构": "Microsoft Research",
-      "频率": "不定期",
-      "链接": "https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/",
-      "说明": "Human-AI interaction、Copilot 生态、HAX Toolkit"
-    },
-    {
-      "名称": "Berkeley NLP Seminar",
-      "机构": "UC Berkeley",
-      "频率": "双周",
-      "链接": "https://www.ischool.berkeley.edu/events/nlp",
-      "说明": "NLP 最新研究 invited talks"
-    },
-    {
-      "名称": "Rice AI Seminar Series",
-      "机构": "Rice University",
-      "频率": "不定期",
-      "链接": "https://kenkennedy.rice.edu/ai-seminar",
-      "说明": "AI/ML、fairness 方向"
-    },
-    {
-      "名称": "Georgia Tech HCI Events",
-      "机构": "Georgia Tech",
-      "频率": "不定期",
-      "链接": "https://mshci.gatech.edu/events",
-      "说明": "People-centered tech approach"
-    },
-    {
-      "名称": "UIUC CIRSS Speaker Series",
-      "机构": "UIUC iSchool",
-      "频率": "学期制",
-      "链接": "https://cirss.ischool.illinois.edu/",
-      "说明": "Spring 2025 主题: Generative AI and the Future of Research"
-    },
-    {
-      "名称": "Stanford HAI YouTube",
-      "机构": "Stanford",
-      "频率": "录播",
-      "链接": "https://www.youtube.com/@StanfordHAI",
-      "说明": "所有 HAI seminar 录播，包括 AI+Education Summit"
-    },
-    {
-      "名称": "ACM SIGCHI YouTube",
-      "机构": "ACM",
-      "频率": "录播",
-      "链接": "https://www.youtube.com/@acmsigchi",
-      "说明": "CHI/CSCW/UIST 等会议 talk 录播"
-    },
-    {
-      "名称": "Microsoft Research YouTube",
-      "机构": "Microsoft",
-      "频率": "录播",
-      "链接": "https://www.youtube.com/@MicrosoftResearch",
-      "说明": "MSR seminar 录播"
     }
   ]
 }
