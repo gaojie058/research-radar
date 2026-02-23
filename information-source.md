@@ -306,31 +306,31 @@ agent, human-AI, agentic, collaboration, qualitative
 
 ### Seminars/Talks
 
-| 名称 | 链接 | 机构 | 频率 | 说明 |
-|------|------|------|------|------|
-| Stanford HAI Seminar | https://hai.stanford.edu/events | Stanford | 每周 | Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播 |
-| Stanford CS547 HCI Seminar | https://hci.stanford.edu/courses/cs547/ | Stanford CS | 每周 | HCI 方向专题 seminar，常有 human-AI interaction 相关 talk |
-| CMU HCII Seminar Series | https://www.hcii.cmu.edu/news/seminars/upcoming | CMU HCII | 每周五 | HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等 |
-| UMich HCI Seminar | https://cse.engin.umich.edu/events/all-seminars/hci/ | U Michigan | 不定期 | Q. Vera Liao 所在校，HCI + AI 方向 |
-| UMich AI Seminar | https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/ | U Michigan | 不定期 | NLP + AI 方向，self-supervised learning、LLM |
-| MIT AI for Society Seminar | https://ai4society.mit.edu/seminar/ | MIT | 不定期 | AI 与社会交叉，法律、政策、human-AI 角度 |
-| MSR People-Centric AI Events | https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/ | Microsoft Research | 不定期 | Human-AI interaction、Copilot 生态、HAX Toolkit |
-| Berkeley NLP Seminar | https://www.ischool.berkeley.edu/events/nlp | UC Berkeley | 双周 | NLP 最新研究 invited talks |
-| Rice AI Seminar Series | https://kenkennedy.rice.edu/ai-seminar | Rice University | 不定期 | AI/ML、fairness 方向 |
-| Georgia Tech HCI Events | https://mshci.gatech.edu/events | Georgia Tech | 不定期 | People-centered tech approach |
-| UIUC CIRSS Speaker Series | https://cirss.ischool.illinois.edu/ | UIUC iSchool | 学期制 | Spring 2025 主题: Generative AI and the Future of Research |
-| Stanford HAI YouTube | https://www.youtube.com/@StanfordHAI | Stanford | 录播 | 所有 HAI seminar 录播，包括 AI+Education Summit |
-| ACM SIGCHI YouTube | https://www.youtube.com/@acmsigchi | ACM | 录播 | CHI/CSCW/UIST 等会议 talk 录播 |
-| Microsoft Research YouTube | https://www.youtube.com/@MicrosoftResearch | Microsoft | 录播 | MSR seminar 录播 |
-| CMU S3D Software Research Seminar | https://s3d.cmu.edu/events/index.html | CMU S3D | 每周一 | Software research in progress，周一 3:30-5pm，SE + AI 交叉 |
-| UCI ISR Events | https://isr.uci.edu/events/ext-events.html | UC Irvine ISR | 不定期 | Institute for Software Research，SE community 核心 |
-| UCL CREST Open Workshops | https://www.ucl.ac.uk/crest/crest-open-workshops | UCL CREST | 不定期 | SE testing/search-based SE/program analysis |
-| HumanAISE Workshop | https://humanai4se.github.io/ | ICSE co-located | 年度 | Human-Centered AI for SE，与你研究最直接相关（AI4SE + human-centered） |
-| AI4SE & SE4AI Workshop | https://sercuarc.org/ai4se-se4ai-research-application-workshop/ | SERC/Army | 年度 | 系统工程 + AI 交叉，industry + research |
-| AIware Conference | https://2025.aiwareconf.org/ | FSE co-located | 年度 | AI-powered software engineering，keynotes + research track |
-| AI Coding Summit | https://aicodingsummit.com/ | GitNation | 年度 | AI-powered dev tools，Copilot/Cursor 等实践者视角 |
-| MSR Research Talks: AI for SE | https://www.microsoft.com/en-us/research/video/research-talks-ai-for-software-development/ | Microsoft Research | 录播 | AI for software development 专题 talks |
-| GitHub Next / DX Podcast | https://getdx.com/podcast/ | GitHub/DX | 不定期 | Developer productivity + AI coding assistants 研究，Eirini Kalliamvakou 等 |
+| 名称 | 链接 | 机构 | 频率 | 标签 | 说明 |
+|------|------|------|------|------|------|
+| Stanford HAI Seminar | https://hai.stanford.edu/events | Stanford | 每周 | HCI,AI | Human-Centered AI 核心 seminar，覆盖 AI policy、education、human-AI interaction。YouTube 有录播 |
+| Stanford CS547 HCI Seminar | https://hci.stanford.edu/courses/cs547/ | Stanford CS | 每周 | HCI | HCI 方向专题 seminar，常有 human-AI interaction 相关 talk |
+| CMU HCII Seminar Series | https://www.hcii.cmu.edu/news/seminars/upcoming | CMU HCII | 每周五 | HCI | HCI 领域最活跃的 seminar 之一。Spring 2026: Sarah Preum, Haoqi Zhang 等 |
+| UMich HCI Seminar | https://cse.engin.umich.edu/events/all-seminars/hci/ | U Michigan | 不定期 | HCI | Q. Vera Liao 所在校，HCI + AI 方向 |
+| UMich AI Seminar | https://cse.engin.umich.edu/events/all-seminars/artificial-intelligence/ | U Michigan | 不定期 | AI | NLP + AI 方向，self-supervised learning、LLM |
+| MIT AI for Society Seminar | https://ai4society.mit.edu/seminar/ | MIT | 不定期 | AI,HCI | AI 与社会交叉，法律、政策、human-AI 角度 |
+| MSR People-Centric AI Events | https://www.microsoft.com/en-us/research/theme/people-centric-ai/events/ | Microsoft Research | 不定期 | HCI,AI | Human-AI interaction、Copilot 生态、HAX Toolkit |
+| Berkeley NLP Seminar | https://www.ischool.berkeley.edu/events/nlp | UC Berkeley | 双周 | AI | NLP 最新研究 invited talks |
+| Rice AI Seminar Series | https://kenkennedy.rice.edu/ai-seminar | Rice University | 不定期 | AI | AI/ML、fairness 方向 |
+| Georgia Tech HCI Events | https://mshci.gatech.edu/events | Georgia Tech | 不定期 | HCI | People-centered tech approach |
+| UIUC CIRSS Speaker Series | https://cirss.ischool.illinois.edu/ | UIUC iSchool | 学期制 | AI,HCI | Spring 2025 主题: Generative AI and the Future of Research |
+| Stanford HAI YouTube | https://www.youtube.com/@StanfordHAI | Stanford | 录播 | HCI,AI | 所有 HAI seminar 录播，包括 AI+Education Summit |
+| ACM SIGCHI YouTube | https://www.youtube.com/@acmsigchi | ACM | 录播 | HCI | CHI/CSCW/UIST 等会议 talk 录播 |
+| Microsoft Research YouTube | https://www.youtube.com/@MicrosoftResearch | Microsoft | 录播 | AI,HCI,SE | MSR seminar 录播 |
+| CMU S3D Software Research Seminar | https://s3d.cmu.edu/events/index.html | CMU S3D | 每周一 | SE,AI | Software research in progress，周一 3:30-5pm，SE + AI 交叉 |
+| UCI ISR Events | https://isr.uci.edu/events/ext-events.html | UC Irvine ISR | 不定期 | SE | Institute for Software Research，SE community 核心 |
+| UCL CREST Open Workshops | https://www.ucl.ac.uk/crest/crest-open-workshops | UCL CREST | 不定期 | SE | SE testing/search-based SE/program analysis |
+| HumanAISE Workshop | https://humanai4se.github.io/ | ICSE co-located | 年度 | SE,AI,HCI | Human-Centered AI for SE，与你研究最直接相关（AI4SE + human-centered） |
+| AI4SE & SE4AI Workshop | https://sercuarc.org/ai4se-se4ai-research-application-workshop/ | SERC/Army | 年度 | SE,AI | 系统工程 + AI 交叉，industry + research |
+| AIware Conference | https://2025.aiwareconf.org/ | FSE co-located | 年度 | SE,AI | AI-powered software engineering，keynotes + research track |
+| AI Coding Summit | https://aicodingsummit.com/ | GitNation | 年度 | SE,AI | AI-powered dev tools，Copilot/Cursor 等实践者视角 |
+| MSR Research Talks: AI for SE | https://www.microsoft.com/en-us/research/video/research-talks-ai-for-software-development/ | Microsoft Research | 录播 | SE,AI | AI for software development 专题 talks |
+| GitHub Next / DX Podcast | https://getdx.com/podcast/ | GitHub/DX | 不定期 | SE,AI | Developer productivity + AI coding assistants 研究，Eirini Kalliamvakou 等 |
 
 ### 播客
 

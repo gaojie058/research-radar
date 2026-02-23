@@ -564,6 +564,14 @@
     <span class="keyword-pill" data-region="Dev Tools">⚡ Dev Tools</span>
   </div>
 </div>
+<div class="keyword-section" id="seminar-section" style="display:none">
+  <div class="keyword-pills" id="seminar-tag-pills">
+    <span class="keyword-pill active" data-semtag="all">All</span>
+    <span class="keyword-pill" data-semtag="HCI">🖥️ HCI</span>
+    <span class="keyword-pill" data-semtag="AI">🤖 AI</span>
+    <span class="keyword-pill" data-semtag="SE">⚙️ SE</span>
+  </div>
+</div>
 <div class="keyword-section" id="conf-section" style="display:none">
   <div class="keyword-pills" id="conf-field-pills">
     <span class="keyword-pill" data-field="all">All Fields</span>
@@ -658,6 +666,7 @@ let currentRegion = 'all';
 let currentSource = 'all';
 let currentField = 'all';
 let currentDeadline = 'all';
+let currentSemTag = 'all';
 let searchQuery = '';
 
 const sourceColors = {
@@ -794,11 +803,13 @@ function render() {
   const isStatic = meta && meta.static;
   const hasUserItems = getCollection().some(i => i.category === currentCategory);
   const confSection = document.getElementById('conf-section');
+  const seminarSection = document.getElementById('seminar-section');
   // Grid layout for all categories
   container.classList.add('grid-mode');
   kwSection.style.display = (currentCategory === 'papers') ? '' : 'none';
   regionSection.style.display = currentCategory === 'opportunities' ? '' : 'none';
   confSection.style.display = currentCategory === 'conferences' ? '' : 'none';
+  seminarSection.style.display = currentCategory === 'seminars' ? '' : 'none';
   sourceSection.style.display = (isStatic && hasUserItems) ? '' : 'none';
 
   // Static link categories
@@ -830,6 +841,10 @@ function render() {
           return currentDeadline === 'upcoming' ? dlDate >= now : dlDate < now;
         });
       }
+    }
+    // Tag filter for seminars
+    if (currentCategory === 'seminars' && currentSemTag !== 'all') {
+      items = items.filter(i => (i['\u6807\u7b7e'] || '').split(',').includes(currentSemTag));
     }
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
@@ -1130,6 +1145,14 @@ document.getElementById('content').addEventListener('click', e => {
 });
 
 // ─── Conference Filters (field + deadline) ───
+document.getElementById('seminar-tag-pills').addEventListener('click', e => {
+  const pill = e.target.closest('.keyword-pill');
+  if (!pill) return;
+  currentSemTag = pill.dataset.semtag;
+  document.querySelectorAll('#seminar-tag-pills .keyword-pill').forEach(p => p.classList.remove('active'));
+  pill.classList.add('active');
+  render();
+});
 document.getElementById('conf-field-pills').addEventListener('click', e => {
   const pill = e.target.closest('.keyword-pill');
   if (!pill) return;
