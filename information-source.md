@@ -368,7 +368,6 @@ agent, human-AI, agentic, collaboration, qualitative
 | SIGIR 2026 | https://sigir.org | AI-ML | A | TBD | TBD | Information Retrieval |
 | FSE 2026 | https://conf.researchr.org/home/fse-2026 | SE | A | TBD | TBD | Foundations of Software Engineering |
 | ASE 2026 | https://conf.researchr.org/home/ase-2026 | SE | A | TBD | TBD | Automated Software Engineering |
-| ISSTA 2026 | https://conf.researchr.org/home/issta-2026 | SE | A | TBD | TBD | International Symposium on Software Testing and Analysis |
 | NAACL 2026 | https://www.aclweb.org | NLP | B | TBD | TBD | North American Chapter of ACL |
 | COLING 2026 | https://coling2026.org | NLP | B | TBD | TBD | International Conference on Computational Linguistics |
 | EACL 2026 | https://www.aclweb.org | NLP | B | TBD | TBD | European Chapter of ACL |
@@ -378,9 +377,6 @@ agent, human-AI, agentic, collaboration, qualitative
 | UbiComp 2026 | https://ubicomp.org | HCI | A | TBD | TBD | Ubiquitous Computing |
 | GROUP 2026 | https://group.acm.org | HCI | C | TBD | TBD | International Conference on Supporting Group Work |
 | INTERACT 2026 | https://interact2026.org | HCI | B | TBD | TBD | Human-Computer Interaction |
-| OOPSLA 2026 | https://conf.researchr.org/home/oopsla-2026 | SE | A | TBD | TBD | Object-Oriented Programming, Systems, Languages & Applications |
-| PLDI 2026 | https://conf.researchr.org/home/pldi-2026 | SE | A | TBD | TBD | Programming Language Design and Implementation |
-| ICPC 2026 | https://conf.researchr.org/home/icpc-2026 | SE | B | TBD | TBD | International Conference on Program Comprehension |
 | CHI GenAICHI Workshop | https://genai-chi.github.io | Workshop | 2026-02-20 | 2026-04-26 | Generative AI × HCI (co-located with CHI) |
 | CHI TREW Workshop | https://trew-workshop.github.io | Workshop | 2026-02-20 | 2026-04-26 | Trust & Reliance in Human-AI Workflows (co-located with CHI) |
 | ACL/EMNLP HCI+NLP Workshop | https://aclanthology.org | Workshop | TBD | TBD | HCI×NLP交叉 |
