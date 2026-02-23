@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-02-23T22:45:19.713783",
+    "fetched_at": "2026-02-23T22:55:43.879593",
     "lookback_days": 7,
     "keywords": [
       "human-AI collaboration",
@@ -1202,22 +1202,6 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "a6dcab0c8fe8d36e947334f3c0e92332b2d5f393",
-      "title": "Multi-Round Human-AI Collaboration with User-Specified Requirements",
-      "authors": [
-        "Sima Noorani",
-        "Shayan Kiyani",
-        "Hamed Hassani",
-        "George Pappas"
-      ],
-      "summary": "As humans increasingly rely on multiround conversational AI for high stakes decisions, principled frameworks are needed to ensure such interactions reliably improve decision quality. We adopt a human centric view governed by two principles: counterfactual harm, ensuring the AI does not undermine human strengths, and complementarity, ensuring it adds value where the human is prone to err. We formalize these concepts via user defined rules, allowing users to specify exactly what harm and complemen",
-      "published": "2026-02-19",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/a6dcab0c8fe8d36e947334f3c0e92332b2d5f393",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
       "id": "b120afe43f244c72dcbe14d2e70bc026ef7894b0",
       "title": "Cooperative AI and Human-Centered Systems for Space Exploration and Translational Medicine Including Surgery",
       "authors": [],
@@ -1226,121 +1210,6 @@
       "citations": 0,
       "link": "https://www.semanticscholar.org/paper/b120afe43f244c72dcbe14d2e70bc026ef7894b0",
       "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "4682903363bc1ab7885673fe7b5fa2b94210eda1",
-      "title": "Human-AI Collaboration in Large Language Model-Integrated Building Energy Management Systems: The Role of User Domain Knowledge and AI Literacy",
-      "authors": [
-        "Wooyoung Jung",
-        "Kahyun Jeon",
-        "Prosper Babon-Ayeng"
-      ],
-      "summary": "This study aimed to comprehend how user domain knowledge and artificial intelligence (AI) literacy impact the effective use of human-AI interactive building energy management system (BEMS). While prior studies have investigated the potential of integrating large language models (LLMs) into BEMS or building energy modeling, very few studies have examined how user interact with such systems. We conducted a systematic role-playing experiment, where 85 human subjects interacted with an advanced gene",
-      "published": "2026-02-18",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/4682903363bc1ab7885673fe7b5fa2b94210eda1",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "527519dd69b8ad85a09b642b62be3ea2a8b00b55",
-      "title": "Deriving Instructional Insights from Human-LLM Co-Evaluation of Student Collaboration in Data-Centric Programming",
-      "authors": [
-        "Marshall An",
-        "Christine Kwon",
-        "Yoonjae Lee",
-        "Ji-Hyeon Hur",
-        "Dongho Lee"
-      ],
-      "summary": "This quasi-experimental study integrates a large language model (LLM) with expert qualitative analysis to examine how instructional design variations in computer-supported collaborative learning (CSCL) shape collaboration in data-centric programming. We collected 73 team transcripts from two contrasting CSCL designs deployed across five course offerings: a closed-ended variant with prescribed solution paths and auto-graded milestones, and an open-ended variant supporting exploratory tasks with m",
-      "published": "2026-02-17",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/527519dd69b8ad85a09b642b62be3ea2a8b00b55",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "8fae2c3f7f1f69a60ba18e320af041317bb2609b",
-      "title": "Zero-shot stance detection in practice: insights on training, prompting, and decoding with a capable lightweight LLM",
-      "authors": [
-        "Rachith Aiyappa",
-        "Shruthi Senthilmani",
-        "Jisun An",
-        "Haewoon Kwak",
-        "Yong-Yeol Ahn"
-      ],
-      "summary": "We investigate the performance of Large Language Model (LLM)-based zero-shot stance detection on tweets. Using FlanT5-XXL, an instruction-tuned open-source LLM, with the SemEval 2016 Tasks 6A, 6B, and P-Stance datasets, we analyze how its performance varies under different prompts and decoding strategies, as well as potential model biases. We show that the zero-shot approach can match or outperform state-of-the-art methods, including fine-tuned models. Additionally, we provide practical insights",
-      "published": "2026-02-12",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/8fae2c3f7f1f69a60ba18e320af041317bb2609b",
-      "matched_keyword": "LLM qualitative analysis",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
-      "title": "Jokeasy: Exploring Human-AI Collaboration in Thematic Joke Generation",
-      "authors": [
-        "Yate Ge",
-        "Lin Tian",
-        "Chiqian Xu",
-        "Luyao Xu",
-        "Meiying Li"
-      ],
-      "summary": "Thematic jokes are central to stand-up comedy, sitcoms, and public speaking, where contexts and punchlines rely on fresh material - news, anecdotes, and cultural references that resonate with the audience. Recent advances in Large Language Models (LLMs) have enabled interactive joke generation through conversational interfaces. Although LLMs enable interactive joke generation, ordinary conversational interfaces seldom give creators enough agency, control, or timely access to such source material",
-      "published": "2026-02-10",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/fb3999a0d6d1b851e62b1fdc9fdeb28f94e0b381",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "8b82fa412642816f7db5deaed364a836ebdd201d",
-      "title": "Thinking Makes LLM Agents Introverted: How Mandatory Thinking Can Backfire in User-Engaged Agents",
-      "authors": [
-        "Jiatong Li",
-        "Changdae Oh",
-        "Hyeong Kyu Choi",
-        "Jindong Wang",
-        "Sharon Li"
-      ],
-      "summary": "Eliciting reasoning has emerged as a powerful technique for improving the performance of large language models (LLMs) on complex tasks by inducing thinking. However, their effectiveness in realistic user-engaged agent scenarios remains unclear. In this paper, we conduct a comprehensive study on the effect of explicit thinking in user-engaged LLM agents. Our experiments span across seven models, three benchmarks, and two thinking instantiations, and we evaluate them through both a quantitative re",
-      "published": "2026-02-08",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/8b82fa412642816f7db5deaed364a836ebdd201d",
-      "matched_keyword": "LLM qualitative analysis",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "0bf6ab530c50492142bf37789e81e6637315a012",
-      "title": "From Human-Human Collaboration to Human-Agent Collaboration: A Vision, Design Philosophy, and an Empirical Framework for Achieving Successful Partnerships Between Humans and LLM Agents",
-      "authors": [
-        "Bingsheng Yao",
-        "Chaoran Chen",
-        "A. Wang",
-        "Sherry Tongshuang Wu",
-        "T. Li"
-      ],
-      "summary": "The emergence of Large Language Model (LLM) agents enables us to build agent-based intelligent systems that move beyond the role of a\"tool\"to become genuine collaborators with humans, thereby realizing a novel human-agent collaboration paradigm. Our vision is that LLM agents should resemble remote human collaborators, which allows HCI researchers to ground the future exploration in decades of research on trust, awareness, and common ground in remote human collaboration, while also revealing the ",
-      "published": "2026-02-05",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/0bf6ab530c50492142bf37789e81e6637315a012",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "b901ef580574dc6b16cc2a61f56802e781b7aeff",
-      "title": "Testing LLM Diagnostics in Endodontics: The Impact of Linguistic Variation on Unseen Cases.",
-      "authors": [
-        "Itrat Batool",
-        "N. Naved",
-        "F. Umer"
-      ],
-      "summary": "AIM\nTo assess the diagnostic performance of two language models, GPT-5 Plus and Gemini 2.5 Flash using a curated benchmark dataset of unseen endodontic and restorative dentistry related clinical case scenarios and the linguistic variations introduced around the original dataset. Additionally, a descriptive qualitative analysis was performed on a subset of cases to evaluate the quality of reasoning generated by both models.\n\n\nMETHODOLOGY\nOne hundred single best answer MCQs were generated using st",
-      "published": "2026-02-05",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/b901ef580574dc6b16cc2a61f56802e781b7aeff",
-      "matched_keyword": "LLM qualitative analysis",
       "source": "semantic_scholar"
     },
     {
@@ -1360,38 +1229,6 @@
       "source": "semantic_scholar"
     },
     {
-      "id": "604d0e8c191f7d11a919f3cda1cd037b6036a36c",
-      "title": "Success and failure of human-AI collaboration in clinical reasoning: An experimental study on challenging real-world cases",
-      "authors": [
-        "Kai Tzu-iunn Ong",
-        "Junwon Seo",
-        "Hyojun Kim",
-        "Jiwoo Kim",
-        "Jihoon Kim"
-      ],
-      "summary": "BACKGROUND\nWhile conversational human-AI collaboration (HAC) using large language models (LLM) has shown potential to enhance clinical reasoning, its effectiveness in highly specialized and challenging clinical scenarios remains unclear. This study aimed to evaluate the effectiveness of HAC and analyzed the causes of its success and failure.\n\n\nMETHODS\nA crossover experimental study was conducted using 30 challenging cases from JAMA Ophthalmology. Thirty participants (10 board-certified ophthalmo",
-      "published": "2026-02-01",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/604d0e8c191f7d11a919f3cda1cd037b6036a36c",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "b7a0a1d5d16fc1994c2242878653906ba015455b",
-      "title": "LeagueBot: A Voice LLM Companion of Cognitive and Emotional Support for Novice Players in Competitive Games",
-      "authors": [
-        "Jungmin Lee",
-        "Inhee Cho",
-        "Youngjae Yoo"
-      ],
-      "summary": "Competitive games pose steep learning curves and strong social pressures, often discouraging novice players and limiting sustained engagement. To address these challenges, this study introduces LeagueBot, a large language model-based voice chatbot designed to provide both informational and emotional support during live gameplay in league of legends, one of the most competitive multiplayer online battle arena games. In a within-subjects experiment with 33 novice players, LeagueBot was found to re",
-      "published": "2026-02-01",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/b7a0a1d5d16fc1994c2242878653906ba015455b",
-      "matched_keyword": "LLM qualitative analysis",
-      "source": "semantic_scholar"
-    },
-    {
       "id": "802f3d25799b1a1e9543e97031f24e8f009770f4",
       "title": "An HCAI Methodological Framework: Putting it Into Action to Enable Human-Centered AI",
       "authors": [
@@ -1404,69 +1241,6 @@
       "citations": 11,
       "link": "https://www.semanticscholar.org/paper/802f3d25799b1a1e9543e97031f24e8f009770f4",
       "matched_keyword": "human-centered AI systems",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "5eb71f6e5f5bf8b1f7299601df0eb309576edc96",
-      "title": "How topic content shapes LLM personality-tailored persuasion: semantic anchoring and topic stereotype effects",
-      "authors": [
-        "Shuang Xu",
-        "Zili Zhou",
-        "Nan Zhao"
-      ],
-      "summary": "Large language models (LLMs) have shown promise in generating personality-tailored persuasive messages, yet their effectiveness remains inconsistent across contexts. This research systematically investigated how the characteristics of recommended products or actions shapes the efficacy of LLM- generated personality-tailored persuasion through three experimental studies (N = 618). Study 1 revealed that personality-matching effects were limited and inconsistent when the core features of the recomm",
-      "published": "2026-01-30",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/5eb71f6e5f5bf8b1f7299601df0eb309576edc96",
-      "matched_keyword": "LLM qualitative analysis",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "192a166871cf394d97cb8c6cf09e73325a2800dd",
-      "title": "Exploring Human-AI Collaboration Dynamics in LLM-supported Engineering Project-Based Learning",
-      "authors": [
-        "Xuan Qiu",
-        "Tin Nok Mak"
-      ],
-      "summary": "",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/192a166871cf394d97cb8c6cf09e73325a2800dd",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "66ea1aa845a34c6693e11d31789a0eec330433de",
-      "title": "Human-LLM Collaboration Framework for Translating Health Instruments",
-      "authors": [
-        "Hind Bitar",
-        "Omaima Almatrafi",
-        "Amal Babour",
-        "Ohoud Alzamzami",
-        "Mayda Alrige"
-      ],
-      "summary": "Large language models have revolutionized various sectors, including education and healthcare, by demonstrating significant advancements in producing human-like text and enhancing translation accuracy. Despite these advancements, the conventional process of cross-cultural instrument translation remains labor-intensive, expensive, and heavily dependent on the expertise of human professionals, including translators and healthcare specialists. The objective of this study is to address the translati",
-      "published": "2026",
-      "citations": 0,
-      "link": "https://www.semanticscholar.org/paper/66ea1aa845a34c6693e11d31789a0eec330433de",
-      "matched_keyword": "human-AI collaboration LLM",
-      "source": "semantic_scholar"
-    },
-    {
-      "id": "a785dc215f8dd317f272e1db008ee9fa0733850e",
-      "title": "CCM-FCC: LLM-powered cognition-centered AI agent framework for proactive human-robot collaboration",
-      "authors": [
-        "Pengfei Ding",
-        "Jie Zhang",
-        "Peng Zhang",
-        "Hongsen Li",
-        "Dexian Wang"
-      ],
-      "summary": "",
-      "published": "2026",
-      "citations": 2,
-      "link": "https://www.semanticscholar.org/paper/a785dc215f8dd317f272e1db008ee9fa0733850e",
-      "matched_keyword": "human-AI collaboration LLM",
       "source": "semantic_scholar"
     },
     {
@@ -1703,7 +1477,7 @@
       "title": "Aqua: A CLI message tool for AI agents",
       "link": "https://github.com/quailyquaily/aqua",
       "hn_link": "https://news.ycombinator.com/item?id=47117169",
-      "points": 70,
+      "points": 71,
       "comments": 32,
       "published": "2026-02-23",
       "matched_keyword": "AI agent",
@@ -1853,6 +1627,17 @@
       "source": "hackernews"
     },
     {
+      "id": "47126168",
+      "title": "Writing about Agentic Engineering Patterns",
+      "link": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
+      "hn_link": "https://news.ycombinator.com/item?id=47126168",
+      "points": 4,
+      "comments": 0,
+      "published": "2026-02-23",
+      "matched_keyword": "agentic",
+      "source": "hackernews"
+    },
+    {
       "id": "47097288",
       "title": "How to Use Goosetown for Parallel Agentic Engineering",
       "link": "https://block.github.io/goose/blog/2026/02/19/gastown-explained-goosetown/",
@@ -1897,17 +1682,6 @@
       "source": "hackernews"
     },
     {
-      "id": "47056400",
-      "title": "A Guide to Which AI to Use in the Agentic Era",
-      "link": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
-      "hn_link": "https://news.ycombinator.com/item?id=47056400",
-      "points": 4,
-      "comments": 0,
-      "published": "2026-02-18",
-      "matched_keyword": "agentic",
-      "source": "hackernews"
-    },
-    {
       "id": "47045159",
       "title": "AI is slowly munching away my passion",
       "link": "https://whynot.fail/human/ai-is-slowly-munching-away-my-passion/",
@@ -1916,17 +1690,6 @@
       "comments": 0,
       "published": "2026-02-17",
       "matched_keyword": "human-AI",
-      "source": "hackernews"
-    },
-    {
-      "id": "47076849",
-      "title": "Idea: Medbook and Other Ideas",
-      "link": "https://news.ycombinator.com/item?id=47076849",
-      "hn_link": "https://news.ycombinator.com/item?id=47076849",
-      "points": 3,
-      "comments": 1,
-      "published": "2026-02-19",
-      "matched_keyword": "AI collaboration",
       "source": "hackernews"
     },
     {
@@ -1992,28 +1755,6 @@
       "points": 2,
       "comments": 0,
       "published": "2026-02-20",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47096307",
-      "title": "Show HN: Universal ROS bridge for AI agents – control robots with LLMs",
-      "link": "https://github.com/webthree549-bot/agent-ros-bridge",
-      "hn_link": "https://news.ycombinator.com/item?id=47096307",
-      "points": 2,
-      "comments": 1,
-      "published": "2026-02-21",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47066016",
-      "title": "Show HN: Sniptail – Turn Slack into a team interface for AI coding agents",
-      "link": "https://github.com/Justkog/sniptail",
-      "hn_link": "https://news.ycombinator.com/item?id=47066016",
-      "points": 2,
-      "comments": 0,
-      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     },
@@ -2135,17 +1876,6 @@
       "points": 1,
       "comments": 0,
       "published": "2026-02-20",
-      "matched_keyword": "AI collaboration",
-      "source": "hackernews"
-    },
-    {
-      "id": "47063668",
-      "title": "Show HN: Supervisor IDE – Command center for coding agents in complex projects",
-      "link": "https://nexroo.ai/supervisor",
-      "hn_link": "https://news.ycombinator.com/item?id=47063668",
-      "points": 1,
-      "comments": 0,
-      "published": "2026-02-18",
       "matched_keyword": "AI collaboration",
       "source": "hackernews"
     }
@@ -2566,23 +2296,29 @@
     {
       "名称": "Latent Space Podcast",
       "链接": "https://latent.space",
-      "说明": "AI工程最前沿，agent相关讨论",
-      "标签": "播客"
+      "说明": "AI工程最前沿，agent相关讨论"
     },
     {
       "名称": "TWIML AI Podcast",
       "链接": "https://twimlai.com",
-      "说明": "学术+工业混合视角",
-      "标签": "播客"
+      "说明": "学术+工业混合视角"
     },
     {
       "名称": "NeurIPS/CHI 录播",
       "链接": "https://youtube.com",
-      "说明": "重要talk的录播",
-      "标签": "播客"
+      "说明": "重要talk的录播"
     }
   ],
   "conferences": [
+    {
+      "名称": "AAAI 2026",
+      "链接": "https://aaai.org",
+      "领域": "AI-ML",
+      "CCF": "A",
+      "Deadline": "2025-08-15",
+      "会议日期": "2026-02-20",
+      "说明": "综合AI顶会, human-AI collaboration track. Philadelphia, USA"
+    },
     {
       "名称": "TEI 2026",
       "链接": "https://tei.acm.org/2026/",
@@ -2650,6 +2386,7 @@
       "名称": "DIS 2026",
       "链接": "https://dis.acm.org",
       "领域": "HCI",
+      "CCF": "B",
       "Deadline": "2026-02-07",
       "会议日期": "2026-06-28",
       "说明": "Designing Interactive Systems"
@@ -2676,6 +2413,7 @@
       "名称": "HCI International 2026",
       "链接": "https://2026.hci.international/",
       "领域": "HCI",
+      "CCF": "C",
       "Deadline": "2026-02-28",
       "会议日期": "2026-07-26",
       "说明": "Montreal, Canada. 28th International Conference on HCI"
@@ -2684,6 +2422,7 @@
       "名称": "ACL 2026",
       "链接": "https://www.aclweb.org",
       "领域": "NLP",
+      "CCF": "A",
       "Deadline": "2026-02-15",
       "会议日期": "2026-08-01",
       "说明": "NLP顶会, human-LLM interaction相关"
@@ -2692,6 +2431,7 @@
       "名称": "AIES 2026",
       "链接": "https://www.aies-conference.com",
       "领域": "Ethics",
+      "CCF": "C",
       "Deadline": "2026-02-18",
       "会议日期": "2026-08-04",
       "说明": "AI, Ethics, and Society"
@@ -2700,6 +2440,7 @@
       "名称": "ASSETS 2026",
       "链接": "https://assets.acm.org",
       "领域": "HCI",
+      "CCF": "B",
       "Deadline": "2026-04-15",
       "会议日期": "2026-10-25",
       "说明": "Accessible Computing, AI accessibility"
@@ -2708,6 +2449,7 @@
       "名称": "UIST 2026",
       "链接": "https://uist.acm.org",
       "领域": "HCI",
+      "CCF": "A",
       "Deadline": "2026-04-02",
       "会议日期": "2026-10-26",
       "说明": "User Interface Software and Technology. Lisbon, Portugal"
@@ -2716,6 +2458,7 @@
       "名称": "NeurIPS 2026",
       "链接": "https://neurips.cc",
       "领域": "AI-ML",
+      "CCF": "A",
       "Deadline": "2026-05-16",
       "会议日期": "2026-12-06",
       "说明": "ML/AI最大顶会, agent/alignment/human-AI"
@@ -2724,49 +2467,213 @@
       "名称": "EMNLP 2026",
       "链接": "https://www.aclweb.org",
       "领域": "NLP",
+      "CCF": "A",
       "Deadline": "2026-06-01",
       "会议日期": "2026-12-10",
       "说明": "NLP顶会, empirical methods"
     },
     {
-      "名称": "AAAI 2026",
-      "链接": "https://aaai.org",
+      "名称": "IJCAI 2026",
+      "链接": "https://www.ijcai.org",
       "领域": "AI-ML",
-      "Deadline": "2025-08-15",
-      "会议日期": "2026-02-20",
-      "说明": "综合AI顶会, human-AI collaboration track. Philadelphia, USA"
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "International Joint Conference on Artificial Intelligence"
+    },
+    {
+      "名称": "KDD 2026",
+      "链接": "https://www.kdd.org",
+      "领域": "AI-ML",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Knowledge Discovery and Data Mining"
+    },
+    {
+      "名称": "WWW 2026",
+      "链接": "https://www2026.thewebconf.org",
+      "领域": "AI-ML",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "The Web Conference"
+    },
+    {
+      "名称": "SIGIR 2026",
+      "链接": "https://sigir.org",
+      "领域": "AI-ML",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Information Retrieval"
+    },
+    {
+      "名称": "FSE 2026",
+      "链接": "https://conf.researchr.org/home/fse-2026",
+      "领域": "SE",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Foundations of Software Engineering"
+    },
+    {
+      "名称": "ASE 2026",
+      "链接": "https://conf.researchr.org/home/ase-2026",
+      "领域": "SE",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Automated Software Engineering"
+    },
+    {
+      "名称": "ISSTA 2026",
+      "链接": "https://conf.researchr.org/home/issta-2026",
+      "领域": "SE",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "International Symposium on Software Testing and Analysis"
+    },
+    {
+      "名称": "NAACL 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "North American Chapter of ACL"
+    },
+    {
+      "名称": "COLING 2026",
+      "链接": "https://coling2026.org",
+      "领域": "NLP",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "International Conference on Computational Linguistics"
+    },
+    {
+      "名称": "EACL 2026",
+      "链接": "https://www.aclweb.org",
+      "领域": "NLP",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "European Chapter of ACL"
+    },
+    {
+      "名称": "ECML-PKDD 2026",
+      "链接": "https://ecmlpkdd.org",
+      "领域": "AI-ML",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "European Conference on Machine Learning"
+    },
+    {
+      "名称": "WSDM 2026",
+      "链接": "https://www.wsdm-conference.org",
+      "领域": "AI-ML",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Web Search and Data Mining"
+    },
+    {
+      "名称": "CIKM 2026",
+      "链接": "https://www.cikm2026.org",
+      "领域": "AI-ML",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Conference on Information and Knowledge Management"
+    },
+    {
+      "名称": "UbiComp 2026",
+      "链接": "https://ubicomp.org",
+      "领域": "HCI",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Ubiquitous Computing"
+    },
+    {
+      "名称": "GROUP 2026",
+      "链接": "https://group.acm.org",
+      "领域": "HCI",
+      "CCF": "C",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "International Conference on Supporting Group Work"
+    },
+    {
+      "名称": "INTERACT 2026",
+      "链接": "https://interact2026.org",
+      "领域": "HCI",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Human-Computer Interaction"
+    },
+    {
+      "名称": "OOPSLA 2026",
+      "链接": "https://conf.researchr.org/home/oopsla-2026",
+      "领域": "SE",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Object-Oriented Programming, Systems, Languages & Applications"
+    },
+    {
+      "名称": "PLDI 2026",
+      "链接": "https://conf.researchr.org/home/pldi-2026",
+      "领域": "SE",
+      "CCF": "A",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "Programming Language Design and Implementation"
+    },
+    {
+      "名称": "ICPC 2026",
+      "链接": "https://conf.researchr.org/home/icpc-2026",
+      "领域": "SE",
+      "CCF": "B",
+      "Deadline": "TBD",
+      "会议日期": "TBD",
+      "说明": "International Conference on Program Comprehension"
     },
     {
       "名称": "CHI GenAICHI Workshop",
       "链接": "https://genai-chi.github.io",
       "领域": "Workshop",
-      "Deadline": "2026-02-20",
-      "会议日期": "2026-04-26",
-      "说明": "Generative AI × HCI (co-located with CHI)"
+      "CCF": "2026-02-20",
+      "Deadline": "2026-04-26",
+      "会议日期": "Generative AI × HCI (co-located with CHI)"
     },
     {
       "名称": "CHI TREW Workshop",
       "链接": "https://trew-workshop.github.io",
       "领域": "Workshop",
-      "Deadline": "2026-02-20",
-      "会议日期": "2026-04-26",
-      "说明": "Trust & Reliance in Human-AI Workflows (co-located with CHI)"
+      "CCF": "2026-02-20",
+      "Deadline": "2026-04-26",
+      "会议日期": "Trust & Reliance in Human-AI Workflows (co-located with CHI)"
     },
     {
       "名称": "ACL/EMNLP HCI+NLP Workshop",
       "链接": "https://aclanthology.org",
       "领域": "Workshop",
+      "CCF": "TBD",
       "Deadline": "TBD",
-      "会议日期": "TBD",
-      "说明": "HCI×NLP交叉"
+      "会议日期": "HCI×NLP交叉"
     },
     {
       "名称": "NeurIPS/ICML Agent Workshops",
       "链接": "https://neurips.cc",
       "领域": "Workshop",
+      "CCF": "TBD",
       "Deadline": "TBD",
-      "会议日期": "TBD",
-      "说明": "系统/ML视角的agent研究"
+      "会议日期": "系统/ML视角的agent研究"
     }
   ],
   "opportunities": [
@@ -2983,7 +2890,7 @@
       "summary": "Computing Research Association job board. Largest source of CS academic positions in North America.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -2993,7 +2900,7 @@
       "summary": "Large US-focused academic job board. Filter by Computer Science / IT category.",
       "region": "🇺🇸 US",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🇺🇸 US"
     },
     {
@@ -3003,7 +2910,7 @@
       "summary": "Global academic recruitment platform. Strong for R1 universities.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3013,7 +2920,7 @@
       "summary": "Global academic job listings, strong for UK/Europe/Asia/Australia.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3023,7 +2930,7 @@
       "summary": "UK & Ireland academic positions. Best source for British universities.",
       "region": "🇬🇧 UK",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🇬🇧 UK"
     },
     {
@@ -3033,7 +2940,7 @@
       "summary": "European academic positions across all countries.",
       "region": "🇪🇺 Europe",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🇪🇺 Europe"
     },
     {
@@ -3043,7 +2950,7 @@
       "summary": "Community-maintained list of CS open positions worldwide. Updated frequently by the community.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🌐 Global"
     },
     {
@@ -3053,7 +2960,7 @@
       "summary": "Community-maintained spreadsheet/wiki tracking CS faculty openings and their status.",
       "region": "🌐 Global",
       "origin": "Board",
-      "ts": 1771886807,
+      "ts": 1771887435,
       "matched_keyword": "🌐 Global"
     }
   ]
