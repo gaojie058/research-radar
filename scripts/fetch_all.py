@@ -34,6 +34,8 @@ def load_config():
         "reddit_subreddits": ["MachineLearning", "artificial", "LocalLLaMA"],
         "reddit_keywords": ["agent", "human-AI", "agentic"],
         "days_lookback": 7,
+        "bluesky_keywords": ["human-AI collaboration", "coding agents", "LLM agent", "HCI research"],
+        "bluesky_handles": ["janchristianblaise.bsky.social", "hci.bsky.social"],
     }
 
     if not CONFIG_MD.exists():
@@ -131,6 +133,16 @@ def load_config():
     if raw:
         config["reddit_keywords"] = parse_comma_list(raw)
 
+    # Bluesky keywords
+    raw = extract_section("Bluesky 关键词")
+    if raw:
+        config["bluesky_keywords"] = parse_bullet_list(raw)
+
+    # Bluesky tracked handles
+    raw = extract_section("Bluesky 跟踪账号")
+    if raw:
+        config["bluesky_handles"] = parse_comma_list(raw)
+
     # Days lookback
     raw = extract_section("时间窗口")
     if raw:
@@ -161,6 +173,8 @@ HN_KEYWORDS = CFG["hn_keywords"]
 REDDIT_SUBREDDITS = CFG["reddit_subreddits"]
 REDDIT_KEYWORDS = CFG["reddit_keywords"]
 DAYS_LOOKBACK = CFG["days_lookback"]
+BLUESKY_KEYWORDS = CFG.get("bluesky_keywords", ["human-AI collaboration", "coding agents", "LLM agent", "HCI research"])
+BLUESKY_HANDLES = CFG.get("bluesky_handles", ["janchristianblaise.bsky.social", "hci.bsky.social"])
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -467,6 +481,91 @@ def fetch_reddit():
     return results
 
 
+# ─── Bluesky ─────────────────────────────────────────────────────────────────
+
+def fetch_bluesky():
+    """Fetch posts from Bluesky via public API (no auth required)."""
+    print("🦋 Fetching Bluesky posts...")
+    results = []
+    seen_uris = set()
+
+    def parse_post(post, matched_keyword):
+        uri = post.get("uri", "")
+        if not uri or uri in seen_uris:
+            return None
+        seen_uris.add(uri)
+        author = post.get("author", {})
+        handle = author.get("handle", "")
+        rkey = uri.split("/")[-1]
+        link = f"https://bsky.app/profile/{handle}/post/{rkey}"
+        record = post.get("record", {})
+        text = record.get("text", "")
+        created_at = record.get("createdAt", "")
+        published = created_at[:10] if created_at else ""
+        if published:
+            try:
+                pub_date = datetime.strptime(published, "%Y-%m-%d")
+                if pub_date < datetime.now() - timedelta(days=DAYS_LOOKBACK):
+                    return None
+            except ValueError:
+                pass
+        return {
+            "id": uri,
+            "title": text[:120] + ("..." if len(text) > 120 else ""),
+            "authors": [handle],
+            "summary": text[:500],
+            "published": published,
+            "likes": post.get("likeCount", 0),
+            "reposts": post.get("repostCount", 0),
+            "link": link,
+            "matched_keyword": matched_keyword,
+            "source": "bluesky",
+        }
+
+    # Keyword search
+    for keyword in BLUESKY_KEYWORDS:
+        url = (
+            f"https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts"
+            f"?q={urllib.parse.quote(keyword)}&limit=10"
+        )
+        data = safe_request(url)
+        if not data:
+            continue
+        try:
+            parsed = json.loads(data)
+            for post in parsed.get("posts", []):
+                item = parse_post(post, keyword)
+                if item:
+                    results.append(item)
+        except json.JSONDecodeError:
+            pass
+        time.sleep(0.5)
+
+    # Fetch from tracked handles
+    for handle in BLUESKY_HANDLES:
+        url = (
+            f"https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed"
+            f"?actor={urllib.parse.quote(handle)}&limit=10"
+        )
+        data = safe_request(url)
+        if not data:
+            continue
+        try:
+            parsed = json.loads(data)
+            for feed_item in parsed.get("feed", []):
+                post = feed_item.get("post", {})
+                item = parse_post(post, f"handle:{handle}")
+                if item:
+                    results.append(item)
+        except json.JSONDecodeError:
+            pass
+        time.sleep(0.5)
+
+    results.sort(key=lambda x: x.get("published", ""), reverse=True)
+    print(f"  ✓ Found {len(results)} Bluesky posts")
+    return results
+
+
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
@@ -484,6 +583,7 @@ def main():
         "semantic_scholar": fetch_semantic_scholar(),
         "hackernews": fetch_hackernews(),
         "reddit": fetch_reddit(),
+        "bluesky": fetch_bluesky(),
         "blogs": CFG["blogs"],
         "newsletters": CFG["newsletters"],
         "researchers": CFG["researchers"],
@@ -513,7 +613,7 @@ def main():
     with open(archive_path, "w") as f:
         json.dump(all_data, f, indent=2, ensure_ascii=False)
 
-    total = sum(len(all_data[k]) for k in ["arxiv", "semantic_scholar", "hackernews", "reddit"])
+    total = sum(len(all_data[k]) for k in ["arxiv", "semantic_scholar", "hackernews", "reddit", "bluesky"])
     print(f"\n✅ Done! Total items: {total}")
     print(f"   Output: {output_path}")
 

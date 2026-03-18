@@ -21,6 +21,7 @@
     --accent-hn: #e65100;
     --accent-reddit: #e53935;
     --accent-twitter: #1a8cd8;
+    --accent-bluesky: #0085ff;
     --accent-papers: #8e44ad;
     --accent-discussions: #e67e22;
     --accent-blogs: #27ae60;
@@ -445,6 +446,80 @@
     .card { padding: 1rem; }
     .keyword-section { padding: 0.8rem 1rem; }
   }
+
+  /* ─── Content Generator ─── */
+  .gen-panel {
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .gen-panel-inner {
+    padding: 1rem 2rem;
+    max-width: 1100px;
+  }
+  .gen-input-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  #gen-input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    resize: vertical;
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+  }
+  #gen-input:focus { border-color: var(--text-muted); }
+  .gen-btn {
+    padding: 0.6rem 1.2rem;
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+  }
+  .gen-btn:hover { opacity: 0.8; }
+  .gen-results {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+  }
+  .gen-copy-btn {
+    padding: 0.2rem 0.6rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.68rem;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    color: var(--text-dim);
+    transition: background 0.15s;
+  }
+  .gen-copy-btn:hover { background: var(--surface-hover); }
+  .gen-toggle-btn {
+    padding: 0.35rem 0.8rem;
+    background: var(--surface);
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .gen-toggle-btn:hover { color: var(--text); border-color: var(--text-muted); }
+  .gen-toggle-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 </style>
 </head>
 <body>
@@ -455,10 +530,22 @@
     <div class="meta-info" id="meta-info">loading...</div>
   </div>
   <div class="header-right">
+    <button class="gen-toggle-btn" id="gen-toggle-btn">✍️ Generate Posts</button>
     <input type="text" class="search-box" id="search" placeholder="filter by keyword, author, title..." />
     <button class="collection-btn" id="collection-btn" data-category="mycollection">
       📌 My Collection <span class="count" id="count-mycollection">—</span>
     </button>
+  </div>
+</div>
+
+<!-- Content Generator Panel -->
+<div class="gen-panel" id="gen-panel" style="display:none">
+  <div class="gen-panel-inner">
+    <div class="gen-input-row">
+      <textarea id="gen-input" rows="3" placeholder="Paste your research finding or abstract here to generate social media posts..."></textarea>
+      <button class="gen-btn" id="gen-btn">Generate ↓</button>
+    </div>
+    <div class="gen-results" id="gen-results"></div>
   </div>
 </div>
 
@@ -660,6 +747,7 @@ const sourceColors = {
   semantic_scholar: 'var(--accent-scholar)',
   hackernews: 'var(--accent-hn)',
   reddit: 'var(--accent-reddit)',
+  bluesky: 'var(--accent-bluesky)',
 };
 
 const sourceLabels = {
@@ -667,12 +755,13 @@ const sourceLabels = {
   semantic_scholar: 'S2',
   hackernews: 'HN',
   reddit: 'Reddit',
+  bluesky: '🦋 Bluesky',
   faculty_jobs: 'Faculty',
 };
 
 const categoryMeta = {
   papers:      { sources: ['arxiv', 'semantic_scholar'], color: 'var(--accent-papers)' },
-  discussions: { sources: ['hackernews', 'reddit'],      color: 'var(--accent-discussions)' },
+  discussions: { sources: ['hackernews', 'reddit', 'bluesky'], color: 'var(--accent-discussions)' },
   blogs:       { static: true, color: 'var(--accent-blogs)',       nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u4f5c\u8005' },
   researchers: { static: true, color: 'var(--accent-researchers)', nameKey: '\u59d3\u540d', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u5e73\u53f0' },
   seminars:    { static: true, color: 'var(--accent-seminars)',   nameKey: '\u540d\u79f0', urlKey: '\u94fe\u63a5', descKey: '\u8bf4\u660e', extraKey: '\u673a\u6784' },
@@ -692,6 +781,7 @@ async function loadData() {
       ...(data.semantic_scholar || []),
       ...(data.hackernews || []),
       ...(data.reddit || []),
+      ...(data.bluesky || []),
       ...(data.faculty_jobs || []),
     ];
 
@@ -721,7 +811,7 @@ async function loadData() {
 
     // Counts
     const paperCount = (data.arxiv || []).length + (data.semantic_scholar || []).length;
-    const discussionCount = (data.hackernews || []).length + (data.reddit || []).length;
+    const discussionCount = (data.hackernews || []).length + (data.reddit || []).length + (data.bluesky || []).length;
     const totalLinks = Object.values(staticData).reduce((s, a) => s + a.length, 0);
 
     document.getElementById('count-all').textContent = allItems.length;
@@ -950,6 +1040,11 @@ function renderCard(item) {
       <span class="tag-metric">\u25B2 ${item.score || 0}</span>
       <span class="tag-metric">\uD83D\uDCAC ${item.comments || 0}</span>
       <span class="tag">r/${item.subreddit}</span>
+    `;
+  } else if (item.source === 'bluesky') {
+    metrics = `
+      <span class="tag-metric">❤️ ${item.likes || 0}</span>
+      <span class="tag-metric">🔁 ${item.reposts || 0}</span>
     `;
   } else if (item.citations != null && item.citations > 0) {
     metrics = `<span class="tag-metric">\uD83D\uDCD1 ${item.citations} cites</span>`;
@@ -1351,6 +1446,79 @@ document.getElementById('tabs').addEventListener('click', () => {
 });
 document.getElementById('collection-btn').addEventListener('click', () => {
   setTimeout(() => trackPageView('mycollection'), 100);
+});
+
+// ─── Content Generator ───
+document.getElementById('gen-toggle-btn').addEventListener('click', () => {
+  const panel = document.getElementById('gen-panel');
+  const btn = document.getElementById('gen-toggle-btn');
+  const isHidden = panel.style.display === 'none';
+  panel.style.display = isHidden ? '' : 'none';
+  btn.classList.toggle('active', isHidden);
+});
+
+document.getElementById('gen-btn').addEventListener('click', () => {
+  const input = document.getElementById('gen-input').value.trim();
+  if (!input) { document.getElementById('gen-input').focus(); return; }
+
+  function trunc(text, max) {
+    return text.length <= max ? text : text.slice(0, max - 3) + '...';
+  }
+
+  const platforms = [
+    {
+      name: 'Twitter / X', icon: '🐦', color: '#1a8cd8',
+      generate: t => trunc(t, 230) + '\n\n#HCI #AI #Research',
+    },
+    {
+      name: 'Bluesky', icon: '🦋', color: '#0085ff',
+      generate: t => trunc(t, 295) + ' 🦋',
+    },
+    {
+      name: 'LinkedIn', icon: '💼', color: '#0a66c2',
+      generate: t => `🔬 New Research Insight\n\n${t}\n\n→ What are your thoughts? Drop a comment below.\n\n#HCI #AI #Research #AcademicResearch`,
+    },
+    {
+      name: 'WeChat 微信', icon: '💚', color: '#07c160',
+      generate: t => `📚 最新研究分享\n\n${t}\n\n🔗 欢迎转发给感兴趣的朋友！\n\n#人工智能 #HCI #学术研究`,
+    },
+    {
+      name: '小红书', icon: '📕', color: '#fe2c55',
+      generate: t => `✨ 学术干货 | AI研究新发现 ✨\n\n${t}\n\n💡 感觉有收获就点个赞吧~\n\n#学术研究 #人工智能 #HCI #科研日常 #AI研究`,
+    },
+    {
+      name: '知乎', icon: '🔵', color: '#0084ff',
+      generate: t => `**研究背景**\n\n${t}\n\n**个人思考**\n\n这项研究对领域的启示值得深入探讨。欢迎在评论区交流你的看法。\n\n#人工智能 #HCI研究 #学术`,
+    },
+  ];
+
+  const container = document.getElementById('gen-results');
+  container.innerHTML = platforms.map(p => {
+    const content = p.generate(input);
+    return `
+      <div class="card">
+        <div class="card-header">
+          <div class="card-source-indicator" style="background:${p.color}"></div>
+          <div style="flex:1">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem">
+              <span style="font-size:0.75rem;font-family:var(--font-mono);color:${p.color};font-weight:600">${p.icon} ${p.name}</span>
+              <button class="gen-copy-btn" data-content="${escapeHtml(content)}">Copy</button>
+            </div>
+            <div style="font-size:0.8rem;color:var(--text-dim);white-space:pre-wrap;line-height:1.5;max-height:120px;overflow-y:auto">${escapeHtml(content)}</div>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+
+  container.querySelectorAll('.gen-copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      navigator.clipboard.writeText(btn.dataset.content).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = orig, 1500);
+      });
+    });
+  });
 });
 
 // ─── Init ───
