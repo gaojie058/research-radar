@@ -538,9 +538,8 @@
     <span class="keyword-pill" data-type="all">All Types</span>
     <span class="keyword-pill" data-type="Grant">🏛️ Grant</span>
     <span class="keyword-pill" data-type="Fellowship">🎓 Fellowship</span>
-    <span class="keyword-pill" data-type="Faculty Job">🏫 Faculty Job</span>
+    <span class="keyword-pill" data-type="Faculty+Board">🎓 Faculty Jobs & Boards</span>
     <span class="keyword-pill" data-type="Industry">🏢 Industry</span>
-    <span class="keyword-pill" data-type="Job Board">📋 Job Board</span>
   </div>
   <div class="keyword-pills" id="region-pills">
     <span class="keyword-pill" data-region="all">All Regions</span>
@@ -701,7 +700,18 @@ async function loadData() {
       researchers: data.researchers || [],
       seminars: [...(data.seminars || []), ...(data.podcasts || [])],
       conferences: data.conferences || [],
-      opportunities: [...(data.opportunities || []), ...(data.faculty_jobs || [])],
+      opportunities: [
+        ...(data.opportunities || []),
+        // Normalize faculty_jobs (English keys) into the same shape as opportunities (Chinese keys)
+        ...(data.faculty_jobs || []).map(j => ({
+          名称: j.title || '',
+          链接: j.link || '',
+          说明: j.summary || '',
+          类型: j.origin === 'Board' ? '📋 Job Board' : '🏫 Faculty Job',
+          地区: j.region || '',
+          _origin: j.origin,
+        })),
+      ],
     };
 
     // Update meta
@@ -797,7 +807,14 @@ function render() {
     // Type and region filters for opportunities
     if (currentCategory === 'opportunities') {
       if (currentType !== 'all') {
-        items = items.filter(i => (i['\u7c7b\u578b'] || '').includes(currentType));
+        if (currentType === 'Faculty+Board') {
+          items = items.filter(i => {
+            const t = i['类型'] || '';
+            return t.includes('Faculty Job') || t.includes('Job Board');
+          });
+        } else {
+          items = items.filter(i => (i['类型'] || '').includes(currentType));
+        }
       }
       if (currentRegion !== 'all') {
         // For region filtering, check if the region appears anywhere in the item
@@ -1032,6 +1049,7 @@ function renderLinkCard(item, meta) {
           <div class="card-title">${titleHtml}</div>
           <div class="card-meta" style="margin-top:0.3rem">
             ${extra ? `<span class="tag">${escapeHtml(extra)}</span>` : ''}
+            ${item['地区'] ? `<span class="tag" style="color:var(--text-muted)">${escapeHtml(item['地区'])}</span>` : ''}
             ${ccfBadge}
             ${confDateBadge}
             ${deadlineBadge}
